@@ -1,0 +1,6 @@
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAIComponents\obj\Debug\CAIComponents.DBList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAIComponents\obj\Debug\CAIComponents.Enumeration.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAIComponents\obj\Debug\CAIComponents.Identification.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAIComponents\obj\Debug\CAIComponents.MultipleChoice.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAIComponents\obj\Debug\CAIComponents.Resources.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAIComponents\obj\Debug\CAIComponents.vbproj.GenerateResource.Cache

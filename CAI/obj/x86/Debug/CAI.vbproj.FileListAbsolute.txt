@@ -1,0 +1,233 @@
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).exe.config
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.DBList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.Enumeration.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.Identification.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.MultipleChoice.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.AdminMain.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.ChatTest.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.InstructorMain.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.TestList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.UserCreate.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.UserEdit.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.UserList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.Authentication.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.LessonCreate.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.LessonEdit.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.LessonList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.MainMDI.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.CAISplash.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.Resources.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.Cache
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI (Computerized Aided Instruction).exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI (Computerized Aided Instruction).xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI (Computerized Aided Instruction).pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.DataList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\Interop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\Interop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\AxInterop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.vbproj.ResolveComReference.cache
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.StudentMain.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.QuestionManagement.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.TestForm.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.TestTaker.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\Interop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.QuestionForm.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.AnswerForm.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.UserViewer.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.UpdatePassword.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\CAI\obj\x86\Debug\CAI.StudentLessonViewer.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).exe.config
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\Interop.SHDocVw.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\AxInterop.SHDocVw.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.vbproj.ResolveComReference.cache
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI (Computerized Aided Instruction).exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI (Computerized Aided Instruction).xml
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI (Computerized Aided Instruction).pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.DataList.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.DBList.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.Enumeration.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.Identification.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.MultipleChoice.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.AdminMain.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.ChatTest.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.InstructorMain.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.StudentLessonViewer.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.StudentMain.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.TestTaker.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.AnswerForm.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.QuestionForm.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.QuestionManagement.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.TestForm.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.TestList.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.UpdatePassword.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.UserCreate.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.UserEdit.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.UserList.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.Authentication.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.LessonCreate.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.LessonEdit.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.LessonList.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.MainMDI.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.CAISplash.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.UserViewer.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.Resources.resources
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.Cache
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\CAI (Computerized Aided Instruction).xml
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\Interop.SHDocVw.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\Interop.WMPLib.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\CAI\obj\x86\Debug\CAI.vbprojResolveAssemblyReference.cache
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe.config
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Microsoft.Office.Interop.Word.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\System.Data.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\System.Design.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\System.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\System.Drawing.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\System.Windows.Forms.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\System.Xml.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\office.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Microsoft.Office.Interop.Word.xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\office.xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Interop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Interop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Interop.PowerPointViewer.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Interop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\AxInterop.SHDocVw.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.vbproj.ResolveComReference.cache
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.AttachmentViewer.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.DataList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.DBList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.Enumeration.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.Identification.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.MultipleChoice.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.AdminMain.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.ChatTest.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.InstructorMain.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.StudentLessonViewer.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.StudentMain.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.TestTaker.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.AnswerForm.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.QuestionForm.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.QuestionManagement.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.StudentTestResult.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.TestForm.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.TestList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.UpdatePassword.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.UserCreate.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.UserEdit.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.UserList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.Authentication.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.LessonCreate.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.LessonEdit.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.LessonList.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.MainMDI.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.CAISplash.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.UserViewer.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.Resources.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.Cache
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.InstructorStudentResultViewer.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Interop.PowerPointViewer.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.vbprojResolveAssemblyReference.cache
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.LessonButton.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.StudentLessonViewerV2.resources
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\Interop.AcroPDFLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\CAI\obj\x86\Debug\CAI.StudentLessonAttachmentViewer.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.PowerPointViewer.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.SHDocVw.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.WMPLib.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\AxInterop.SHDocVw.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\AxInterop.WMPLib.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.ResolveComReference.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AttachmentViewer.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonButton.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.DataList.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.DBList.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Enumeration.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Identification.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.MultipleChoice.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AdminMain.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AdminMainScreen.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ChatTest.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.InstructorMain.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentLessonAttachmentViewer.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentLessonViewer.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentLessonViewerV2.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentMain.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.TestTaker.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AnswerForm.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.InstructorStudentResultViewer.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.QuestionForm.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.QuestionManagement.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentTestResult.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.TestForm.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.TestList.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UpdatePassword.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserCreate.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserEdit.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserList.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Authentication.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonCreate.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonEdit.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonList.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.MainMDI.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.CAISplash.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserListRev2.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserViewer.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Resources.resources
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CoreCompileInputs.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe.config
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Data.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Design.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Drawing.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Windows.Forms.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Xml.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.PowerPointViewer.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.SHDocVw.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.WMPLib.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.SHDocVw.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.WMPLib.dll
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CopyComplete
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb

@@ -1,0 +1,400 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA
+</name>
+</assembly>
+<members>
+<member name="T:CAI.My.Resources.LessonList">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.lesson_list_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.lesson_next_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.lesson_page_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.lesson_prev_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.LineShape1_Bounds">
+<summary>
+  Looks up a localized resource of type System.Drawing.Rectangle similar to {X=685,Y=71,Width=358,Height=0}.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.LineShape1_Location">
+<summary>
+  Looks up a localized resource of type System.Drawing.Point similar to {X=685,Y=71}.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.LineShape1_Size">
+<summary>
+  Looks up a localized resource of type System.Drawing.Size similar to {Width=358, Height=0}.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.LineShape2_Bounds">
+<summary>
+  Looks up a localized resource of type System.Drawing.Rectangle similar to {X=624,Y=59,Width=374,Height=0}.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.LineShape2_Location">
+<summary>
+  Looks up a localized resource of type System.Drawing.Point similar to {X=624,Y=59}.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.LineShape2_Size">
+<summary>
+  Looks up a localized resource of type System.Drawing.Size similar to {Width=374, Height=0}.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.LessonList.Panel2_Locked">
+<summary>
+  Looks up a localized resource of type System.Boolean similar to True.
+</summary>
+</member>
+<member name="T:CAI.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.add">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.banner">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.banner1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.cai">
+<summary>
+  Looks up a localized string similar to network_path=Z
+server=localhost
+port=3306
+database=db_cai
+user=root
+password=.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.cai_setup">
+<summary>
+  Looks up a localized string similar to -- phpMyAdmin SQL Dump
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 07, 2018 at 01:09 AM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.1.15
+
+SET SQL_MODE = &quot;NO_AUTO_VALUE_ON_ZERO&quot;;
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = &quot;+00:00&quot;;
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.create_instructor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.createadmin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.homescreenbg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_back_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_back_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_books_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_bulleted_list_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_cancel_40">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_cancel_512">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_checkmark_512">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_classroom_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_conference_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_exit_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_exit_filled_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_export_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_eye_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_eye_96__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_gears_filled_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_gears_filled_100__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_key_2_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_key_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_literature_filled_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_lock_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_lock_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_ok_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_ok_480">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_ok_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_padlock_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_padlock_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_password_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_password_filled_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_password_filled_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_prev_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_prev_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_right_button_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_right_button_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_settings_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_settings_64__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_test_passed_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_test_passed_80">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_user_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.lecturelogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.lessonviewer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.monitoringadmin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.profile_filelogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.quizlogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.search_filelogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.trash">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.viewlogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

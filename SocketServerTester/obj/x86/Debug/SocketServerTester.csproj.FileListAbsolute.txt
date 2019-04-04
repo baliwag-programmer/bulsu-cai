@@ -1,0 +1,19 @@
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketServerTester\bin\Debug\SocketServerTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketServerTester\bin\Debug\SocketServerTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketServerTester\obj\x86\Debug\SocketServerTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketServerTester\obj\x86\Debug\SocketServerTester.pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketServerTester\bin\Debug\SocketServerTester.exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketServerTester\bin\Debug\SocketServerTester.pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketServerTester\obj\x86\Debug\SocketServerTester.exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketServerTester\obj\x86\Debug\SocketServerTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketServerTester\bin\Debug\SocketServerTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketServerTester\bin\Debug\SocketServerTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketServerTester\obj\x86\Debug\SocketServerTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketServerTester\obj\x86\Debug\SocketServerTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketServerTester\obj\x86\Debug\SocketServerTester.csprojResolveAssemblyReference.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\bin\Debug\SocketServerTester.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\bin\Debug\SocketServerTester.pdb
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.csprojAssemblyReference.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.csproj.CoreCompileInputs.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.pdb

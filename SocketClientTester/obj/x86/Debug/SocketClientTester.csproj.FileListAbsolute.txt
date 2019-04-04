@@ -1,0 +1,18 @@
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketClientTester\bin\Debug\SocketClientTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketClientTester\bin\Debug\SocketClientTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketClientTester\obj\x86\Debug\SocketClientTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SocketClientTester\obj\x86\Debug\SocketClientTester.pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketClientTester\bin\Debug\SocketClientTester.exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketClientTester\bin\Debug\SocketClientTester.pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketClientTester\obj\x86\Debug\SocketClientTester.exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SocketClientTester\obj\x86\Debug\SocketClientTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketClientTester\bin\Debug\SocketClientTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketClientTester\bin\Debug\SocketClientTester.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketClientTester\obj\x86\Debug\SocketClientTester.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SocketClientTester\obj\x86\Debug\SocketClientTester.pdb
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\bin\Debug\SocketClientTester.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\bin\Debug\SocketClientTester.pdb
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.csprojAssemblyReference.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.csproj.CoreCompileInputs.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.pdb

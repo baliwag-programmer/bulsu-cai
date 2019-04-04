@@ -1,0 +1,19 @@
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SockerServer\bin\Debug\SockerServer.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SockerServer\bin\Debug\SockerServer.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SockerServer\obj\x86\Debug\SockerServer.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI\SockerServer\obj\x86\Debug\SockerServer.pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SockerServer\bin\Debug\SockerServer.exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SockerServer\bin\Debug\SockerServer.pdb
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SockerServer\obj\x86\Debug\SockerServer.exe
+C:\Users\Desktop\Desktop\CAI-May-06-2018\CAI\SockerServer\obj\x86\Debug\SockerServer.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SockerServer\bin\Debug\SockerServer.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SockerServer\bin\Debug\SockerServer.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SockerServer\obj\x86\Debug\SockerServer.exe
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SockerServer\obj\x86\Debug\SockerServer.pdb
+C:\Users\AMD\Documents\Visual Studio 2010\Projects\Cyra\CAI-netbook\SockerServer\obj\x86\Debug\SockerServer.csprojResolveAssemblyReference.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\bin\Debug\SockerServer.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\bin\Debug\SockerServer.pdb
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.csprojAssemblyReference.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.csproj.CoreCompileInputs.cache
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.exe
+E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.pdb
