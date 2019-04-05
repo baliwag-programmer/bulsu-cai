@@ -17,3 +17,9 @@ E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.csproj
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.csproj.CoreCompileInputs.cache
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.exe
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\bin\Debug\SockerServer.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\bin\Debug\SockerServer.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.csprojAssemblyReference.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.csproj.CoreCompileInputs.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SockerServer\obj\x86\Debug\SockerServer.pdb

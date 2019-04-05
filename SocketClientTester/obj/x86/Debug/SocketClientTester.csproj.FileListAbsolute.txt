@@ -16,3 +16,9 @@ E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientT
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.csproj.CoreCompileInputs.cache
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.exe
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\bin\Debug\SocketClientTester.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\bin\Debug\SocketClientTester.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.csprojAssemblyReference.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.csproj.CoreCompileInputs.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketClientTester\obj\x86\Debug\SocketClientTester.pdb

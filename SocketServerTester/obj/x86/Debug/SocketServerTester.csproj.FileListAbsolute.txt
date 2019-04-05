@@ -17,3 +17,8 @@ E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerT
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.csproj.CoreCompileInputs.cache
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.exe
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\bin\Debug\SocketServerTester.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\bin\Debug\SocketServerTester.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.csproj.CoreCompileInputs.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\SocketServerTester\obj\x86\Debug\SocketServerTester.pdb

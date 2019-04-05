@@ -1,4 +1,5 @@
 ﻿Imports System.Collections.ObjectModel
+Imports Microsoft.VisualBasic.ApplicationServices
 
 Namespace My
     ' The following events are available for MyApplication:
@@ -8,8 +9,10 @@ Namespace My
     ' StartupNextInstance: Raised when launching a single-instance application and the application is already active. 
     ' NetworkAvailabilityChanged: Raised when the network connection is connected or disconnected.
     Partial Friend Class MyApplication
+
         Protected Overrides Function OnInitialize(commandLineArgs As ReadOnlyCollection(Of String)) As Boolean
             Return MyBase.OnInitialize(commandLineArgs)
         End Function
+
     End Class
 End Namespace

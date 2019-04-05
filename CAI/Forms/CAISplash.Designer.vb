@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CAISplash
     Inherits System.Windows.Forms.Form
 
@@ -20,7 +20,7 @@ Partial Class CAISplash
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.Version = New System.Windows.Forms.Label()
@@ -101,5 +101,4 @@ Partial Class CAISplash
     Friend WithEvents Version As System.Windows.Forms.Label
     Friend WithEvents Copyright As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-
 End Class

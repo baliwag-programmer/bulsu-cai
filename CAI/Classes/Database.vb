@@ -41,6 +41,7 @@ Public Class Database
                 End If
             End If
         Catch ex As Exception
+            connection = Nothing
             Console.WriteLine(ex)
         End Try
     End Sub

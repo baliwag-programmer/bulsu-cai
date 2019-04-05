@@ -231,3 +231,69 @@ E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CopyComplete
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
 E:\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe.config
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Data.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Design.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Drawing.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Windows.Forms.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Xml.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.PowerPointViewer.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.SHDocVw.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.WMPLib.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.PowerPointViewer.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.SHDocVw.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\AxInterop.SHDocVw.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.ResolveComReference.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AttachmentViewer.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Heading.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonButton.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.DataList.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.DBList.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Enumeration.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Identification.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.MultipleChoice.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AdminMain.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AdminMainScreen.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ChatTest.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.InstructorMain.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentLessonAttachmentViewer.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentLessonViewer.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentLessonViewerV2.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentMain.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.TestTaker.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AnswerForm.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.InstructorStudentResultViewer.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.QuestionForm.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.QuestionManagement.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.StudentTestResult.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.TestForm.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.TestList.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UpdatePassword.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserCreate.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserEdit.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserList.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Authentication.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonCreate.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonEdit.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.LessonList.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.MainMDI.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.CAISplash.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserListRev2.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserViewer.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Resources.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CoreCompileInputs.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CopyComplete
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb

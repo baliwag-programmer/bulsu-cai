@@ -42,36 +42,6 @@ Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of 
   Looks up a localized resource of type System.Boolean similar to True.
 </summary>
 </member>
-<member name="P:CAI.My.Resources.LessonList.LineShape1_Bounds">
-<summary>
-  Looks up a localized resource of type System.Drawing.Rectangle similar to {X=685,Y=71,Width=358,Height=0}.
-</summary>
-</member>
-<member name="P:CAI.My.Resources.LessonList.LineShape1_Location">
-<summary>
-  Looks up a localized resource of type System.Drawing.Point similar to {X=685,Y=71}.
-</summary>
-</member>
-<member name="P:CAI.My.Resources.LessonList.LineShape1_Size">
-<summary>
-  Looks up a localized resource of type System.Drawing.Size similar to {Width=358, Height=0}.
-</summary>
-</member>
-<member name="P:CAI.My.Resources.LessonList.LineShape2_Bounds">
-<summary>
-  Looks up a localized resource of type System.Drawing.Rectangle similar to {X=624,Y=59,Width=374,Height=0}.
-</summary>
-</member>
-<member name="P:CAI.My.Resources.LessonList.LineShape2_Location">
-<summary>
-  Looks up a localized resource of type System.Drawing.Point similar to {X=624,Y=59}.
-</summary>
-</member>
-<member name="P:CAI.My.Resources.LessonList.LineShape2_Size">
-<summary>
-  Looks up a localized resource of type System.Drawing.Size similar to {Width=374, Height=0}.
-</summary>
-</member>
 <member name="P:CAI.My.Resources.LessonList.Panel2_Locked">
 <summary>
   Looks up a localized resource of type System.Boolean similar to True.
@@ -231,6 +201,11 @@ SET time_zone = &quot;+00:00&quot;;
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:CAI.My.Resources.Resources.icons8_filter">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:CAI.My.Resources.Resources.icons8_gears_filled_100">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -322,6 +297,11 @@ SET time_zone = &quot;+00:00&quot;;
 </summary>
 </member>
 <member name="P:CAI.My.Resources.Resources.icons8_right_button_96">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_search_property_16">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

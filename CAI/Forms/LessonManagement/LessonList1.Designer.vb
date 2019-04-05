@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  A strongly-typed resource class, for looking up localized strings, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
     Public Class LessonList
@@ -101,66 +101,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("lesson_prev.Locked", resourceCulture)
                 Return CType(obj,Boolean)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Rectangle similar to {X=685,Y=71,Width=358,Height=0}.
-        '''</summary>
-        Public Shared ReadOnly Property LineShape1_Bounds() As System.Drawing.Rectangle
-            Get
-                Dim obj As Object = ResourceManager.GetObject("LineShape1.Bounds", resourceCulture)
-                Return CType(obj,System.Drawing.Rectangle)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Point similar to {X=685,Y=71}.
-        '''</summary>
-        Public Shared ReadOnly Property LineShape1_Location() As System.Drawing.Point
-            Get
-                Dim obj As Object = ResourceManager.GetObject("LineShape1.Location", resourceCulture)
-                Return CType(obj,System.Drawing.Point)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=358, Height=0}.
-        '''</summary>
-        Public Shared ReadOnly Property LineShape1_Size() As System.Drawing.Size
-            Get
-                Dim obj As Object = ResourceManager.GetObject("LineShape1.Size", resourceCulture)
-                Return CType(obj,System.Drawing.Size)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Rectangle similar to {X=624,Y=59,Width=374,Height=0}.
-        '''</summary>
-        Public Shared ReadOnly Property LineShape2_Bounds() As System.Drawing.Rectangle
-            Get
-                Dim obj As Object = ResourceManager.GetObject("LineShape2.Bounds", resourceCulture)
-                Return CType(obj,System.Drawing.Rectangle)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Point similar to {X=624,Y=59}.
-        '''</summary>
-        Public Shared ReadOnly Property LineShape2_Location() As System.Drawing.Point
-            Get
-                Dim obj As Object = ResourceManager.GetObject("LineShape2.Location", resourceCulture)
-                Return CType(obj,System.Drawing.Point)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Size similar to {Width=374, Height=0}.
-        '''</summary>
-        Public Shared ReadOnly Property LineShape2_Size() As System.Drawing.Size
-            Get
-                Dim obj As Object = ResourceManager.GetObject("LineShape2.Size", resourceCulture)
-                Return CType(obj,System.Drawing.Size)
             End Get
         End Property
         
