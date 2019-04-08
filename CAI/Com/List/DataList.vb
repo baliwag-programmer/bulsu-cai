@@ -78,7 +78,7 @@
                 If headers.Count > 0 Then
 
                     For Each header As ColumnHeader In headers
-                        .Columns.Add(header)
+                        .Columns.Add(CType(header, System.Windows.Forms.ColumnHeader))
                     Next
                 End If
             End If
