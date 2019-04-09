@@ -35,8 +35,8 @@ Partial Class UserForm
         Me.txt_password = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_username = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LabelUsername = New System.Windows.Forms.Label()
+        Me.LabelAccountType = New System.Windows.Forms.Label()
         Me.ComboAccountType = New System.Windows.Forms.ComboBox()
         Me.BTNCancel = New System.Windows.Forms.Button()
         Me.BTNSave = New System.Windows.Forms.Button()
@@ -163,25 +163,25 @@ Partial Class UserForm
         Me.txt_username.Size = New System.Drawing.Size(290, 23)
         Me.txt_username.TabIndex = 16
         '
-        'Label1
+        'LabelUsername
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label1.Location = New System.Drawing.Point(49, 211)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 16)
-        Me.Label1.TabIndex = 24
-        Me.Label1.Text = "USERNAME :"
+        Me.LabelUsername.AutoSize = True
+        Me.LabelUsername.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.LabelUsername.Location = New System.Drawing.Point(49, 211)
+        Me.LabelUsername.Name = "LabelUsername"
+        Me.LabelUsername.Size = New System.Drawing.Size(90, 16)
+        Me.LabelUsername.TabIndex = 24
+        Me.LabelUsername.Text = "USERNAME :"
         '
-        'Label2
+        'LabelAccountType
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label2.Location = New System.Drawing.Point(49, 151)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 16)
-        Me.Label2.TabIndex = 28
-        Me.Label2.Text = "ACCOUNT TYPE :"
+        Me.LabelAccountType.AutoSize = True
+        Me.LabelAccountType.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.LabelAccountType.Location = New System.Drawing.Point(49, 151)
+        Me.LabelAccountType.Name = "LabelAccountType"
+        Me.LabelAccountType.Size = New System.Drawing.Size(122, 16)
+        Me.LabelAccountType.TabIndex = 28
+        Me.LabelAccountType.Text = "ACCOUNT TYPE :"
         '
         'ComboAccountType
         '
@@ -198,6 +198,7 @@ Partial Class UserForm
         '
         Me.BTNCancel.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.BTNCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.BTNCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.BTNCancel.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
@@ -258,7 +259,7 @@ Partial Class UserForm
         Me.Controls.Add(Me.BTNCancel)
         Me.Controls.Add(Me.BTNSave)
         Me.Controls.Add(Me.ComboAccountType)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.LabelAccountType)
         Me.Controls.Add(Me.txt_last_name)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txt_middle)
@@ -270,7 +271,7 @@ Partial Class UserForm
         Me.Controls.Add(Me.txt_password)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txt_username)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LabelUsername)
         Me.Controls.Add(Me.LabelActionChangeImage)
         Me.Controls.Add(Me.Heading1)
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -302,8 +303,8 @@ Partial Class UserForm
     Friend WithEvents txt_password As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txt_username As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents LabelUsername As Label
+    Friend WithEvents LabelAccountType As Label
     Friend WithEvents ComboAccountType As ComboBox
     Friend WithEvents BTNCancel As Button
     Friend WithEvents BTNSave As Button

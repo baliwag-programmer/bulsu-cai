@@ -24,6 +24,7 @@ Partial Class AdminMainScreen
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminMainScreen))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ButtonProfile = New System.Windows.Forms.Button()
         Me.LabelAccountType = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.LabelFullName = New System.Windows.Forms.Label()
@@ -31,6 +32,7 @@ Partial Class AdminMainScreen
         Me.Avatar = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.ButtonSecurity = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.LabelViewLogReport = New System.Windows.Forms.Label()
         Me.LabelMonitoring = New System.Windows.Forms.Label()
@@ -52,6 +54,7 @@ Partial Class AdminMainScreen
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Green
+        Me.Panel1.Controls.Add(Me.ButtonProfile)
         Me.Panel1.Controls.Add(Me.LabelAccountType)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.LabelFullName)
@@ -59,11 +62,32 @@ Partial Class AdminMainScreen
         Me.Panel1.Controls.Add(Me.Avatar)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.ButtonSecurity)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(319, 600)
         Me.Panel1.TabIndex = 0
+        '
+        'ButtonProfile
+        '
+        Me.ButtonProfile.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonProfile.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonProfile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonProfile.FlatAppearance.BorderSize = 0
+        Me.ButtonProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonProfile.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonProfile.ForeColor = System.Drawing.Color.White
+        Me.ButtonProfile.Image = CType(resources.GetObject("ButtonProfile.Image"), System.Drawing.Image)
+        Me.ButtonProfile.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ButtonProfile.Location = New System.Drawing.Point(235, 234)
+        Me.ButtonProfile.Name = "ButtonProfile"
+        Me.ButtonProfile.Size = New System.Drawing.Size(77, 59)
+        Me.ButtonProfile.TabIndex = 20
+        Me.ButtonProfile.Text = "PROFILE"
+        Me.ButtonProfile.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ButtonProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ButtonProfile.UseVisualStyleBackColor = False
         '
         'LabelAccountType
         '
@@ -117,7 +141,7 @@ Partial Class AdminMainScreen
         '
         Me.Avatar.BackColor = System.Drawing.Color.White
         Me.Avatar.Image = CType(resources.GetObject("Avatar.Image"), System.Drawing.Image)
-        Me.Avatar.Location = New System.Drawing.Point(80, 234)
+        Me.Avatar.Location = New System.Drawing.Point(78, 234)
         Me.Avatar.Margin = New System.Windows.Forms.Padding(2)
         Me.Avatar.Name = "Avatar"
         Me.Avatar.Size = New System.Drawing.Size(158, 132)
@@ -147,6 +171,26 @@ Partial Class AdminMainScreen
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 13
         Me.PictureBox2.TabStop = False
+        '
+        'ButtonSecurity
+        '
+        Me.ButtonSecurity.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonSecurity.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonSecurity.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonSecurity.FlatAppearance.BorderSize = 0
+        Me.ButtonSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonSecurity.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSecurity.ForeColor = System.Drawing.Color.White
+        Me.ButtonSecurity.Image = Global.CAI.My.Resources.Resources.icons8_key_32x32
+        Me.ButtonSecurity.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ButtonSecurity.Location = New System.Drawing.Point(235, 307)
+        Me.ButtonSecurity.Name = "ButtonSecurity"
+        Me.ButtonSecurity.Size = New System.Drawing.Size(77, 59)
+        Me.ButtonSecurity.TabIndex = 21
+        Me.ButtonSecurity.Text = "SECURITY"
+        Me.ButtonSecurity.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ButtonSecurity.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ButtonSecurity.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -313,4 +357,6 @@ Partial Class AdminMainScreen
     Friend WithEvents Avatar As PictureBox
     Friend WithEvents LabelAccountType As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents ButtonProfile As Button
+    Friend WithEvents ButtonSecurity As Button
 End Class

@@ -16,16 +16,21 @@ Public Class AdminMainScreen
         End If
 
         If sender Is BTNViewLogReport Or sender Is LabelViewLogReport Then
-
+            Dim form = New ActivityLogs
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
         End If
 
     End Sub
 
     Private Sub OnDateTimeChanged(ByRef CurrentDateTime As Date)
-        If Not Me.IsDisposed Then
+        Try
             Me.LabelDate.Text = Format(CurrentDateTime, "Long Date")
             Me.LabelTime.Text = Format(CurrentDateTime, "hh:mm:ss tt")
-        End If
+        Catch ex As Exception
+
+        End Try
     End Sub
 
     Private Sub OnFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,6 +44,22 @@ Public Class AdminMainScreen
             Avatar.Image = ImageModule.Base64ToImage(Auth.dp)
             LabelFullName.Text = String.Format("{0}, {1}, {2}", Auth.last_name, Auth.first_name, Auth.middle_name).ToUpper()
             LabelAccountType.Text = Auth.role.display_name.ToUpper()
+        End If
+    End Sub
+
+    Private Sub OnClickProfileAction(sender As Object, e As EventArgs) Handles ButtonSecurity.Click, ButtonProfile.Click
+        If sender Is ButtonSecurity Then
+            Dim form = New UpdatePassword(Auth.GetInstance.id)
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+
+        If sender Is ButtonProfile Then
+            Dim form = New UserViewer(Auth.GetInstance.id)
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
         End If
     End Sub
 

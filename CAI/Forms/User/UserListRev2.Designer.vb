@@ -36,6 +36,7 @@ Partial Class UserListRev2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.pict_user_pict = New System.Windows.Forms.PictureBox()
+        Me.DataList1 = New CAI.DataList()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BTNEdit = New System.Windows.Forms.Button()
         Me.BTNCreate = New System.Windows.Forms.Button()
@@ -49,7 +50,6 @@ Partial Class UserListRev2
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Heading1 = New CAI.Heading()
-        Me.DataList1 = New CAI.DataList()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.UserDetailWrapper.SuspendLayout()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -249,6 +249,20 @@ Partial Class UserListRev2
         Me.pict_user_pict.TabIndex = 55
         Me.pict_user_pict.TabStop = False
         '
+        'DataList1
+        '
+        Me.DataList1.BackColor = System.Drawing.SystemColors.Control
+        Me.DataList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.DataList1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.DataList1.DataListHeaders = Nothing
+        Me.DataList1.DataListQueryFilters = Nothing
+        Me.DataList1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataList1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.DataList1.Location = New System.Drawing.Point(3, 3)
+        Me.DataList1.Name = "DataList1"
+        Me.DataList1.Size = New System.Drawing.Size(800, 357)
+        Me.DataList1.TabIndex = 1
+        '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -260,7 +274,7 @@ Partial Class UserListRev2
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(788, 130)
+        Me.Button1.Location = New System.Drawing.Point(801, 130)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 71)
         Me.Button1.TabIndex = 63
@@ -281,7 +295,7 @@ Partial Class UserListRev2
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(980, 130)
+        Me.BTNEdit.Location = New System.Drawing.Point(979, 130)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(85, 71)
         Me.BTNEdit.TabIndex = 62
@@ -301,7 +315,7 @@ Partial Class UserListRev2
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(879, 130)
+        Me.BTNCreate.Location = New System.Drawing.Point(890, 130)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(85, 71)
         Me.BTNCreate.TabIndex = 61
@@ -390,20 +404,6 @@ Partial Class UserListRev2
         Me.Heading1.Size = New System.Drawing.Size(1066, 127)
         Me.Heading1.TabIndex = 4
         Me.Heading1.Title = "ACCOUNT MANAGEMENT"
-        '
-        'DataList1
-        '
-        Me.DataList1.BackColor = System.Drawing.SystemColors.Control
-        Me.DataList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.DataList1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.DataList1.DataListHeaders = Nothing
-        Me.DataList1.DataListQueryFilters = Nothing
-        Me.DataList1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataList1.Font = New System.Drawing.Font("Verdana", 8.25!)
-        Me.DataList1.Location = New System.Drawing.Point(3, 3)
-        Me.DataList1.Name = "DataList1"
-        Me.DataList1.Size = New System.Drawing.Size(800, 357)
-        Me.DataList1.TabIndex = 1
         '
         'UserListRev2
         '

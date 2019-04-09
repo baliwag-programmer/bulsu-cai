@@ -371,6 +371,7 @@
     <Compile Include="Models\Model.vb" />
     <Compile Include="Models\RoleModel.vb" />
     <Compile Include="Modules\ImageModule.vb" />
+    <Compile Include="Modules\LoggerModule.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -564,6 +565,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\cai_setup.sql" />
+    <None Include="Resources\icons8_key_32x32.png" />
+    <None Include="Resources\icons8_gears_32x32.png" />
+    <None Include="Resources\icons8_settings_32x32.png" />
+    <None Include="Resources\icons8_settings_48x48.png" />
+    <None Include="Resources\icons8-settings-48.png" />
     <None Include="Resources\icons8_filter.png" />
     <None Include="Resources\icons8-search-property-161.png" />
     <None Include="Resources\icons8-search-property-16.png" />

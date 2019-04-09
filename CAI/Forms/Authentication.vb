@@ -148,7 +148,10 @@ invalid:
             MsgBox("Invalid login credentials", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Invalid")
             PasswordTextBox.Text = ""
         Catch ex As Exception
-            Console.WriteLine(ex.Message)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
+
+            MsgBox("Sorry unable to log in. Please see the latest log file for information.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Unable to login.")
         End Try
     End Sub
 
@@ -192,7 +195,7 @@ invalid:
     End Sub
 
     Private Sub link_register_student_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles link_register_student.LinkClicked
-        Dim form = New UserCreate(CAI.UserList.Role.Student, True)
+        Dim form = New UserForm(UserForm.Mode.Create, UserForm.Role.Student)
         Me.Hide()
         form.ShowDialog()
         Me.Show()

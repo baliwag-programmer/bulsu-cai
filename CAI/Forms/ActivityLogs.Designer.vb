@@ -51,6 +51,7 @@ Partial Class ActivityLogs
         Me.lbl_user_name = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,9 +66,9 @@ Partial Class ActivityLogs
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Controls.Add(Me.list_log)
-        Me.Panel2.Location = New System.Drawing.Point(-2, 29)
+        Me.Panel2.Location = New System.Drawing.Point(-2, 133)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(553, 448)
+        Me.Panel2.Size = New System.Drawing.Size(553, 429)
         Me.Panel2.TabIndex = 30
         '
         'Panel4
@@ -78,7 +79,7 @@ Partial Class ActivityLogs
         Me.Panel4.Controls.Add(Me.logs_btn_prev)
         Me.Panel4.Controls.Add(Me.logs_btn_next)
         Me.Panel4.Controls.Add(Me.logs_pagination)
-        Me.Panel4.Location = New System.Drawing.Point(0, 416)
+        Me.Panel4.Location = New System.Drawing.Point(0, 397)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(553, 32)
         Me.Panel4.TabIndex = 3
@@ -126,7 +127,7 @@ Partial Class ActivityLogs
         Me.list_log.GridLines = True
         Me.list_log.Location = New System.Drawing.Point(0, 0)
         Me.list_log.Name = "list_log"
-        Me.list_log.Size = New System.Drawing.Size(553, 418)
+        Me.list_log.Size = New System.Drawing.Size(553, 399)
         Me.list_log.TabIndex = 2
         Me.list_log.UseCompatibleStateImageBehavior = False
         Me.list_log.View = System.Windows.Forms.View.Details
@@ -162,7 +163,7 @@ Partial Class ActivityLogs
         Me.pict_user_pict.BackColor = System.Drawing.Color.White
         Me.pict_user_pict.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pict_user_pict.Image = Global.CAI.My.Resources.Resources.icons8_user_96
-        Me.pict_user_pict.Location = New System.Drawing.Point(563, 29)
+        Me.pict_user_pict.Location = New System.Drawing.Point(563, 133)
         Me.pict_user_pict.Name = "pict_user_pict"
         Me.pict_user_pict.Size = New System.Drawing.Size(109, 105)
         Me.pict_user_pict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -173,7 +174,7 @@ Partial Class ActivityLogs
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(560, 148)
+        Me.Label5.Location = New System.Drawing.Point(560, 252)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(97, 13)
         Me.Label5.TabIndex = 35
@@ -183,7 +184,7 @@ Partial Class ActivityLogs
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(678, 96)
+        Me.Label1.Location = New System.Drawing.Point(678, 200)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(74, 13)
         Me.Label1.TabIndex = 37
@@ -193,7 +194,7 @@ Partial Class ActivityLogs
         '
         Me.lbl_username.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_username.AutoSize = True
-        Me.lbl_username.Location = New System.Drawing.Point(678, 118)
+        Me.lbl_username.Location = New System.Drawing.Point(678, 222)
         Me.lbl_username.Name = "lbl_username"
         Me.lbl_username.Size = New System.Drawing.Size(65, 13)
         Me.lbl_username.TabIndex = 46
@@ -203,7 +204,7 @@ Partial Class ActivityLogs
         '
         Me.lbl_reigestered_since.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_reigestered_since.AutoSize = True
-        Me.lbl_reigestered_since.Location = New System.Drawing.Point(678, 51)
+        Me.lbl_reigestered_since.Location = New System.Drawing.Point(678, 155)
         Me.lbl_reigestered_since.Name = "lbl_reigestered_since"
         Me.lbl_reigestered_since.Size = New System.Drawing.Size(133, 13)
         Me.lbl_reigestered_since.TabIndex = 48
@@ -213,7 +214,7 @@ Partial Class ActivityLogs
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(678, 29)
+        Me.Label3.Location = New System.Drawing.Point(678, 133)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(112, 13)
         Me.Label3.TabIndex = 47
@@ -225,9 +226,9 @@ Partial Class ActivityLogs
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.list_recent_logs)
-        Me.Panel1.Location = New System.Drawing.Point(561, 230)
+        Me.Panel1.Location = New System.Drawing.Point(561, 334)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(337, 247)
+        Me.Panel1.Size = New System.Drawing.Size(337, 228)
         Me.Panel1.TabIndex = 49
         '
         'Panel3
@@ -238,7 +239,7 @@ Partial Class ActivityLogs
         Me.Panel3.Controls.Add(Me.recent_btn_prev)
         Me.Panel3.Controls.Add(Me.recent_btn_next)
         Me.Panel3.Controls.Add(Me.recent_pagination)
-        Me.Panel3.Location = New System.Drawing.Point(0, 215)
+        Me.Panel3.Location = New System.Drawing.Point(0, 196)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(337, 32)
         Me.Panel3.TabIndex = 3
@@ -286,7 +287,7 @@ Partial Class ActivityLogs
         Me.list_recent_logs.GridLines = True
         Me.list_recent_logs.Location = New System.Drawing.Point(0, 0)
         Me.list_recent_logs.Name = "list_recent_logs"
-        Me.list_recent_logs.Size = New System.Drawing.Size(337, 217)
+        Me.list_recent_logs.Size = New System.Drawing.Size(337, 198)
         Me.list_recent_logs.TabIndex = 2
         Me.list_recent_logs.UseCompatibleStateImageBehavior = False
         Me.list_recent_logs.View = System.Windows.Forms.View.Details
@@ -310,7 +311,7 @@ Partial Class ActivityLogs
         '
         Me.lbl_user_name.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_user_name.AutoSize = True
-        Me.lbl_user_name.Location = New System.Drawing.Point(560, 167)
+        Me.lbl_user_name.Location = New System.Drawing.Point(560, 271)
         Me.lbl_user_name.Name = "lbl_user_name"
         Me.lbl_user_name.Size = New System.Drawing.Size(151, 13)
         Me.lbl_user_name.TabIndex = 50
@@ -320,7 +321,7 @@ Partial Class ActivityLogs
         '
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(561, 214)
+        Me.Label7.Location = New System.Drawing.Point(561, 318)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(101, 13)
         Me.Label7.TabIndex = 51
@@ -336,7 +337,7 @@ Partial Class ActivityLogs
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(813, 148)
+        Me.Button1.Location = New System.Drawing.Point(813, 252)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 52
@@ -345,12 +346,24 @@ Partial Class ActivityLogs
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(898, 127)
+        Me.Heading1.TabIndex = 53
+        Me.Heading1.Title = "LOG REPORTS"
+        '
         'ActivityLogs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
-        Me.ClientSize = New System.Drawing.Size(898, 477)
+        Me.ClientSize = New System.Drawing.Size(898, 562)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.lbl_user_name)
@@ -408,4 +421,5 @@ Partial Class ActivityLogs
     Friend WithEvents logs_user_name As System.Windows.Forms.ColumnHeader
     Friend WithEvents logs_created_at As System.Windows.Forms.ColumnHeader
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Heading1 As Heading
 End Class

@@ -206,6 +206,11 @@ SET time_zone = &quot;+00:00&quot;;
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:CAI.My.Resources.Resources.icons8_gears_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:CAI.My.Resources.Resources.icons8_gears_filled_100">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -217,6 +222,11 @@ SET time_zone = &quot;+00:00&quot;;
 </summary>
 </member>
 <member name="P:CAI.My.Resources.Resources.icons8_key_2_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_key_32x32">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -302,6 +312,16 @@ SET time_zone = &quot;+00:00&quot;;
 </summary>
 </member>
 <member name="P:CAI.My.Resources.Resources.icons8_search_property_16">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_settings_32x32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.icons8_settings_48x48">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
