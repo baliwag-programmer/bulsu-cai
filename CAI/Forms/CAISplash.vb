@@ -1,8 +1,9 @@
 ﻿Public NotInheritable Class CAISplash
 
-    'TODO: This form can easily be set as the splash screen for the application by going to the "Application" tab
-    '  of the Project Designer ("Properties" under the "Project" menu).
+    Private WithEvents ProgressTimer As New Timer
 
+    Private CurrentStatus As String
+    Private DotIndicator As New List(Of String)
 
     Private Sub SplashScreen_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'Set up the dialog text at runtime according to the application's assembly information.  
@@ -31,5 +32,24 @@
         'Copyright info
         Copyright.Text = My.Application.Info.Copyright
 
+        With ProgressTimer
+            .Interval = 500
+            .Start()
+        End With
+
+        AddHandler My.Application.OnApplicationEvent, AddressOf OnApplicationEventChange
+
+    End Sub
+
+    Public Sub OnApplicationEventChange(ByRef EventMessage As String)
+        CurrentStatus = EventMessage
+        Console.WriteLine(EventMessage)
+    End Sub
+
+    Private Sub ProgressTimer_Tick(sender As Object, e As EventArgs) Handles ProgressTimer.Tick
+        DotIndicator.Add(".")
+        Me.LabelProgress.Text = My.Application.CurrentStatus & String.Join("", DotIndicator.ToArray())
+        If DotIndicator.Count >= 3 Then _
+            DotIndicator = New List(Of String)
     End Sub
 End Class

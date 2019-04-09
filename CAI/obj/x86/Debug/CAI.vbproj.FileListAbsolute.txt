@@ -298,3 +298,4 @@ C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Comp
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbprojAssemblyReference.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserForm.resources

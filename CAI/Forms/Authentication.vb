@@ -109,7 +109,7 @@
                 user.last_name = last_name
                 user.first_name = first_name
                 user.middle_name = middle_name
-                user.instructor_id = instructor_id
+                user.instructor_id = IIf(String.IsNullOrEmpty(instructor_id), 0, instructor_id)
                 user.approved = approved
 
 
@@ -122,6 +122,9 @@
 
                 MsgBox(String.Format("Welcome {0}, {1}, {2}", last_name, first_name, middle_name), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Successfully logged in.")
                 Me.Hide()
+
+                My.Application.SetAuth(user)
+
                 If user.role.name = "student" Then
                     Dim form = New StudentMain
                     form.ShowDialog()
@@ -133,9 +136,10 @@
                 End If
 
                 If user.role.name = "administrator" Then
-                    Dim form = New AdminMain
+                    Dim form = New AdminMainScreen
                     form.ShowDialog()
                 End If
+
                 Me.Show()
                 Exit Sub
             End If
@@ -177,7 +181,7 @@ invalid:
             If total_user = 0 Then
                 Dim confirm = MsgBox("System detected their is no administrator account yet." & vbNewLine & vbNewLine & "Do you want to create administrator now?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "No Data Found")
                 If confirm = MsgBoxResult.Yes Then
-                    Dim form = New UserCreate
+                    Dim form = New UserForm(UserForm.Mode.Create, UserForm.Role.Administrator)
                     form.ShowDialog()
                 End If
             End If

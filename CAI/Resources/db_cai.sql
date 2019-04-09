@@ -176,20 +176,21 @@ CREATE TABLE `topics` (
 --
 
 CREATE TABLE `users` (
-  `id` int(10) UNSIGNED NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `password` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `lastname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `firstname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `middlename` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `username` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `instructor_id` int(11) NOT NULL,
+  `instructor_id` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `login_attempt` int(11) NOT NULL DEFAULT '0',
   `is_locked` int(1) DEFAULT '0',
-  `dp` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `approved` int(1) DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `dp` longtext COLLATE utf8mb4_unicode_ci,
+  `approved` int(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 

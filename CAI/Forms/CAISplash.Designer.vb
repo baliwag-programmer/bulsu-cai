@@ -26,6 +26,7 @@ Partial Class CAISplash
         Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelProgress = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,6 +75,17 @@ Partial Class CAISplash
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'LabelProgress
+        '
+        Me.LabelProgress.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.LabelProgress.BackColor = System.Drawing.Color.Transparent
+        Me.LabelProgress.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelProgress.Location = New System.Drawing.Point(17, 257)
+        Me.LabelProgress.Name = "LabelProgress"
+        Me.LabelProgress.Size = New System.Drawing.Size(666, 20)
+        Me.LabelProgress.TabIndex = 7
+        Me.LabelProgress.Text = "Processing"
+        '
         'CAISplash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
@@ -81,6 +93,7 @@ Partial Class CAISplash
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(689, 276)
         Me.ControlBox = False
+        Me.Controls.Add(Me.LabelProgress)
         Me.Controls.Add(Me.ApplicationTitle)
         Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.Copyright)
@@ -101,4 +114,5 @@ Partial Class CAISplash
     Friend WithEvents Version As System.Windows.Forms.Label
     Friend WithEvents Copyright As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents LabelProgress As Label
 End Class

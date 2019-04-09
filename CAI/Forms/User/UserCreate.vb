@@ -121,7 +121,7 @@ Public Class UserCreate
             command.Parameters.AddWithValue("@firstname", txt_first_name.Text)
             command.Parameters.AddWithValue("@middlename", txt_middle.Text)
             command.Parameters.AddWithValue("@password", txt_password.Text)
-            command.Parameters.AddWithValue("@dp", profile_path)
+            command.Parameters.AddWithValue("@dp", ImageModule.ImageToBase64(ImageModule.ReadImageFromPath(profile_path)))
             Dim user_id = command.ExecuteScalar()
             ' Bind the role
             Dim role_id As Integer
@@ -178,7 +178,6 @@ Public Class UserCreate
         If Not file.FileName = "" Then
             profile_path = file.FileName
             pict_user_pict.Image = Image.FromFile(profile_path)
-            profile_path = Auth.saveAvatar(file.FileName)
         End If
     End Sub
 

@@ -8,8 +8,8 @@
 
     Public current_role As Role
     Public Enum Role
-        Administrator
         Instructor
+        Administrator
         Student
     End Enum
     '
