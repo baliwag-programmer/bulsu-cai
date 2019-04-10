@@ -401,3 +401,17 @@
    at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
    at System.Windows.Forms.Form.ShowDialog()
    at CAI.Authentication.BTNCreate_Click(Object sender, EventArgs e) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\Authentication.vb:line 140
+4/10/2019 12:00:00 AM::CAI.ActivityLogs, Text: ActivityLogs
+4/10/2019 12:00:00 AM::System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at CAI.ActivityLogs.list_log_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\ActivityLogs.vb:line 101
+4/10/2019 12:00:00 AM::CAI.ActivityLogs, Text: ActivityLogs
+4/10/2019 12:00:00 AM::System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at CAI.ActivityLogs.list_log_SelectedIndexChanged(Object sender, EventArgs e) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\ActivityLogs.vb:line 101
