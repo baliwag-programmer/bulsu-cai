@@ -51,6 +51,7 @@ Partial Class UserList
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BTNPreview = New System.Windows.Forms.Button()
         Me.BTNApprovedBlocked = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +59,7 @@ Partial Class UserList
         '
         'txt_filter
         '
-        Me.txt_filter.Location = New System.Drawing.Point(80, 78)
+        Me.txt_filter.Location = New System.Drawing.Point(80, 158)
         Me.txt_filter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_filter.Name = "txt_filter"
         Me.txt_filter.Size = New System.Drawing.Size(243, 21)
@@ -67,7 +68,7 @@ Partial Class UserList
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 81)
+        Me.Label1.Location = New System.Drawing.Point(18, 162)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 12
@@ -123,7 +124,7 @@ Partial Class UserList
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(623, 48)
+        Me.BTNEdit.Location = New System.Drawing.Point(623, 133)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(85, 71)
         Me.BTNEdit.TabIndex = 11
@@ -144,7 +145,7 @@ Partial Class UserList
         Me.BTNTrash.ForeColor = System.Drawing.Color.White
         Me.BTNTrash.Image = Global.CAI.My.Resources.Resources.trash
         Me.BTNTrash.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNTrash.Location = New System.Drawing.Point(725, 48)
+        Me.BTNTrash.Location = New System.Drawing.Point(725, 133)
         Me.BTNTrash.Name = "BTNTrash"
         Me.BTNTrash.Size = New System.Drawing.Size(85, 71)
         Me.BTNTrash.TabIndex = 10
@@ -164,7 +165,7 @@ Partial Class UserList
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(522, 48)
+        Me.BTNCreate.Location = New System.Drawing.Point(522, 133)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(85, 71)
         Me.BTNCreate.TabIndex = 9
@@ -180,9 +181,9 @@ Partial Class UserList
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.user_list)
-        Me.Panel1.Location = New System.Drawing.Point(0, 125)
+        Me.Panel1.Location = New System.Drawing.Point(0, 210)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(810, 437)
+        Me.Panel1.Size = New System.Drawing.Size(810, 352)
         Me.Panel1.TabIndex = 28
         '
         'Panel3
@@ -193,7 +194,7 @@ Partial Class UserList
         Me.Panel3.Controls.Add(Me.btn_prev)
         Me.Panel3.Controls.Add(Me.btn_next)
         Me.Panel3.Controls.Add(Me.pagination)
-        Me.Panel3.Location = New System.Drawing.Point(0, 405)
+        Me.Panel3.Location = New System.Drawing.Point(0, 320)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(810, 32)
         Me.Panel3.TabIndex = 3
@@ -241,7 +242,7 @@ Partial Class UserList
         Me.user_list.GridLines = True
         Me.user_list.Location = New System.Drawing.Point(0, 0)
         Me.user_list.Name = "user_list"
-        Me.user_list.Size = New System.Drawing.Size(810, 407)
+        Me.user_list.Size = New System.Drawing.Size(810, 322)
         Me.user_list.TabIndex = 2
         Me.user_list.UseCompatibleStateImageBehavior = False
         Me.user_list.View = System.Windows.Forms.View.Details
@@ -270,7 +271,7 @@ Partial Class UserList
         '
         Me.lbl_user_name.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_user_name.AutoSize = True
-        Me.lbl_user_name.Location = New System.Drawing.Point(816, 462)
+        Me.lbl_user_name.Location = New System.Drawing.Point(816, 484)
         Me.lbl_user_name.Name = "lbl_user_name"
         Me.lbl_user_name.Size = New System.Drawing.Size(12, 13)
         Me.lbl_user_name.TabIndex = 59
@@ -280,7 +281,7 @@ Partial Class UserList
         '
         Me.lbl_reigestered_since.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_reigestered_since.AutoSize = True
-        Me.lbl_reigestered_since.Location = New System.Drawing.Point(816, 354)
+        Me.lbl_reigestered_since.Location = New System.Drawing.Point(816, 376)
         Me.lbl_reigestered_since.Name = "lbl_reigestered_since"
         Me.lbl_reigestered_since.Size = New System.Drawing.Size(12, 13)
         Me.lbl_reigestered_since.TabIndex = 57
@@ -290,17 +291,17 @@ Partial Class UserList
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(816, 327)
+        Me.Label3.Location = New System.Drawing.Point(816, 349)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(112, 13)
+        Me.Label3.Size = New System.Drawing.Size(132, 13)
         Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Registered Since :"
+        Me.Label3.Text = "REGISTERED SINCE :"
         '
         'lbl_username
         '
         Me.lbl_username.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_username.AutoSize = True
-        Me.lbl_username.Location = New System.Drawing.Point(816, 408)
+        Me.lbl_username.Location = New System.Drawing.Point(816, 430)
         Me.lbl_username.Name = "lbl_username"
         Me.lbl_username.Size = New System.Drawing.Size(12, 13)
         Me.lbl_username.TabIndex = 55
@@ -312,9 +313,9 @@ Partial Class UserList
         Me.pict_user_pict.BackColor = System.Drawing.Color.White
         Me.pict_user_pict.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pict_user_pict.Image = Global.CAI.My.Resources.Resources.icons8_user_96
-        Me.pict_user_pict.Location = New System.Drawing.Point(819, 125)
+        Me.pict_user_pict.Location = New System.Drawing.Point(850, 210)
         Me.pict_user_pict.Name = "pict_user_pict"
-        Me.pict_user_pict.Size = New System.Drawing.Size(189, 181)
+        Me.pict_user_pict.Size = New System.Drawing.Size(134, 124)
         Me.pict_user_pict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pict_user_pict.TabIndex = 54
         Me.pict_user_pict.TabStop = False
@@ -323,21 +324,21 @@ Partial Class UserList
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(816, 435)
+        Me.Label5.Location = New System.Drawing.Point(816, 457)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 13)
+        Me.Label5.Size = New System.Drawing.Size(78, 13)
         Me.Label5.TabIndex = 52
-        Me.Label5.Text = "User Fullname :"
+        Me.Label5.Text = "FULL NAME :"
         '
         'Label8
         '
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(816, 381)
+        Me.Label8.Location = New System.Drawing.Point(816, 403)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(74, 13)
+        Me.Label8.Size = New System.Drawing.Size(79, 13)
         Me.Label8.TabIndex = 53
-        Me.Label8.Text = "Username :"
+        Me.Label8.Text = "USERNAME :"
         '
         'Button1
         '
@@ -350,7 +351,7 @@ Partial Class UserList
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(431, 48)
+        Me.Button1.Location = New System.Drawing.Point(431, 133)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 71)
         Me.Button1.TabIndex = 60
@@ -371,7 +372,7 @@ Partial Class UserList
         Me.BTNPreview.ForeColor = System.Drawing.Color.White
         Me.BTNPreview.Image = Global.CAI.My.Resources.Resources.icons8_eye_48
         Me.BTNPreview.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNPreview.Location = New System.Drawing.Point(923, 48)
+        Me.BTNPreview.Location = New System.Drawing.Point(899, 133)
         Me.BTNPreview.Name = "BTNPreview"
         Me.BTNPreview.Size = New System.Drawing.Size(85, 71)
         Me.BTNPreview.TabIndex = 61
@@ -392,7 +393,7 @@ Partial Class UserList
         Me.BTNApprovedBlocked.ForeColor = System.Drawing.Color.White
         Me.BTNApprovedBlocked.Image = Global.CAI.My.Resources.Resources.icons8_ok_48
         Me.BTNApprovedBlocked.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNApprovedBlocked.Location = New System.Drawing.Point(725, 48)
+        Me.BTNApprovedBlocked.Location = New System.Drawing.Point(725, 133)
         Me.BTNApprovedBlocked.Name = "BTNApprovedBlocked"
         Me.BTNApprovedBlocked.Size = New System.Drawing.Size(85, 71)
         Me.BTNApprovedBlocked.TabIndex = 62
@@ -402,12 +403,24 @@ Partial Class UserList
         Me.BTNApprovedBlocked.UseVisualStyleBackColor = False
         Me.BTNApprovedBlocked.Visible = False
         '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(1020, 127)
+        Me.Heading1.TabIndex = 63
+        Me.Heading1.Title = "ACCOUNT MANAGEMENT"
+        '
         'UserList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(1020, 562)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.BTNApprovedBlocked)
         Me.Controls.Add(Me.BTNPreview)
         Me.Controls.Add(Me.Button1)
@@ -447,9 +460,6 @@ Partial Class UserList
     Friend WithEvents txt_filter As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents form_title As System.Windows.Forms.Label
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents btn_prev As System.Windows.Forms.Button
@@ -470,4 +480,8 @@ Partial Class UserList
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents BTNPreview As System.Windows.Forms.Button
     Friend WithEvents BTNApprovedBlocked As System.Windows.Forms.Button
+    Private WithEvents LineShape1 As PowerPacks.LineShape
+    Private WithEvents LineShape2 As PowerPacks.LineShape
+    Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents Heading1 As Heading
 End Class

@@ -27,13 +27,19 @@ Module ImageModule
     End Function
 
     Public Function Base64ToImage(ByVal base64String As String) As Image
-        ' Convert Base64 String to byte[]
-        Dim imageBytes As Byte() = Convert.FromBase64String(base64String)
-        Dim ms As New MemoryStream(imageBytes, 0, imageBytes.Length)
+        Try
+            ' Convert Base64 String to byte[]
+            Dim imageBytes As Byte() = Convert.FromBase64String(base64String)
+            Dim ms As New MemoryStream(imageBytes, 0, imageBytes.Length)
 
-        ' Convert byte[] to Image
-        ms.Write(imageBytes, 0, imageBytes.Length)
-        Dim ConvertedBase64Image As Image = Image.FromStream(ms, True)
-        Return ConvertedBase64Image
+            ' Convert byte[] to Image
+            ms.Write(imageBytes, 0, imageBytes.Length)
+            Dim ConvertedBase64Image As Image = Image.FromStream(ms, True)
+            Return ConvertedBase64Image
+        Catch ex As Exception
+
+        End Try
+
+        Return Nothing
     End Function
 End Module

@@ -56,10 +56,11 @@ Public Class InstructorMain
         lbl_role.Text = Auth.GetInstance.role.name
         lbl_name.Text = String.Format("{0}, {1}, {2}", Auth.GetInstance.last_name, Auth.GetInstance.first_name, Auth.GetInstance.middle_name)
 
-        If Not Auth.GetInstance.dp = "" Then _
-            dp_user_profile.Image = Image.FromFile(Auth.GetInstance.dp)
-        If Auth.GetInstance.dp = "" Then _
-            dp_user_profile.Image = My.Resources.icons8_user_96
+        Dim avatar = ImageModule.Base64ToImage(Auth.GetInstance.dp)
+        dp_user_profile.Image = My.Resources.icons8_user_96
+
+        If Not avatar Is Nothing Then _
+            dp_user_profile.Image = avatar
     End Sub
 
     Private Sub BTNLesson_Click(sender As System.Object, e As System.EventArgs) Handles BTNLesson.Click

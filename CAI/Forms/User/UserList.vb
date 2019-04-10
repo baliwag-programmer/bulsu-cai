@@ -26,7 +26,11 @@
         Dim title = "ADMINISTRATOR MANAGEMENT"
         Select Case current_role
             Case UserList.Role.Instructor
-                title = "INSTRUCTOR MANAGEMENT"
+                title = "MONITORING"
+                BTNCreate.Visible = False
+                BTNEdit.Visible = False
+                Button1.SetBounds(BTNApprovedBlocked.Location.X, BTNApprovedBlocked.Location.Y, BTNApprovedBlocked.Width, BTNApprovedBlocked.Height)
+                for_approval = False
             Case UserList.Role.Student
                 title = "STUDENT MANAGEMENT"
                 user_list.Columns(1).Text = "STUDENT NUMBER"
@@ -34,14 +38,17 @@
             Case Else
                 BTNPreview.Visible = False
         End Select
-        form_title.Text = title
+        Me.Heading1.Title = title
         Me.Text = title
-        BTNApprovedBlocked.Visible = for_approval
 
-        BTNCreate.Visible = Not for_approval And Not current_role = UserList.Role.Student
-        BTNEdit.Visible = Not for_approval
-        BTNTrash.Visible = Not for_approval
-        BTNPreview.Visible = Not for_approval
+        If UserList.Role.Instructor Then
+            BTNApprovedBlocked.Visible = for_approval
+
+            BTNCreate.Visible = Not for_approval And Not current_role = UserList.Role.Student
+            BTNEdit.Visible = Not for_approval
+            BTNTrash.Visible = Not for_approval
+            BTNPreview.Visible = Not for_approval
+        End If
         If for_approval Then _
             Button1.Location = BTNEdit.Location
         If current_role = UserList.Role.Student And Not for_approval Then _
@@ -230,8 +237,12 @@
             lbl_username.Text = items(0).SubItems(1).Text
             lbl_user_name.Text = items(0).SubItems(2).Text
             lbl_reigestered_since.Text = items(0).SubItems(3).Text
-            If Not items(0).SubItems(4).Text = "" Then _
-                pict_user_pict.Image = Image.FromFile(items(0).SubItems(4).Text)
+            If Not items(0).SubItems(4).Text = "" Then
+                Dim avatar = ImageModule.Base64ToImage(items(0).SubItems(4).Text)
+                pict_user_pict.Image = My.Resources.icons8_user_96
+                If Not avatar Is Nothing Then _
+                    pict_user_pict.Image = avatar
+            End If
         End If
     End Sub
 
@@ -276,7 +287,7 @@
                 Auth.GetInstance.last_name = last_name
                 Auth.GetInstance.first_name = first_name
                 Auth.GetInstance.middle_name = middle_name
-                Auth.GetInstance.instructor_id = instructor_id
+                Auth.GetInstance.instructor_id = IIf(String.IsNullOrEmpty(instructor_id), 0, instructor_id)
 
                 Me.Hide()
                 Auth.GetInstance.isPreview = True

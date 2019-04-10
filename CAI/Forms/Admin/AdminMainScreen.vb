@@ -12,7 +12,10 @@ Public Class AdminMainScreen
         End If
 
         If sender Is BTNMonitoring Or sender Is LabelMonitoring Then
-
+            Dim form = New UserList(role:=UserList.Role.Instructor)
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
         End If
 
         If sender Is BTNViewLogReport Or sender Is LabelViewLogReport Then
