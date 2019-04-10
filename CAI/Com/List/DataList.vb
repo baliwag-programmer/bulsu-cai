@@ -1,4 +1,6 @@
-﻿Public Class DataList
+﻿Imports System.ComponentModel
+
+Public Class DataList
 
 #Region "Private Variables"
     Private _Columns As DataListHeaderCollectionExtender
@@ -30,6 +32,8 @@
 #End Region
 
 #Region "Property"
+    <Category("Data List Property")>
+    <Description("Headers to be displayed in columns.")>
     Property DataListHeaders() As DataListHeaderCollectionExtender
         Get
             Return _Columns
@@ -39,6 +43,8 @@
         End Set
     End Property
 
+    <Category("Data List Property")>
+    <Description("Query filters for showing data.")>
     Property DataListQueryFilters() As List(Of DataLisQueryFilters)
         Get
             Return Nothing

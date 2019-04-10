@@ -42,6 +42,7 @@ Partial Class UserViewer
         Me.BTNEdit = New System.Windows.Forms.Button()
         Me.BTNPassword = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,17 +51,17 @@ Partial Class UserViewer
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(10, 174)
+        Me.Label7.Location = New System.Drawing.Point(10, 322)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(101, 13)
+        Me.Label7.Size = New System.Drawing.Size(135, 13)
         Me.Label7.TabIndex = 60
-        Me.Label7.Text = "Recent Activities"
+        Me.Label7.Text = "RECENT ACTIVITIES :"
         '
         'lbl_user_name
         '
         Me.lbl_user_name.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_user_name.AutoSize = True
-        Me.lbl_user_name.Location = New System.Drawing.Point(315, 98)
+        Me.lbl_user_name.Location = New System.Drawing.Point(315, 246)
         Me.lbl_user_name.Name = "lbl_user_name"
         Me.lbl_user_name.Size = New System.Drawing.Size(151, 13)
         Me.lbl_user_name.TabIndex = 59
@@ -73,9 +74,9 @@ Partial Class UserViewer
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.list_log)
-        Me.Panel1.Location = New System.Drawing.Point(-4, 190)
+        Me.Panel1.Location = New System.Drawing.Point(-4, 341)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(530, 317)
+        Me.Panel1.Size = New System.Drawing.Size(530, 221)
         Me.Panel1.TabIndex = 58
         '
         'Panel3
@@ -86,7 +87,7 @@ Partial Class UserViewer
         Me.Panel3.Controls.Add(Me.btn_prev)
         Me.Panel3.Controls.Add(Me.btn_next)
         Me.Panel3.Controls.Add(Me.pagination)
-        Me.Panel3.Location = New System.Drawing.Point(0, 285)
+        Me.Panel3.Location = New System.Drawing.Point(0, 189)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(530, 32)
         Me.Panel3.TabIndex = 3
@@ -134,7 +135,7 @@ Partial Class UserViewer
         Me.list_log.GridLines = True
         Me.list_log.Location = New System.Drawing.Point(0, 0)
         Me.list_log.Name = "list_log"
-        Me.list_log.Size = New System.Drawing.Size(530, 287)
+        Me.list_log.Size = New System.Drawing.Size(530, 191)
         Me.list_log.TabIndex = 2
         Me.list_log.UseCompatibleStateImageBehavior = False
         Me.list_log.View = System.Windows.Forms.View.Details
@@ -157,7 +158,7 @@ Partial Class UserViewer
         'lbl_registered_since
         '
         Me.lbl_registered_since.AutoSize = True
-        Me.lbl_registered_since.Location = New System.Drawing.Point(127, 34)
+        Me.lbl_registered_since.Location = New System.Drawing.Point(127, 182)
         Me.lbl_registered_since.Name = "lbl_registered_since"
         Me.lbl_registered_since.Size = New System.Drawing.Size(133, 13)
         Me.lbl_registered_since.TabIndex = 57
@@ -166,16 +167,16 @@ Partial Class UserViewer
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(127, 12)
+        Me.Label3.Location = New System.Drawing.Point(127, 160)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(112, 13)
+        Me.Label3.Size = New System.Drawing.Size(132, 13)
         Me.Label3.TabIndex = 56
-        Me.Label3.Text = "Registered Since :"
+        Me.Label3.Text = "REGISTERED SINCE :"
         '
         'lbl_username
         '
         Me.lbl_username.AutoSize = True
-        Me.lbl_username.Location = New System.Drawing.Point(127, 101)
+        Me.lbl_username.Location = New System.Drawing.Point(127, 249)
         Me.lbl_username.Name = "lbl_username"
         Me.lbl_username.Size = New System.Drawing.Size(65, 13)
         Me.lbl_username.TabIndex = 55
@@ -186,7 +187,7 @@ Partial Class UserViewer
         Me.pict_user_pict.BackColor = System.Drawing.Color.White
         Me.pict_user_pict.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pict_user_pict.Image = Global.CAI.My.Resources.Resources.icons8_user_96
-        Me.pict_user_pict.Location = New System.Drawing.Point(12, 12)
+        Me.pict_user_pict.Location = New System.Drawing.Point(12, 160)
         Me.pict_user_pict.Name = "pict_user_pict"
         Me.pict_user_pict.Size = New System.Drawing.Size(109, 105)
         Me.pict_user_pict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -197,20 +198,21 @@ Partial Class UserViewer
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(315, 79)
+        Me.Label5.Location = New System.Drawing.Point(315, 227)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 13)
+        Me.Label5.Size = New System.Drawing.Size(78, 13)
         Me.Label5.TabIndex = 52
-        Me.Label5.Text = "User Fullname :"
+        Me.Label5.Text = "FULL NAME :"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(127, 79)
+        Me.Label1.Location = New System.Drawing.Point(127, 227)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 13)
+        Me.Label1.Size = New System.Drawing.Size(79, 13)
         Me.Label1.TabIndex = 53
-        Me.Label1.Text = "Username :"
+        Me.Label1.Text = "USERNAME :"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'BTNEdit
         '
@@ -223,7 +225,7 @@ Partial Class UserViewer
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(441, 116)
+        Me.BTNEdit.Location = New System.Drawing.Point(441, 264)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(85, 71)
         Me.BTNEdit.TabIndex = 62
@@ -243,7 +245,7 @@ Partial Class UserViewer
         Me.BTNPassword.ForeColor = System.Drawing.Color.White
         Me.BTNPassword.Image = Global.CAI.My.Resources.Resources.icons8_key_2_48
         Me.BTNPassword.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNPassword.Location = New System.Drawing.Point(350, 116)
+        Me.BTNPassword.Location = New System.Drawing.Point(350, 264)
         Me.BTNPassword.Name = "BTNPassword"
         Me.BTNPassword.Size = New System.Drawing.Size(85, 71)
         Me.BTNPassword.TabIndex = 61
@@ -262,7 +264,7 @@ Partial Class UserViewer
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(259, 116)
+        Me.Button1.Location = New System.Drawing.Point(259, 264)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 71)
         Me.Button1.TabIndex = 63
@@ -271,12 +273,24 @@ Partial Class UserViewer
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(525, 127)
+        Me.Heading1.TabIndex = 64
+        Me.Heading1.Title = ""
+        '
         'UserViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
-        Me.ClientSize = New System.Drawing.Size(525, 507)
+        Me.ClientSize = New System.Drawing.Size(525, 562)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BTNEdit)
         Me.Controls.Add(Me.BTNPassword)
@@ -326,5 +340,5 @@ Partial Class UserViewer
     Friend WithEvents BTNEdit As System.Windows.Forms.Button
     Friend WithEvents BTNPassword As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-
+    Friend WithEvents Heading1 As Heading
 End Class

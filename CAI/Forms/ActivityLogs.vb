@@ -84,20 +84,26 @@
     End Sub
 
     Private Sub list_log_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles list_log.SelectedIndexChanged
-        Dim items = list_log.SelectedItems
-        If items.Count > 0 Then
-            lbl_user_name.Text = items(0).SubItems(3).Text
-            lbl_username.Text = items(0).SubItems(2).Text
-            lbl_reigestered_since.Text = items(0).SubItems(items(0).SubItems.Count - 3).Text
-            Dim dp = items(0).SubItems(items(0).SubItems.Count - 1).Text
-            If Not dp = "" Then _
-                pict_user_pict.Image = Image.FromFile(dp)
-            If dp = "" Then _
-                pict_user_pict.Image = My.Resources.icons8_user_96
+        Try
+            Dim items = list_log.SelectedItems
+            If items.Count > 0 Then
+                lbl_user_name.Text = items(0).SubItems(3).Text
+                lbl_username.Text = items(0).SubItems(2).Text
+                lbl_reigestered_since.Text = items(0).SubItems(items(0).SubItems.Count - 3).Text
+                Dim dp = items(0).SubItems(items(0).SubItems.Count - 1).Text
+                If Not dp = "" Then _
+                    pict_user_pict.Image = ImageModule.Base64ToImage(dp)
+                If dp = "" Then _
+                    pict_user_pict.Image = My.Resources.icons8_user_96
 
-            ' TODO fetch the recent activities
-            fetchUserLogs(items(0).SubItems(items(0).SubItems.Count - 2).Text)
-        End If
+                ' TODO fetch the recent activities
+                list_recent_logs.Items.Clear()
+                fetchUserLogs(items(0).SubItems(items(0).SubItems.Count - 2).Text)
+            End If
+        Catch ex As Exception
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
+        End Try
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click

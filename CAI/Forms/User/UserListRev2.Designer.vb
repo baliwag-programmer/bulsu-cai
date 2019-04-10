@@ -36,7 +36,6 @@ Partial Class UserListRev2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.pict_user_pict = New System.Windows.Forms.PictureBox()
-        Me.DataList1 = New CAI.DataList()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BTNEdit = New System.Windows.Forms.Button()
         Me.BTNCreate = New System.Windows.Forms.Button()
@@ -49,11 +48,24 @@ Partial Class UserListRev2
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Heading1 = New CAI.Heading()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.btn_prev = New System.Windows.Forms.Button()
+        Me.btn_next = New System.Windows.Forms.Button()
+        Me.pagination = New System.Windows.Forms.Label()
+        Me.user_list = New System.Windows.Forms.ListView()
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.list_username = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.UserDetailWrapper.SuspendLayout()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -65,7 +77,7 @@ Partial Class UserListRev2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel1.Controls.Add(Me.UserDetailWrapper, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.DataList1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 0, 0)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(-2, 200)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
@@ -249,20 +261,6 @@ Partial Class UserListRev2
         Me.pict_user_pict.TabIndex = 55
         Me.pict_user_pict.TabStop = False
         '
-        'DataList1
-        '
-        Me.DataList1.BackColor = System.Drawing.SystemColors.Control
-        Me.DataList1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.DataList1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.DataList1.DataListHeaders = Nothing
-        Me.DataList1.DataListQueryFilters = Nothing
-        Me.DataList1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataList1.Font = New System.Drawing.Font("Verdana", 8.25!)
-        Me.DataList1.Location = New System.Drawing.Point(3, 3)
-        Me.DataList1.Name = "DataList1"
-        Me.DataList1.Size = New System.Drawing.Size(800, 357)
-        Me.DataList1.TabIndex = 1
-        '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -394,6 +392,10 @@ Partial Class UserListRev2
         Me.Label9.Text = "SEARCH :"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "asdfasdfasd"
+        '
         'Heading1
         '
         Me.Heading1.BackColor = System.Drawing.Color.White
@@ -404,6 +406,96 @@ Partial Class UserListRev2
         Me.Heading1.Size = New System.Drawing.Size(1066, 127)
         Me.Heading1.TabIndex = 4
         Me.Heading1.Title = "ACCOUNT MANAGEMENT"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Gray
+        Me.Panel3.Controls.Add(Me.btn_prev)
+        Me.Panel3.Controls.Add(Me.btn_next)
+        Me.Panel3.Controls.Add(Me.pagination)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel3.Location = New System.Drawing.Point(0, 325)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(800, 32)
+        Me.Panel3.TabIndex = 66
+        '
+        'btn_prev
+        '
+        Me.btn_prev.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_prev.FlatAppearance.BorderSize = 0
+        Me.btn_prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_prev.Image = Global.CAI.My.Resources.Resources.icons8_prev_48
+        Me.btn_prev.Location = New System.Drawing.Point(725, 0)
+        Me.btn_prev.Name = "btn_prev"
+        Me.btn_prev.Size = New System.Drawing.Size(38, 31)
+        Me.btn_prev.TabIndex = 2
+        Me.btn_prev.UseVisualStyleBackColor = True
+        '
+        'btn_next
+        '
+        Me.btn_next.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_next.FlatAppearance.BorderSize = 0
+        Me.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_next.Image = Global.CAI.My.Resources.Resources.icons8_right_button_48
+        Me.btn_next.Location = New System.Drawing.Point(762, 0)
+        Me.btn_next.Name = "btn_next"
+        Me.btn_next.Size = New System.Drawing.Size(38, 31)
+        Me.btn_next.TabIndex = 1
+        Me.btn_next.UseVisualStyleBackColor = True
+        '
+        'pagination
+        '
+        Me.pagination.AutoSize = True
+        Me.pagination.Location = New System.Drawing.Point(14, 10)
+        Me.pagination.Name = "pagination"
+        Me.pagination.Size = New System.Drawing.Size(100, 16)
+        Me.pagination.TabIndex = 0
+        Me.pagination.Text = "Page 01 of 10"
+        '
+        'user_list
+        '
+        Me.user_list.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.user_list.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.list_username, Me.ColumnHeader6, Me.ColumnHeader7})
+        Me.user_list.FullRowSelect = True
+        Me.user_list.GridLines = True
+        Me.user_list.Location = New System.Drawing.Point(2, 1)
+        Me.user_list.Name = "user_list"
+        Me.user_list.Size = New System.Drawing.Size(798, 325)
+        Me.user_list.TabIndex = 65
+        Me.user_list.UseCompatibleStateImageBehavior = False
+        Me.user_list.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "ID"
+        Me.ColumnHeader5.Width = 0
+        '
+        'list_username
+        '
+        Me.list_username.Text = "USERNAME"
+        Me.list_username.Width = 150
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "FULL NAME"
+        Me.ColumnHeader6.Width = 300
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "REGISTERED SINCE"
+        Me.ColumnHeader7.Width = 150
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Panel3)
+        Me.Panel1.Controls.Add(Me.user_list)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(3, 3)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(800, 357)
+        Me.Panel1.TabIndex = 1
         '
         'UserListRev2
         '
@@ -429,6 +521,9 @@ Partial Class UserListRev2
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -455,8 +550,18 @@ Partial Class UserListRev2
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents DataList1 As DataList
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents btn_prev As Button
+    Friend WithEvents btn_next As Button
+    Friend WithEvents pagination As Label
+    Friend WithEvents user_list As ListView
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents list_username As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents ColumnHeader7 As ColumnHeader
 End Class
