@@ -98,7 +98,9 @@
 
                 ' TODO fetch the recent activities
                 list_recent_logs.Items.Clear()
-                fetchUserLogs(items(0).SubItems(items(0).SubItems.Count - 2).Text)
+                Dim UserID As String = items(0).SubItems(items(0).SubItems.Count - 2).Text
+                If Not String.IsNullOrEmpty(UserID) Then _
+                    fetchUserLogs(UserID)
             End If
         Catch ex As Exception
             LoggerModule.createLog(Me.ToString, LogType.Err)

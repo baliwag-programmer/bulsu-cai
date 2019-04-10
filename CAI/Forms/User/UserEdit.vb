@@ -43,16 +43,16 @@ Public Class UserEdit
             Dim first_name = IIf(IsDBNull(reader.GetValue(3)), "", reader.GetValue(3))
             Dim middle_name = IIf(IsDBNull(reader.GetValue(4)), "", reader.GetValue(4))
             Dim dp = Database.GetInstance.readerValue(reader, "dp")
+            Dim avatar = ImageModule.Base64ToImage(dp)
+            PictureBox1.Image = My.Resources.icons8_user_96
             reader.Close()
 
             txt_username.Text = username
             txt_last_name.Text = last_name
             txt_first_name.Text = first_name
             txt_middle.Text = middle_name
-            If Not dp = "" Then _
-                PictureBox1.Image = Image.FromFile(dp)
-            If dp = "" Then _
-                PictureBox1.Image = My.Resources.icons8_user_96
+            If Not avatar Is Nothing Then _
+                PictureBox1.Image = avatar
 
         Catch ex As Exception
             Console.WriteLine("Unable to fetch user details")
@@ -122,17 +122,13 @@ Public Class UserEdit
         Me.Close()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As System.Object, e As System.EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As System.Object, e As System.EventArgs)
         Dim file = New OpenFileDialog
         file.ShowDialog()
         If Not file.FileName = "" Then
-            dp_profile = file.FileName
-            PictureBox1.Image = Image.FromFile(dp_profile)
-            dp_profile = Auth.saveAvatar(dp_profile)
+            pict_user_pict.Image = ImageModule.ReadImageFromPath(dp_profile)
+            dp_profile = ImageModule.ImageToBase64(ImageModule.ReadImageFromPath(dp_profile))
         End If
     End Sub
 
-    Private Sub UserEdit_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

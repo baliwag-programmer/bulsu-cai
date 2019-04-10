@@ -11,19 +11,25 @@ Module ImageModule
     End Function
 
     Public Function ImageToBase64(ByVal img As Image, Optional ByVal format As System.Drawing.Imaging.ImageFormat = Nothing) As String
+        Try
 
-        If format Is Nothing Then
-            format = Imaging.ImageFormat.Jpeg
-        End If
+            If format Is Nothing Then
+                format = Imaging.ImageFormat.Jpeg
+            End If
 
-        Using ms As New MemoryStream
-            ' Convert Image to byte[]
-            img.Save(ms, format)
-            Dim imageBytes As Byte() = ms.ToArray() ' Convert byte[] to Base64 String
-            Dim base64String As String = Convert.ToBase64String(imageBytes)
-            Console.WriteLine(format.ToString)
-            Return base64String
-        End Using
+            Using ms As New MemoryStream
+                ' Convert Image to byte[]
+                img.Save(ms, format)
+                Dim imageBytes As Byte() = ms.ToArray() ' Convert byte[] to Base64 String
+                Dim base64String As String = Convert.ToBase64String(imageBytes)
+                Console.WriteLine(format.ToString)
+                Return base64String
+            End Using
+        Catch ex As Exception
+
+        End Try
+
+        Return Nothing
     End Function
 
     Public Function Base64ToImage(ByVal base64String As String) As Image
