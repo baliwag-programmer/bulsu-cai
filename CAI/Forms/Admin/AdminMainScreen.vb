@@ -46,8 +46,10 @@ Public Class AdminMainScreen
         AdministratorControlPanel.Visible = auth.role.name = "administrator"
 
         If InstructorControlPanel.Visible Then
+            ActionStudentManagement.State = HasStudents()
             ActionApprovalManagement.State = HasForApproval()
         End If
+
     End Sub
 
     Private Sub FillAuthDetails()
@@ -117,10 +119,10 @@ Public Class AdminMainScreen
             Me.Hide()
             form.ShowDialog()
             Me.Show()
-
-            ActionApprovalManagement.State = HasForApproval()
         End If
 
+        ActionStudentManagement.State = HasStudents()
+        ActionApprovalManagement.State = HasForApproval()
     End Sub
 
     Private Function HasForApproval() As Boolean
@@ -140,6 +142,23 @@ Public Class AdminMainScreen
         Return HasForApproval
     End Function
 
+    Private Function HasStudents() As Boolean
+        HasStudents = False
+
+        Try
+            Dim query_rule = String.Format("SELECT COUNT(*) FROM users WHERE approved = 1 AND EXISTS (SELECT * FROM role_user WHERE EXISTS (SELECT * FROM roles WHERE name = '{0}' AND role_user.role_id = roles.id) AND users.id = role_user.user_id AND users.instructor_id = {1})", "student", Auth.GetInstance.id)
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(query_rule, Database.GetInstance.GetConnection)
+            Dim total = command.ExecuteScalar()
+
+            HasStudents = total > 0
+        Catch ex As Exception
+            LoggerModule.createLog(Me.ToString(), LogType.Err)
+            LoggerModule.createLog(ex.ToString(), LogType.Err)
+        End Try
+
+        Return HasForApproval()
+    End Function
+
     Private Sub OnInstructorButtonChangedState(sender As Object, state As Boolean) Handles ActionTestManagement.OnStateChanged, ActionStudentManagement.OnStateChanged, ActionLessonManagement.OnStateChanged, ActionApprovalManagement.OnStateChanged
         Dim control As ImageShower = sender
         If state Then
@@ -148,4 +167,5 @@ Public Class AdminMainScreen
             control.Cursor = Cursors.No
         End If
     End Sub
+
 End Class

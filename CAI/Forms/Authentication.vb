@@ -170,6 +170,20 @@ invalid:
     End Sub
 
     Private Sub Authentication_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'If Not IO.Directory.Exists(String.Format("{0}:/", Config.GetInstance.network_path)) Then
+        '    'Auto map network drive
+        '    If MsgBox("System detected that your network drive is not yet mounted." & vbNewLine & vbNewLine &
+        '        String.Format("Do you want to automatically mount network drive {0}:/", Config.GetInstance.network_path),
+        '        MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Network drive not detected.") = MsgBoxResult.Yes Then
+        '        NetworkModule1.MapDrive(
+        '                Config.GetInstance.network_path,
+        '                Config.GetInstance.network_address,
+        '                Config.GetInstance.network_user,
+        '                Config.GetInstance.network_password
+        '            )
+        '    End If
+        'End If
+
         loadDateTime()
         ' Add any initialization after the InitializeComponent() call.
         setupRole()

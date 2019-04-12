@@ -141,6 +141,7 @@ Namespace My
         End Sub
 
         Private Sub MyApplication_Startup(sender As Object, e As StartupEventArgs) Handles Me.Startup
+
         End Sub
 
         Public Function GetCurrentStatus() As String

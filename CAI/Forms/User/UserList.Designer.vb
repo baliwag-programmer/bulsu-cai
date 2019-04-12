@@ -124,7 +124,7 @@ Partial Class UserList
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(623, 133)
+        Me.BTNEdit.Location = New System.Drawing.Point(640, 133)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(85, 71)
         Me.BTNEdit.TabIndex = 11
@@ -165,7 +165,7 @@ Partial Class UserList
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(522, 133)
+        Me.BTNCreate.Location = New System.Drawing.Point(555, 133)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(85, 71)
         Me.BTNCreate.TabIndex = 9
@@ -351,7 +351,7 @@ Partial Class UserList
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(431, 133)
+        Me.Button1.Location = New System.Drawing.Point(725, 133)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 71)
         Me.Button1.TabIndex = 60
@@ -393,7 +393,7 @@ Partial Class UserList
         Me.BTNApprovedBlocked.ForeColor = System.Drawing.Color.White
         Me.BTNApprovedBlocked.Image = Global.CAI.My.Resources.Resources.icons8_ok_48
         Me.BTNApprovedBlocked.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNApprovedBlocked.Location = New System.Drawing.Point(725, 133)
+        Me.BTNApprovedBlocked.Location = New System.Drawing.Point(470, 133)
         Me.BTNApprovedBlocked.Name = "BTNApprovedBlocked"
         Me.BTNApprovedBlocked.Size = New System.Drawing.Size(85, 71)
         Me.BTNApprovedBlocked.TabIndex = 62
@@ -421,7 +421,6 @@ Partial Class UserList
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(1020, 562)
         Me.Controls.Add(Me.Heading1)
-        Me.Controls.Add(Me.BTNApprovedBlocked)
         Me.Controls.Add(Me.BTNPreview)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_user_name)
@@ -439,6 +438,7 @@ Partial Class UserList
         Me.Controls.Add(Me.BTNTrash)
         Me.Controls.Add(Me.BTNCreate)
         Me.Controls.Add(Me.ShapeContainer1)
+        Me.Controls.Add(Me.BTNApprovedBlocked)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog

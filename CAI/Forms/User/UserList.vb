@@ -41,18 +41,21 @@
         Me.Heading1.Title = title
         Me.Text = title
 
-        If UserList.Role.Instructor Then
-            BTNApprovedBlocked.Visible = for_approval
+        If for_approval Then
+            BTNApprovedBlocked.Location = BTNEdit.Location
+        Else
+            BTNTrash.Location = BTNEdit.Location
+            BTNEdit.Location = BTNCreate.Location
+            BTNCreate.Location = BTNApprovedBlocked.Location
+        End If
 
-            BTNCreate.Visible = Not for_approval And Not current_role = UserList.Role.Student
+        If Auth.GetInstance().role.name = "instructor" Then
+            BTNApprovedBlocked.Visible = for_approval
+            BTNCreate.Visible = Not for_approval
             BTNEdit.Visible = Not for_approval
             BTNTrash.Visible = Not for_approval
             BTNPreview.Visible = Not for_approval
         End If
-        If for_approval Then _
-            Button1.Location = BTNEdit.Location
-        If current_role = UserList.Role.Student And Not for_approval Then _
-            Button1.Location = BTNCreate.Location
     End Sub
 
     Private Sub list_ItemSelectionChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ListViewItemSelectionChangedEventArgs) Handles list.ItemSelectionChanged
@@ -233,13 +236,19 @@
         BTNTrash.Enabled = items.Count > 0 And Not Auth.GetInstance.isPreview
         BTNPreview.Enabled = items.Count > 0 And Not Auth.GetInstance.isPreview
         BTNApprovedBlocked.Enabled = items.Count > 0 And Not Auth.GetInstance.isPreview
+
+        pict_user_pict.Image = My.Resources.icons8_user_96
+
+        lbl_username.Text = "-"
+        lbl_user_name.Text = "-"
+        lbl_reigestered_since.Text = "-"
+
         If items.Count > 0 Then
             lbl_username.Text = items(0).SubItems(1).Text
             lbl_user_name.Text = items(0).SubItems(2).Text
             lbl_reigestered_since.Text = items(0).SubItems(3).Text
             If Not items(0).SubItems(4).Text = "" Then
                 Dim avatar = ImageModule.Base64ToImage(items(0).SubItems(4).Text)
-                pict_user_pict.Image = My.Resources.icons8_user_96
                 If Not avatar Is Nothing Then _
                     pict_user_pict.Image = avatar
             End If

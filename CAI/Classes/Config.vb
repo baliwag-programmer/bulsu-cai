@@ -5,8 +5,11 @@
     Property user As String = "root"
     Property password As String = "root"
     Property database As String = "db_cai"
-    Property network_path As String = "Z"
     Property server As String = "localhost"
+    Property network_path As String = "Z"
+    Property network_password As String = ""
+    Property network_user As String = "\\PC-Name\AMD"
+    Property network_address As String = "\\PC-Name\SharedCAIPath"
 
     Private Shared instance As Config = Nothing
 
