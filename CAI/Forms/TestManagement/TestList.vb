@@ -42,7 +42,7 @@
         auto_list.btn_next = lesson_next
         auto_list.btn_prev = lesson_prev
         auto_list.pagination = lesson_page
-        auto_list.custom_Sql = String.Format("SELECT tests.id, tests.title, tests.description, DATE_FORMAT(tests.created_at, '%a %b %d, %Y') as created_at, tests.type, IF(is_locked = 1, 'LOCKED', 'UNLOCKED') as locked_display, CONCAT(LPAD(duration_hour, 2, '0'), ':', LPAD(duration_minute, 2, '0')) as duration, COUNT(questions.id) as total_items, is_locked FROM tests", Auth.GetInstance.id)
+        auto_list.custom_Sql = String.Format("SELECT tests.id, tests.title, tests.description, DATE_FORMAT(tests.created_at, '%a %b %d, %Y') as created_at, tests.type, IF(is_locked = 1, 'LOCKED', 'UNLOCKED') as locked_display, CONCAT(LPAD(duration_hour, 2, '0'), ':', LPAD(duration_minute, 2, '0')) as duration, COUNT(questions.id) as total_items, tests.is_locked FROM tests", Auth.GetInstance.id)
         auto_list.where = New List(Of Criteria)
         auto_list.orWhere = New List(Of OrCriteria)
         auto_list.parameters = New List(Of CommandParameter)
@@ -221,8 +221,8 @@
             MsgBox(String.Format("Successfully {0} the test.", method), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success")
             fetchTest()
         Catch ex As Exception
-            Console.WriteLine(String.Format("Sorry unable to {0} the test.", method))
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
 
         test_list.SelectedItems.Clear()
