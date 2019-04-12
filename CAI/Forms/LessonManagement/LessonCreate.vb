@@ -15,7 +15,7 @@ Public Class LessonCreate
         If Not id = "" Then
             Me.id = id
             fetchDetails(Me.id)
-            form_title.Text = "EDITTING LESSON"
+            Me.Text = "EDITTING LESSON"
         End If
     End Sub
 
@@ -119,14 +119,6 @@ Public Class LessonCreate
         Catch ex As MySql.Data.MySqlClient.MySqlException
             Console.WriteLine(ex.Message)
         End Try
-    End Sub
-
-    Private Sub LessonCreate_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub form_title_TextChanged(sender As System.Object, e As System.EventArgs) Handles form_title.TextChanged
-        Me.Text = form_title.Text
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click

@@ -244,8 +244,8 @@ hasError:
             End While
             reader.Close()
         Catch ex As Exception
-            Console.WriteLine("Sorry unable to fetch details.")
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
     End Sub
 

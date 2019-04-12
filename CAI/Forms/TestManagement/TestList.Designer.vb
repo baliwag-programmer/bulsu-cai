@@ -68,7 +68,7 @@ Partial Class TestList
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(831, 146)
+        Me.BTNEdit.Location = New System.Drawing.Point(747, 141)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(73, 71)
         Me.BTNEdit.TabIndex = 19
@@ -88,7 +88,7 @@ Partial Class TestList
         Me.BTNTrash.ForeColor = System.Drawing.Color.White
         Me.BTNTrash.Image = Global.CAI.My.Resources.Resources.trash
         Me.BTNTrash.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNTrash.Location = New System.Drawing.Point(918, 146)
+        Me.BTNTrash.Location = New System.Drawing.Point(828, 141)
         Me.BTNTrash.Name = "BTNTrash"
         Me.BTNTrash.Size = New System.Drawing.Size(73, 71)
         Me.BTNTrash.TabIndex = 18
@@ -107,7 +107,7 @@ Partial Class TestList
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(744, 146)
+        Me.BTNCreate.Location = New System.Drawing.Point(666, 141)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(73, 71)
         Me.BTNCreate.TabIndex = 17
@@ -119,7 +119,7 @@ Partial Class TestList
         'txt_filter
         '
         Me.txt_filter.Font = New System.Drawing.Font("Tahoma", 14.25!)
-        Me.txt_filter.Location = New System.Drawing.Point(69, 166)
+        Me.txt_filter.Location = New System.Drawing.Point(69, 161)
         Me.txt_filter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_filter.Name = "txt_filter"
         Me.txt_filter.Size = New System.Drawing.Size(153, 30)
@@ -128,7 +128,7 @@ Partial Class TestList
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 177)
+        Me.Label1.Location = New System.Drawing.Point(7, 170)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 14
@@ -253,7 +253,7 @@ Partial Class TestList
         Me.BTNLocker.ForeColor = System.Drawing.Color.White
         Me.BTNLocker.Image = Global.CAI.My.Resources.Resources.icons8_padlock_48
         Me.BTNLocker.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNLocker.Location = New System.Drawing.Point(665, 146)
+        Me.BTNLocker.Location = New System.Drawing.Point(585, 141)
         Me.BTNLocker.Name = "BTNLocker"
         Me.BTNLocker.Size = New System.Drawing.Size(73, 71)
         Me.BTNLocker.TabIndex = 27
@@ -265,7 +265,7 @@ Partial Class TestList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(236, 177)
+        Me.Label3.Location = New System.Drawing.Point(236, 170)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 28
@@ -277,7 +277,7 @@ Partial Class TestList
         Me.ComboType.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.ComboType.FormattingEnabled = True
         Me.ComboType.Items.AddRange(New Object() {"PRE-TEST", "POST-TEST", "QUIZ", "ACTIVITY"})
-        Me.ComboType.Location = New System.Drawing.Point(286, 166)
+        Me.ComboType.Location = New System.Drawing.Point(286, 161)
         Me.ComboType.Name = "ComboType"
         Me.ComboType.Size = New System.Drawing.Size(153, 31)
         Me.ComboType.TabIndex = 29
@@ -292,7 +292,7 @@ Partial Class TestList
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(511, 143)
+        Me.Button1.Location = New System.Drawing.Point(909, 139)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 30
@@ -312,7 +312,7 @@ Partial Class TestList
         Me.BTNStudentResults.ForeColor = System.Drawing.Color.White
         Me.BTNStudentResults.Image = Global.CAI.My.Resources.Resources.icons8_test_passed_48
         Me.BTNStudentResults.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNStudentResults.Location = New System.Drawing.Point(590, 143)
+        Me.BTNStudentResults.Location = New System.Drawing.Point(504, 139)
         Me.BTNStudentResults.Name = "BTNStudentResults"
         Me.BTNStudentResults.Size = New System.Drawing.Size(73, 74)
         Me.BTNStudentResults.TabIndex = 31

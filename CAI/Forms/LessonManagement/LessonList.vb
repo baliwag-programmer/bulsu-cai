@@ -98,14 +98,13 @@ Public Class LessonList
     End Sub
 
     Private Sub dispatch(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTNTrash.Click, BTNEdit.Click, BTNCreate.Click, BTNLocker.Click
-        Dim dispatcher As Button = sender
-        If dispatcher.Name = BTNCreate.Name Then _
+        If sender Is BTNCreate Then _
             create()
-        If dispatcher.Name = BTNEdit.Name Then _
+        If sender Is BTNEdit Then _
             edit()
-        If dispatcher.Name = BTNTrash.Name Then _
+        If sender Is BTNTrash Then _
             trash()
-        If dispatcher.Name = BTNLocker.Name Then _
+        If sender Is BTNLocker Then _
             lockUnlock()
 
         lesson_list.SelectedItems.Clear()

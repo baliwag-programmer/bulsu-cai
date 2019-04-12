@@ -26,7 +26,6 @@ Partial Class TestForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtTitle = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
@@ -49,22 +48,23 @@ Partial Class TestForm
         Me.TXTInstruction = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Heading1 = New CAI.Heading()
         Me.SuspendLayout()
         '
         'TxtDescription
         '
         Me.TxtDescription.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDescription.Location = New System.Drawing.Point(12, 200)
+        Me.TxtDescription.Location = New System.Drawing.Point(12, 273)
         Me.TxtDescription.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtDescription.Multiline = True
         Me.TxtDescription.Name = "TxtDescription"
-        Me.TxtDescription.Size = New System.Drawing.Size(481, 143)
+        Me.TxtDescription.Size = New System.Drawing.Size(625, 143)
         Me.TxtDescription.TabIndex = 13
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 180)
+        Me.Label2.Location = New System.Drawing.Point(12, 253)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(80, 13)
         Me.Label2.TabIndex = 12
@@ -73,7 +73,7 @@ Partial Class TestForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 128)
+        Me.Label1.Location = New System.Drawing.Point(12, 201)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 11
@@ -82,21 +82,11 @@ Partial Class TestForm
         'TxtTitle
         '
         Me.TxtTitle.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTitle.Location = New System.Drawing.Point(12, 147)
+        Me.TxtTitle.Location = New System.Drawing.Point(12, 220)
         Me.TxtTitle.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TxtTitle.Name = "TxtTitle"
-        Me.TxtTitle.Size = New System.Drawing.Size(481, 30)
+        Me.TxtTitle.Size = New System.Drawing.Size(625, 30)
         Me.TxtTitle.TabIndex = 10
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 9)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(198, 33)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "CREATE TEST"
         '
         'LineShape1
         '
@@ -129,7 +119,7 @@ Partial Class TestForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 73)
+        Me.Label4.Location = New System.Drawing.Point(9, 146)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 19
@@ -141,9 +131,9 @@ Partial Class TestForm
         Me.ComboType.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.ComboType.FormattingEnabled = True
         Me.ComboType.Items.AddRange(New Object() {"PRE-TEST", "POST-TEST", "QUIZ", "ACTIVITY"})
-        Me.ComboType.Location = New System.Drawing.Point(12, 89)
+        Me.ComboType.Location = New System.Drawing.Point(12, 162)
         Me.ComboType.Name = "ComboType"
-        Me.ComboType.Size = New System.Drawing.Size(238, 31)
+        Me.ComboType.Size = New System.Drawing.Size(382, 31)
         Me.ComboType.TabIndex = 20
         '
         'BTNCancel
@@ -153,7 +143,7 @@ Partial Class TestForm
         Me.BTNCancel.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCancel.Location = New System.Drawing.Point(380, 501)
+        Me.BTNCancel.Location = New System.Drawing.Point(524, 574)
         Me.BTNCancel.Name = "BTNCancel"
         Me.BTNCancel.Size = New System.Drawing.Size(113, 34)
         Me.BTNCancel.TabIndex = 22
@@ -167,7 +157,7 @@ Partial Class TestForm
         Me.BTNSave.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNSave.Location = New System.Drawing.Point(261, 501)
+        Me.BTNSave.Location = New System.Drawing.Point(405, 574)
         Me.BTNSave.Name = "BTNSave"
         Me.BTNSave.Size = New System.Drawing.Size(113, 34)
         Me.BTNSave.TabIndex = 21
@@ -177,7 +167,7 @@ Partial Class TestForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(349, 73)
+        Me.Label5.Location = New System.Drawing.Point(493, 146)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(65, 13)
         Me.Label5.TabIndex = 23
@@ -189,7 +179,7 @@ Partial Class TestForm
         Me.combo_hour.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.combo_hour.FormattingEnabled = True
         Me.combo_hour.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"})
-        Me.combo_hour.Location = New System.Drawing.Point(352, 89)
+        Me.combo_hour.Location = New System.Drawing.Point(496, 162)
         Me.combo_hour.Name = "combo_hour"
         Me.combo_hour.Size = New System.Drawing.Size(62, 31)
         Me.combo_hour.TabIndex = 24
@@ -200,7 +190,7 @@ Partial Class TestForm
         Me.combo_minutes.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.combo_minutes.FormattingEnabled = True
         Me.combo_minutes.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
-        Me.combo_minutes.Location = New System.Drawing.Point(431, 89)
+        Me.combo_minutes.Location = New System.Drawing.Point(575, 162)
         Me.combo_minutes.Name = "combo_minutes"
         Me.combo_minutes.Size = New System.Drawing.Size(62, 31)
         Me.combo_minutes.TabIndex = 25
@@ -209,7 +199,7 @@ Partial Class TestForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(410, 86)
+        Me.Label6.Location = New System.Drawing.Point(554, 159)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(26, 32)
         Me.Label6.TabIndex = 26
@@ -221,7 +211,7 @@ Partial Class TestForm
         Me.CHKLocked.Checked = True
         Me.CHKLocked.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CHKLocked.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CHKLocked.Location = New System.Drawing.Point(12, 475)
+        Me.CHKLocked.Location = New System.Drawing.Point(12, 548)
         Me.CHKLocked.Name = "CHKLocked"
         Me.CHKLocked.Size = New System.Drawing.Size(84, 20)
         Me.CHKLocked.TabIndex = 27
@@ -231,7 +221,7 @@ Partial Class TestForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(366, 123)
+        Me.Label7.Location = New System.Drawing.Point(510, 196)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(34, 13)
         Me.Label7.TabIndex = 28
@@ -240,7 +230,7 @@ Partial Class TestForm
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(440, 123)
+        Me.Label8.Location = New System.Drawing.Point(584, 196)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(44, 13)
         Me.Label8.TabIndex = 29
@@ -253,7 +243,7 @@ Partial Class TestForm
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(12, 501)
+        Me.Button1.Location = New System.Drawing.Point(12, 574)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(161, 34)
         Me.Button1.TabIndex = 30
@@ -267,15 +257,15 @@ Partial Class TestForm
         Me.CMBQuestionType.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.CMBQuestionType.FormattingEnabled = True
         Me.CMBQuestionType.Items.AddRange(New Object() {"MULTIPLE-CHOICE", "IDENTIFICATION"})
-        Me.CMBQuestionType.Location = New System.Drawing.Point(12, 384)
+        Me.CMBQuestionType.Location = New System.Drawing.Point(12, 457)
         Me.CMBQuestionType.Name = "CMBQuestionType"
-        Me.CMBQuestionType.Size = New System.Drawing.Size(238, 31)
+        Me.CMBQuestionType.Size = New System.Drawing.Size(382, 31)
         Me.CMBQuestionType.TabIndex = 32
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(9, 368)
+        Me.Label9.Location = New System.Drawing.Point(9, 441)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(104, 13)
         Me.Label9.TabIndex = 31
@@ -284,7 +274,7 @@ Partial Class TestForm
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(270, 368)
+        Me.Label10.Location = New System.Drawing.Point(436, 441)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(132, 13)
         Me.Label10.TabIndex = 33
@@ -293,26 +283,26 @@ Partial Class TestForm
         'TXTTotal
         '
         Me.TXTTotal.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTTotal.Location = New System.Drawing.Point(273, 384)
+        Me.TXTTotal.Location = New System.Drawing.Point(439, 457)
         Me.TXTTotal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TXTTotal.Name = "TXTTotal"
-        Me.TXTTotal.Size = New System.Drawing.Size(220, 30)
+        Me.TXTTotal.Size = New System.Drawing.Size(198, 30)
         Me.TXTTotal.TabIndex = 34
         Me.TXTTotal.Text = "10"
         '
         'TXTInstruction
         '
         Me.TXTInstruction.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTInstruction.Location = New System.Drawing.Point(12, 434)
+        Me.TXTInstruction.Location = New System.Drawing.Point(12, 507)
         Me.TXTInstruction.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TXTInstruction.Name = "TXTInstruction"
-        Me.TXTInstruction.Size = New System.Drawing.Size(481, 30)
+        Me.TXTInstruction.Size = New System.Drawing.Size(625, 30)
         Me.TXTInstruction.TabIndex = 36
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(9, 418)
+        Me.Label11.Location = New System.Drawing.Point(9, 491)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(77, 13)
         Me.Label11.TabIndex = 35
@@ -321,18 +311,30 @@ Partial Class TestForm
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(9, 345)
+        Me.Label12.Location = New System.Drawing.Point(9, 418)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(463, 13)
         Me.Label12.TabIndex = 37
         Me.Label12.Text = "Note : Automatically added 5 more question for the randomization of questions."
+        '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(649, 133)
+        Me.Heading1.TabIndex = 38
+        Me.Heading1.Title = "TEST FORM"
         '
         'TestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
-        Me.ClientSize = New System.Drawing.Size(513, 547)
+        Me.ClientSize = New System.Drawing.Size(649, 618)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.TXTInstruction)
         Me.Controls.Add(Me.Label11)
@@ -351,7 +353,6 @@ Partial Class TestForm
         Me.Controls.Add(Me.BTNSave)
         Me.Controls.Add(Me.ComboType)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TxtDescription)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -375,10 +376,6 @@ Partial Class TestForm
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TxtTitle As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ComboType As System.Windows.Forms.ComboBox
     Friend WithEvents BTNCancel As System.Windows.Forms.Button
@@ -398,5 +395,8 @@ Partial Class TestForm
     Friend WithEvents TXTInstruction As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-
+    Private WithEvents LineShape1 As PowerPacks.LineShape
+    Private WithEvents LineShape2 As PowerPacks.LineShape
+    Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents Heading1 As Heading
 End Class

@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.CAI.StudentLessonAttachmentViewer
+            Me.MainForm = Global.CAI.Authentication
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

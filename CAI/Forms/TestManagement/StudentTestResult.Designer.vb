@@ -34,14 +34,10 @@ Partial Class StudentTestResult
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
         Me.ListContainer.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListContainer
@@ -51,9 +47,9 @@ Partial Class StudentTestResult
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListContainer.Controls.Add(Me.Panel2)
         Me.ListContainer.Controls.Add(Me.test_list)
-        Me.ListContainer.Location = New System.Drawing.Point(-1, 101)
+        Me.ListContainer.Location = New System.Drawing.Point(-1, 127)
         Me.ListContainer.Name = "ListContainer"
-        Me.ListContainer.Size = New System.Drawing.Size(990, 461)
+        Me.ListContainer.Size = New System.Drawing.Size(990, 435)
         Me.ListContainer.TabIndex = 27
         '
         'Panel2
@@ -64,7 +60,7 @@ Partial Class StudentTestResult
         Me.Panel2.Controls.Add(Me.lesson_prev)
         Me.Panel2.Controls.Add(Me.lesson_next)
         Me.Panel2.Controls.Add(Me.lesson_page)
-        Me.Panel2.Location = New System.Drawing.Point(0, 429)
+        Me.Panel2.Location = New System.Drawing.Point(0, 403)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(990, 32)
         Me.Panel2.TabIndex = 3
@@ -112,7 +108,7 @@ Partial Class StudentTestResult
         Me.test_list.GridLines = True
         Me.test_list.Location = New System.Drawing.Point(0, 0)
         Me.test_list.Name = "test_list"
-        Me.test_list.Size = New System.Drawing.Size(990, 431)
+        Me.test_list.Size = New System.Drawing.Size(990, 405)
         Me.test_list.TabIndex = 2
         Me.test_list.UseCompatibleStateImageBehavior = False
         Me.test_list.View = System.Windows.Forms.View.Details
@@ -146,59 +142,17 @@ Partial Class StudentTestResult
         Me.ColumnHeader4.Text = "DATE TAKEN"
         Me.ColumnHeader4.Width = 189
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(2, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 30
-        Me.PictureBox1.TabStop = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(177, 59)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(115, 16)
-        Me.Label9.TabIndex = 29
-        Me.Label9.Text = "Baliuag, Bulacan"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(142, 43)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(132, 16)
-        Me.Label8.TabIndex = 28
-        Me.Label8.Text = "Baptiste, Academy"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(108, 9)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(171, 32)
-        Me.Label7.TabIndex = 31
-        Me.Label7.Text = "Saint Jean"
-        '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(899, 21)
+        Me.Button1.Location = New System.Drawing.Point(899, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 32
@@ -207,6 +161,17 @@ Partial Class StudentTestResult
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(984, 127)
+        Me.Heading1.TabIndex = 33
+        Me.Heading1.Title = "STUDENT TEST RESULTS"
+        '
         'StudentTestResult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
@@ -214,11 +179,8 @@ Partial Class StudentTestResult
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(984, 562)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ListContainer)
+        Me.Controls.Add(Me.Heading1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.ForeColor = System.Drawing.Color.White
         Me.Name = "StudentTestResult"
@@ -228,9 +190,7 @@ Partial Class StudentTestResult
         Me.ListContainer.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ListContainer As System.Windows.Forms.Panel
@@ -239,15 +199,12 @@ Partial Class StudentTestResult
     Friend WithEvents lesson_next As System.Windows.Forms.Button
     Friend WithEvents lesson_page As System.Windows.Forms.Label
     Friend WithEvents test_list As System.Windows.Forms.ListView
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Heading1 As Heading
 End Class

@@ -32,7 +32,6 @@ Partial Class QuestionManagement
         Me.questions_question = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.questions_type = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.question_correct = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
@@ -41,6 +40,7 @@ Partial Class QuestionManagement
         Me.txt_filter = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
         Me.ListContainer.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -52,9 +52,9 @@ Partial Class QuestionManagement
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListContainer.Controls.Add(Me.Panel2)
         Me.ListContainer.Controls.Add(Me.question_list)
-        Me.ListContainer.Location = New System.Drawing.Point(-1, 156)
+        Me.ListContainer.Location = New System.Drawing.Point(-1, 229)
         Me.ListContainer.Name = "ListContainer"
-        Me.ListContainer.Size = New System.Drawing.Size(547, 340)
+        Me.ListContainer.Size = New System.Drawing.Size(758, 341)
         Me.ListContainer.TabIndex = 27
         '
         'Panel2
@@ -65,9 +65,9 @@ Partial Class QuestionManagement
         Me.Panel2.Controls.Add(Me.lesson_prev)
         Me.Panel2.Controls.Add(Me.lesson_next)
         Me.Panel2.Controls.Add(Me.lesson_page)
-        Me.Panel2.Location = New System.Drawing.Point(0, 308)
+        Me.Panel2.Location = New System.Drawing.Point(0, 309)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(547, 32)
+        Me.Panel2.Size = New System.Drawing.Size(758, 32)
         Me.Panel2.TabIndex = 3
         '
         'lesson_prev
@@ -76,7 +76,7 @@ Partial Class QuestionManagement
         Me.lesson_prev.FlatAppearance.BorderSize = 0
         Me.lesson_prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lesson_prev.Image = Global.CAI.My.Resources.Resources.icons8_prev_48
-        Me.lesson_prev.Location = New System.Drawing.Point(472, 0)
+        Me.lesson_prev.Location = New System.Drawing.Point(683, 0)
         Me.lesson_prev.Name = "lesson_prev"
         Me.lesson_prev.Size = New System.Drawing.Size(38, 31)
         Me.lesson_prev.TabIndex = 2
@@ -88,7 +88,7 @@ Partial Class QuestionManagement
         Me.lesson_next.FlatAppearance.BorderSize = 0
         Me.lesson_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lesson_next.Image = Global.CAI.My.Resources.Resources.icons8_right_button_48
-        Me.lesson_next.Location = New System.Drawing.Point(509, 0)
+        Me.lesson_next.Location = New System.Drawing.Point(720, 0)
         Me.lesson_next.Name = "lesson_next"
         Me.lesson_next.Size = New System.Drawing.Size(38, 31)
         Me.lesson_next.TabIndex = 1
@@ -113,7 +113,7 @@ Partial Class QuestionManagement
         Me.question_list.GridLines = True
         Me.question_list.Location = New System.Drawing.Point(0, 0)
         Me.question_list.Name = "question_list"
-        Me.question_list.Size = New System.Drawing.Size(547, 310)
+        Me.question_list.Size = New System.Drawing.Size(758, 311)
         Me.question_list.TabIndex = 2
         Me.question_list.UseCompatibleStateImageBehavior = False
         Me.question_list.View = System.Windows.Forms.View.Details
@@ -137,16 +137,6 @@ Partial Class QuestionManagement
         '
         Me.question_correct.Text = "CORRECT ANSWER"
         Me.question_correct.Width = 144
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 9)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(179, 33)
-        Me.Label3.TabIndex = 28
-        Me.Label3.Text = "QUESTIONS"
         '
         'LineShape2
         '
@@ -172,7 +162,7 @@ Partial Class QuestionManagement
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1, Me.LineShape2})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(546, 496)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(546, 570)
         Me.ShapeContainer1.TabIndex = 29
         Me.ShapeContainer1.TabStop = False
         '
@@ -187,7 +177,7 @@ Partial Class QuestionManagement
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(461, 79)
+        Me.BTNEdit.Location = New System.Drawing.Point(672, 154)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(73, 71)
         Me.BTNEdit.TabIndex = 31
@@ -206,7 +196,7 @@ Partial Class QuestionManagement
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(374, 79)
+        Me.BTNCreate.Location = New System.Drawing.Point(589, 154)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(73, 71)
         Me.BTNCreate.TabIndex = 30
@@ -217,7 +207,7 @@ Partial Class QuestionManagement
         '
         'txt_filter
         '
-        Me.txt_filter.Location = New System.Drawing.Point(71, 106)
+        Me.txt_filter.Location = New System.Drawing.Point(71, 179)
         Me.txt_filter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_filter.Name = "txt_filter"
         Me.txt_filter.Size = New System.Drawing.Size(195, 21)
@@ -226,7 +216,7 @@ Partial Class QuestionManagement
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 110)
+        Me.Label1.Location = New System.Drawing.Point(9, 183)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 32
@@ -242,7 +232,7 @@ Partial Class QuestionManagement
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(295, 79)
+        Me.Button1.Location = New System.Drawing.Point(506, 152)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 34
@@ -251,18 +241,29 @@ Partial Class QuestionManagement
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(757, 127)
+        Me.Heading1.TabIndex = 49
+        Me.Heading1.Title = "QUESTIONS"
+        '
         'QuestionManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
-        Me.ClientSize = New System.Drawing.Size(546, 496)
+        Me.ClientSize = New System.Drawing.Size(757, 570)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txt_filter)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BTNEdit)
         Me.Controls.Add(Me.BTNCreate)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ListContainer)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
@@ -287,10 +288,6 @@ Partial Class QuestionManagement
     Friend WithEvents lesson_next As System.Windows.Forms.Button
     Friend WithEvents lesson_page As System.Windows.Forms.Label
     Friend WithEvents question_list As System.Windows.Forms.ListView
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents questions_id As System.Windows.Forms.ColumnHeader
     Friend WithEvents questions_question As System.Windows.Forms.ColumnHeader
     Friend WithEvents questions_type As System.Windows.Forms.ColumnHeader
@@ -300,5 +297,8 @@ Partial Class QuestionManagement
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents question_correct As System.Windows.Forms.ColumnHeader
     Friend WithEvents Button1 As System.Windows.Forms.Button
-
+    Friend WithEvents Heading1 As Heading
+    Private WithEvents LineShape2 As PowerPacks.LineShape
+    Private WithEvents LineShape1 As PowerPacks.LineShape
+    Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
 End Class
