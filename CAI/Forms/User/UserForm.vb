@@ -156,7 +156,6 @@ Public Class UserForm
             End While
             reader.Close()
 
-            MsgBox(ComboAccountType.Items.Count)
             If ComboAccountType.Items.Count = 0 Then
                 MsgBox("Sorry their is no available instructor data.", MsgBoxStyle.Information + MsgBoxStyle.OkCancel, "Currently not available.")
                 Me.Close()
@@ -245,7 +244,9 @@ Public Class UserForm
             ' Student message
             If Me.StudentAccountRequest Then _
                 MsgBox("Successfully submitted your request for an account.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Submitted Request For An Account.")
-            MsgBox(message, MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
+
+            If Not Me.StudentAccountRequest Then _
+                MsgBox(message, MsgBoxStyle.Information + MsgBoxStyle.OkOnly)
 
         Catch ex As Exception
             LoggerModule.createLog(Me.ToString, LogType.Err)

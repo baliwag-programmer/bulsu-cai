@@ -139,6 +139,12 @@
     <Compile Include="Com\Heading.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Com\ImageShower.Designer.vb">
+      <DependentUpon>ImageShower.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Com\ImageShower.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Com\LessonButton.Designer.vb">
       <DependentUpon>LessonButton.vb</DependentUpon>
     </Compile>
@@ -400,6 +406,9 @@
     <EmbeddedResource Include="Com\Heading.resx">
       <DependentUpon>Heading.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Com\ImageShower.resx">
+      <DependentUpon>ImageShower.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Com\LessonButton.resx">
       <DependentUpon>LessonButton.vb</DependentUpon>
     </EmbeddedResource>
@@ -564,7 +573,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\cai_setup.sql" />
     <None Include="Resources\icons8_key_32x32.png" />
     <None Include="Resources\icons8_gears_32x32.png" />
     <None Include="Resources\icons8_settings_32x32.png" />
@@ -701,6 +709,33 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flaticon_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-management-ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lesson-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approval-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approval-management-disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-management-ico-disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lesson-management-disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test-management-disabled.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

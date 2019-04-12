@@ -168,7 +168,7 @@ Partial Class UserEdit
         Me.LabelActionChangeImage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LabelActionChangeImage.Font = New System.Drawing.Font("Verdana", 9.75!)
         Me.LabelActionChangeImage.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.LabelActionChangeImage.Location = New System.Drawing.Point(517, 343)
+        Me.LabelActionChangeImage.Location = New System.Drawing.Point(529, 343)
         Me.LabelActionChangeImage.Name = "LabelActionChangeImage"
         Me.LabelActionChangeImage.Size = New System.Drawing.Size(175, 16)
         Me.LabelActionChangeImage.TabIndex = 47

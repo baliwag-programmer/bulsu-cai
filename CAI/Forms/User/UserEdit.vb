@@ -11,12 +11,12 @@ Public Class UserEdit
 
         ' Add any initialization after the InitializeComponent() call.
 
-        form_title.Text = "EDITING ADMINISTRATOR"
+        Heading1.Title = "EDITING ADMINISTRATOR"
         If role = UserList.Role.Instructor Then _
-            form_title.Text = "EDITING INSTRUCTOR"
+            Heading1.Title = "EDITING INSTRUCTOR"
         If role = UserList.Role.Student Then
             Label1.Text = "Student Number :"
-            form_title.Text = "EDITING STUDENT"
+            Heading1.Title = "EDITING STUDENT"
         End If
 
         Me.user_id = user_id
@@ -24,7 +24,7 @@ Public Class UserEdit
         Auth = CAI.Auth.GetInstance
 
         If Me.user_id = Auth.id Then _
-            form_title.Text = "EDITTING PROFILE"
+            Heading1.Title = "EDITTING PROFILE"
     End Sub
 
     Sub fetchDetails()
@@ -44,7 +44,7 @@ Public Class UserEdit
             Dim middle_name = IIf(IsDBNull(reader.GetValue(4)), "", reader.GetValue(4))
             Dim dp = Database.GetInstance.readerValue(reader, "dp")
             Dim avatar = ImageModule.Base64ToImage(dp)
-            PictureBox1.Image = My.Resources.icons8_user_96
+            pict_user_pict.Image = My.Resources.icons8_user_96
             reader.Close()
 
             txt_username.Text = username
@@ -52,7 +52,7 @@ Public Class UserEdit
             txt_first_name.Text = first_name
             txt_middle.Text = middle_name
             If Not avatar Is Nothing Then _
-                PictureBox1.Image = avatar
+                pict_user_pict.Image = avatar
 
         Catch ex As Exception
             Console.WriteLine("Unable to fetch user details")
@@ -122,12 +122,13 @@ Public Class UserEdit
         Me.Close()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As System.Object, e As System.EventArgs)
+    Private Sub PictureBox1_Click(sender As System.Object, e As System.EventArgs) Handles pict_user_pict.Click, LabelActionChangeImage.Click
         Dim file = New OpenFileDialog
         file.ShowDialog()
         If Not file.FileName = "" Then
-            pict_user_pict.Image = ImageModule.ReadImageFromPath(dp_profile)
-            dp_profile = ImageModule.ImageToBase64(ImageModule.ReadImageFromPath(dp_profile))
+            Dim avatar = ImageModule.ReadImageFromPath(file.FileName)
+            pict_user_pict.Image = avatar
+            dp_profile = ImageModule.ImageToBase64(avatar)
         End If
     End Sub
 

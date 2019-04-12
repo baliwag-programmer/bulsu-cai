@@ -89,10 +89,10 @@ Public Class UserViewer
 
             lbl_username.Text = username
             lbl_registered_since.Text = registered_since
+            pict_user_pict.Image = My.Resources.icons8_user_96
             If Not dp = "" Then _
-                pict_user_pict.Image = Image.FromFile(dp)
-            If dp = "" Then _
-                pict_user_pict.Image = My.Resources.icons8_user_96
+                pict_user_pict.Image = ImageModule.Base64ToImage(dp)
+
             lbl_user_name.Text = String.Format("{0}, {1}, {2}", last_name, first_name, middle_name)
 
             Dim logs = New LogsModel
@@ -102,8 +102,8 @@ Public Class UserViewer
             logs.create()
 
         Catch ex As Exception
-            Console.WriteLine("Unable to fetch user details")
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
     End Sub
 

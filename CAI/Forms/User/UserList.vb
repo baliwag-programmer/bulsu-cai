@@ -269,7 +269,7 @@
         Auth.GetInstance.previewing_auth.instructor_id = Auth.GetInstance.instructor_id
 
         Try
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("SELECT id, lastname, firstname, middlename, username, instructor_id FROM users WHERE id = @id", Database.GetInstance.GetConnection)
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand("SELECT id, lastname, firstname, middlename, username, instructor_id, dp FROM users WHERE id = @id", Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@id", selected)
             Dim reader = command.ExecuteReader
             If reader.Read Then
@@ -279,10 +279,12 @@
                 Dim first_name As String = IIf(reader.IsDBNull(2), "", reader.GetValue(2))
                 Dim middle_name As String = IIf(reader.IsDBNull(3), "", reader.GetValue(3))
                 Dim username As String = IIf(reader.IsDBNull(4), "", reader.GetValue(4))
+                Dim dp As String = IIf(IsDBNull(reader("dp")), "", reader("dp"))
                 Dim instructor_id As String = IIf(reader.IsDBNull(5), "", reader.GetValue(5))
                 reader.Close()
 
                 Auth.GetInstance.id = id
+                Auth.GetInstance.dp = dp
                 Auth.GetInstance.username = username
                 Auth.GetInstance.last_name = last_name
                 Auth.GetInstance.first_name = first_name
@@ -292,15 +294,13 @@
                 Me.Hide()
                 Auth.GetInstance.isPreview = True
                 If Auth.GetInstance.role.name = "instructor" Then
-                    Dim form = New InstructorMain
+                    Dim form = New AdminMainScreen
                     form.ShowDialog()
-                    form.Dispose()
                 End If
 
                 If Auth.GetInstance.role.name = "student" Then
                     Dim form = New StudentMain
                     form.ShowDialog()
-                    form.Dispose()
                 End If
 
                 Auth.GetInstance.id = Auth.GetInstance.previewing_auth.id

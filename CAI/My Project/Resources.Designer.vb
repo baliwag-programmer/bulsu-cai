@@ -73,6 +73,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property approval_management() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("approval-management", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property approval_management_disabled() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("approval-management-disabled", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property banner() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("banner", resourceCulture)
@@ -105,25 +125,19 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to -- phpMyAdmin SQL Dump
-        '''-- version 4.7.9
-        '''-- https://www.phpmyadmin.net/
+        '''  Looks up a localized string similar to -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
         '''--
-        '''-- Host: 127.0.0.1
-        '''-- Generation Time: Jun 07, 2018 at 01:09 AM
-        '''-- Server version: 10.1.31-MariaDB
-        '''-- PHP Version: 7.1.15
-        '''
-        '''SET SQL_MODE = &quot;NO_AUTO_VALUE_ON_ZERO&quot;;
-        '''SET AUTOCOMMIT = 0;
-        '''START TRANSACTION;
-        '''SET time_zone = &quot;+00:00&quot;;
-        '''
+        '''-- Host: 127.0.0.1    Database: db_cai
+        '''-- ------------------------------------------------------
+        '''-- Server version	5.7.19
         '''
         '''/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
         '''/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
         '''/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-        '''/*!40101 [rest of string was truncated]&quot;;.
+        '''/*!40101 SET NAMES utf8 */;
+        '''/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+        '''/*!40103 SET TIME_ZONE=&apos;+00:00&apos; */;
+        '''/*!40014 S [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property cai_setup() As String
             Get
@@ -157,6 +171,16 @@ Namespace My.Resources
         Friend ReadOnly Property edit() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("edit", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property flaticon_logout() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("flaticon_logout", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -624,6 +648,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property lesson_management() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lesson-management", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property lesson_management_disabled() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lesson-management-disabled", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property lessonviewer() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lessonviewer", resourceCulture)
@@ -677,6 +721,46 @@ Namespace My.Resources
         Friend ReadOnly Property search_filelogo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("search_filelogo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property student_management_ico() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("student-management-ico", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property student_management_ico_disabled() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("student-management-ico-disabled", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property test_management() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("test-management", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property test_management_disabled() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("test-management-disabled", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

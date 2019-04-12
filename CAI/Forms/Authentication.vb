@@ -130,12 +130,7 @@
                     form.ShowDialog()
                 End If
 
-                If user.role.name = "instructor" Then
-                    Dim form = New InstructorMain
-                    form.ShowDialog()
-                End If
-
-                If user.role.name = "administrator" Then
+                If user.role.name = "administrator" Or user.role.name = "instructor" Then
                     Dim form = New AdminMainScreen
                     form.ShowDialog()
                 End If
@@ -195,7 +190,7 @@ invalid:
     End Sub
 
     Private Sub link_register_student_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles link_register_student.LinkClicked
-        Dim form = New UserForm(UserForm.Mode.Create, UserForm.Role.Student)
+        Dim form = New UserForm(UserForm.Mode.Create, UserForm.Role.Student, True)
         Me.Hide()
         form.ShowDialog()
         Me.Show()

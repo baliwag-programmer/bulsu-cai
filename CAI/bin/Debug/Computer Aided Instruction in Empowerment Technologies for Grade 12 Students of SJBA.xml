@@ -68,6 +68,16 @@ Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of 
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:CAI.My.Resources.Resources.approval_management">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.approval_management_disabled">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:CAI.My.Resources.Resources.banner">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -90,25 +100,19 @@ password=.
 </member>
 <member name="P:CAI.My.Resources.Resources.cai_setup">
 <summary>
-  Looks up a localized string similar to -- phpMyAdmin SQL Dump
--- version 4.7.9
--- https://www.phpmyadmin.net/
+  Looks up a localized string similar to -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 07, 2018 at 01:09 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.1.15
-
-SET SQL_MODE = &quot;NO_AUTO_VALUE_ON_ZERO&quot;;
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = &quot;+00:00&quot;;
-
+-- Host: 127.0.0.1    Database: db_cai
+-- ------------------------------------------------------
+-- Server version	5.7.19
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 [rest of string was truncated]&quot;;.
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE=&apos;+00:00&apos; */;
+/*!40014 S [rest of string was truncated]&quot;;.
 </summary>
 </member>
 <member name="P:CAI.My.Resources.Resources.create_instructor">
@@ -122,6 +126,11 @@ SET time_zone = &quot;+00:00&quot;;
 </summary>
 </member>
 <member name="P:CAI.My.Resources.Resources.edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.flaticon_logout">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -356,6 +365,16 @@ SET time_zone = &quot;+00:00&quot;;
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:CAI.My.Resources.Resources.lesson_management">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.lesson_management_disabled">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:CAI.My.Resources.Resources.lessonviewer">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -382,6 +401,26 @@ SET time_zone = &quot;+00:00&quot;;
 </summary>
 </member>
 <member name="P:CAI.My.Resources.Resources.search_filelogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.student_management_ico">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.student_management_ico_disabled">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.test_management">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.test_management_disabled">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
