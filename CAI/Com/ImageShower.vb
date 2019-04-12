@@ -35,11 +35,13 @@
     Private _EnabledImage As Image
     Private _DisabledImage As Image
 
+    Private _ClickEventHandlers As New List(Of ClickEventHandler)
     Private _StateChangeEventHandlers As New List(Of StateChangeEventHandler)
 #End Region
 
 #Region "Event Handler"
     Delegate Sub StateChangeEventHandler(sender As Object, state As Boolean)
+    Delegate Sub ClickEventHandler(sender As Object, e As EventArgs)
 #End Region
 
 #Region "Events"
@@ -63,6 +65,27 @@
             Next
         End RaiseEvent
     End Event
+
+    Public Custom Event OnClicked As ClickEventHandler
+        AddHandler(value As ClickEventHandler)
+            _ClickEventHandlers.Add(value)
+        End AddHandler
+        RemoveHandler(value As ClickEventHandler)
+            _ClickEventHandlers.Remove(value)
+        End RemoveHandler
+        RaiseEvent(sender As Object, e As EventArgs)
+            For Each handler As ClickEventHandler In _ClickEventHandlers
+                Try
+                    If handler IsNot Nothing Then
+                        handler.Invoke(sender, e)
+                    End If
+                Catch ex As Exception
+                    LoggerModule.createLog(Me.ToString, LogType.Err)
+                    LoggerModule.createLog(ex.ToString, LogType.Err)
+                End Try
+            Next
+        End RaiseEvent
+    End Event
 #End Region
 
     Private Sub SetImage()
@@ -75,4 +98,7 @@
         End If
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        RaiseEvent OnClicked(Me, e)
+    End Sub
 End Class

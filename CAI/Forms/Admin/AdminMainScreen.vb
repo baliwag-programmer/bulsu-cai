@@ -44,6 +44,10 @@ Public Class AdminMainScreen
     Private Sub IntializeRoleBasedControl(auth As Auth)
         InstructorControlPanel.Visible = auth.role.name = "instructor"
         AdministratorControlPanel.Visible = auth.role.name = "administrator"
+
+        If InstructorControlPanel.Visible Then
+            ActionApprovalManagement.State = HasForApproval()
+        End If
     End Sub
 
     Private Sub FillAuthDetails()
@@ -86,9 +90,55 @@ Public Class AdminMainScreen
         End If
     End Sub
 
-    Private Sub OnInstructorAction(sender As Object, e As EventArgs) Handles LabelActionTestManagement.Click, LabelActionStudentManagement.Click, LabelActionLessonManagement.Click, LabelActionApprovalManagement.Click, ActionTestManagement.Click, ActionStudentManagement.Click, ActionLessonManagement.Click, ActionApprovalManagement.Click
+    Private Sub OnInstructorAction(sender As Object, e As EventArgs) Handles LabelActionTestManagement.Click, LabelActionStudentManagement.Click, LabelActionLessonManagement.Click, LabelActionApprovalManagement.Click, ActionTestManagement.OnClicked, ActionStudentManagement.OnClicked, ActionLessonManagement.OnClicked, ActionApprovalManagement.OnClicked
+        If sender Is ActionStudentManagement Or sender Is LabelActionStudentManagement Then
+            Dim form = New UserList(UserList.Role.Student)
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+
+        If sender Is ActionLessonManagement Or sender Is LabelActionLessonManagement Then
+            Dim form = New LessonList
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+
+        If sender Is ActionTestManagement Or sender Is LabelActionTestManagement Then
+            Dim form = New TestList
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+
+        If sender Is ActionApprovalManagement Or sender Is LabelActionApprovalManagement Then
+            Dim form = New UserList(CAI.UserList.Role.Student, True)
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+
+            ActionApprovalManagement.State = HasForApproval()
+        End If
 
     End Sub
+
+    Private Function HasForApproval() As Boolean
+        HasForApproval = False
+
+        Try
+            Dim query_rule = String.Format("SELECT COUNT(*) FROM users WHERE approved = 0 AND EXISTS (SELECT * FROM role_user WHERE EXISTS (SELECT * FROM roles WHERE name = '{0}' AND role_user.role_id = roles.id) AND users.id = role_user.user_id AND users.instructor_id = {1})", "student", Auth.GetInstance.id)
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(query_rule, Database.GetInstance.GetConnection)
+            Dim total = command.ExecuteScalar()
+
+            HasForApproval = total > 0
+        Catch ex As Exception
+            LoggerModule.createLog(Me.ToString(), LogType.Err)
+            LoggerModule.createLog(ex.ToString(), LogType.Err)
+        End Try
+
+        Return HasForApproval
+    End Function
 
     Private Sub OnInstructorButtonChangedState(sender As Object, state As Boolean) Handles ActionTestManagement.OnStateChanged, ActionStudentManagement.OnStateChanged, ActionLessonManagement.OnStateChanged, ActionApprovalManagement.OnStateChanged
         Dim control As ImageShower = sender
