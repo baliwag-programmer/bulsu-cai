@@ -23,19 +23,11 @@ Partial Class TestList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim ColumnHeader1 As System.Windows.Forms.ColumnHeader
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.BTNEdit = New System.Windows.Forms.Button()
         Me.BTNTrash = New System.Windows.Forms.Button()
         Me.BTNCreate = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_filter = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.ListContainer = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lesson_prev = New System.Windows.Forms.Button()
@@ -54,8 +46,8 @@ Partial Class TestList
         Me.ComboType = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.BTNStudentResults = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
         ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ListContainer.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -64,48 +56,6 @@ Partial Class TestList
         '
         ColumnHeader1.Text = "STATUS"
         ColumnHeader1.Width = 116
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 24
-        Me.PictureBox1.TabStop = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(178, 58)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(115, 16)
-        Me.Label9.TabIndex = 23
-        Me.Label9.Text = "Baliuag, Bulacan"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(143, 42)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(132, 16)
-        Me.Label8.TabIndex = 22
-        Me.Label8.Text = "Baptiste, Academy"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(109, 10)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(171, 32)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "Saint Jean"
         '
         'BTNEdit
         '
@@ -118,7 +68,7 @@ Partial Class TestList
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(831, 106)
+        Me.BTNEdit.Location = New System.Drawing.Point(831, 146)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(73, 71)
         Me.BTNEdit.TabIndex = 19
@@ -138,7 +88,7 @@ Partial Class TestList
         Me.BTNTrash.ForeColor = System.Drawing.Color.White
         Me.BTNTrash.Image = Global.CAI.My.Resources.Resources.trash
         Me.BTNTrash.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNTrash.Location = New System.Drawing.Point(918, 106)
+        Me.BTNTrash.Location = New System.Drawing.Point(918, 146)
         Me.BTNTrash.Name = "BTNTrash"
         Me.BTNTrash.Size = New System.Drawing.Size(73, 71)
         Me.BTNTrash.TabIndex = 18
@@ -157,7 +107,7 @@ Partial Class TestList
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(744, 106)
+        Me.BTNCreate.Location = New System.Drawing.Point(744, 146)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(73, 71)
         Me.BTNCreate.TabIndex = 17
@@ -166,21 +116,10 @@ Partial Class TestList
         Me.BTNCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.BTNCreate.UseVisualStyleBackColor = False
         '
-        'Label2
-        '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(693, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(288, 33)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "TEST MANAGEMENT"
-        '
         'txt_filter
         '
         Me.txt_filter.Font = New System.Drawing.Font("Tahoma", 14.25!)
-        Me.txt_filter.Location = New System.Drawing.Point(69, 126)
+        Me.txt_filter.Location = New System.Drawing.Point(69, 166)
         Me.txt_filter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_filter.Name = "txt_filter"
         Me.txt_filter.Size = New System.Drawing.Size(153, 30)
@@ -189,41 +128,11 @@ Partial Class TestList
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 137)
+        Me.Label1.Location = New System.Drawing.Point(7, 177)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 13)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Search :"
-        '
-        'LineShape2
-        '
-        Me.LineShape2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LineShape2.BorderColor = System.Drawing.Color.White
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 529
-        Me.LineShape2.X2 = 980
-        Me.LineShape2.Y1 = 56
-        Me.LineShape2.Y2 = 56
-        '
-        'LineShape1
-        '
-        Me.LineShape1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LineShape1.BorderColor = System.Drawing.Color.White
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 590
-        Me.LineShape1.X2 = 1025
-        Me.LineShape1.Y1 = 68
-        Me.LineShape1.Y2 = 68
-        '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1, Me.LineShape2})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(994, 572)
-        Me.ShapeContainer1.TabIndex = 25
-        Me.ShapeContainer1.TabStop = False
         '
         'ListContainer
         '
@@ -232,9 +141,9 @@ Partial Class TestList
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListContainer.Controls.Add(Me.Panel2)
         Me.ListContainer.Controls.Add(Me.test_list)
-        Me.ListContainer.Location = New System.Drawing.Point(0, 183)
+        Me.ListContainer.Location = New System.Drawing.Point(0, 223)
         Me.ListContainer.Name = "ListContainer"
-        Me.ListContainer.Size = New System.Drawing.Size(994, 389)
+        Me.ListContainer.Size = New System.Drawing.Size(994, 349)
         Me.ListContainer.TabIndex = 26
         '
         'Panel2
@@ -245,7 +154,7 @@ Partial Class TestList
         Me.Panel2.Controls.Add(Me.lesson_prev)
         Me.Panel2.Controls.Add(Me.lesson_next)
         Me.Panel2.Controls.Add(Me.lesson_page)
-        Me.Panel2.Location = New System.Drawing.Point(0, 357)
+        Me.Panel2.Location = New System.Drawing.Point(0, 317)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(994, 32)
         Me.Panel2.TabIndex = 3
@@ -293,7 +202,7 @@ Partial Class TestList
         Me.test_list.GridLines = True
         Me.test_list.Location = New System.Drawing.Point(0, 0)
         Me.test_list.Name = "test_list"
-        Me.test_list.Size = New System.Drawing.Size(994, 359)
+        Me.test_list.Size = New System.Drawing.Size(994, 319)
         Me.test_list.TabIndex = 2
         Me.test_list.UseCompatibleStateImageBehavior = False
         Me.test_list.View = System.Windows.Forms.View.Details
@@ -344,7 +253,7 @@ Partial Class TestList
         Me.BTNLocker.ForeColor = System.Drawing.Color.White
         Me.BTNLocker.Image = Global.CAI.My.Resources.Resources.icons8_padlock_48
         Me.BTNLocker.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNLocker.Location = New System.Drawing.Point(665, 106)
+        Me.BTNLocker.Location = New System.Drawing.Point(665, 146)
         Me.BTNLocker.Name = "BTNLocker"
         Me.BTNLocker.Size = New System.Drawing.Size(73, 71)
         Me.BTNLocker.TabIndex = 27
@@ -356,7 +265,7 @@ Partial Class TestList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(236, 137)
+        Me.Label3.Location = New System.Drawing.Point(236, 177)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 28
@@ -368,7 +277,7 @@ Partial Class TestList
         Me.ComboType.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.ComboType.FormattingEnabled = True
         Me.ComboType.Items.AddRange(New Object() {"PRE-TEST", "POST-TEST", "QUIZ", "ACTIVITY"})
-        Me.ComboType.Location = New System.Drawing.Point(286, 126)
+        Me.ComboType.Location = New System.Drawing.Point(286, 166)
         Me.ComboType.Name = "ComboType"
         Me.ComboType.Size = New System.Drawing.Size(153, 31)
         Me.ComboType.TabIndex = 29
@@ -383,7 +292,7 @@ Partial Class TestList
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(511, 103)
+        Me.Button1.Location = New System.Drawing.Point(511, 143)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 30
@@ -403,7 +312,7 @@ Partial Class TestList
         Me.BTNStudentResults.ForeColor = System.Drawing.Color.White
         Me.BTNStudentResults.Image = Global.CAI.My.Resources.Resources.icons8_test_passed_48
         Me.BTNStudentResults.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNStudentResults.Location = New System.Drawing.Point(590, 103)
+        Me.BTNStudentResults.Location = New System.Drawing.Point(590, 143)
         Me.BTNStudentResults.Name = "BTNStudentResults"
         Me.BTNStudentResults.Size = New System.Drawing.Size(73, 74)
         Me.BTNStudentResults.TabIndex = 31
@@ -412,36 +321,41 @@ Partial Class TestList
         Me.BTNStudentResults.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.BTNStudentResults.UseVisualStyleBackColor = False
         '
+        'Heading1
+        '
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(994, 127)
+        Me.Heading1.TabIndex = 32
+        Me.Heading1.Title = "TEST MANAGEMENT"
+        '
         'TestList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(994, 572)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.BTNStudentResults)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboType)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.BTNLocker)
         Me.Controls.Add(Me.ListContainer)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.BTNEdit)
         Me.Controls.Add(Me.BTNTrash)
         Me.Controls.Add(Me.BTNCreate)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_filter)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ShapeContainer1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.ForeColor = System.Drawing.Color.White
         Me.Name = "TestList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TestList"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ListContainer.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -449,19 +363,11 @@ Partial Class TestList
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents BTNEdit As System.Windows.Forms.Button
     Friend WithEvents BTNTrash As System.Windows.Forms.Button
     Friend WithEvents BTNCreate As System.Windows.Forms.Button
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txt_filter As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents ListContainer As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents lesson_prev As System.Windows.Forms.Button
@@ -480,4 +386,5 @@ Partial Class TestList
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
     Friend WithEvents BTNStudentResults As System.Windows.Forms.Button
+    Friend WithEvents Heading1 As Heading
 End Class

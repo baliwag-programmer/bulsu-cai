@@ -125,15 +125,14 @@
 
                 My.Application.SetAuth(user)
 
-                If user.role.name = "student" Then
-                    Dim form = New StudentMain
-                    form.ShowDialog()
-                End If
+                'If user.role.name = "student" Then
+                '    Dim form = New StudentMain
+                '    form.ShowDialog()
+                'End If
 
-                If user.role.name = "administrator" Or user.role.name = "instructor" Then
-                    Dim form = New AdminMainScreen
-                    form.ShowDialog()
-                End If
+                Dim form = New AdminMainScreen
+                form.ShowDialog()
+
 
                 Me.Show()
                 Exit Sub

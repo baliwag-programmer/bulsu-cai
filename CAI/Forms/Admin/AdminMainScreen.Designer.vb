@@ -34,8 +34,22 @@ Partial Class AdminMainScreen
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ButtonSecurity = New System.Windows.Forms.Button()
         Me.AdminPanel = New System.Windows.Forms.Panel()
+        Me.StudentControlPanel = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ImageShower1 = New CAI.ImageShower()
+        Me.ImageShower2 = New CAI.ImageShower()
+        Me.ImageShower3 = New CAI.ImageShower()
         Me.LabelDate = New System.Windows.Forms.Label()
         Me.LabelTime = New System.Windows.Forms.Label()
+        Me.AdministratorControlPanel = New System.Windows.Forms.Panel()
+        Me.LabelViewLogReport = New System.Windows.Forms.Label()
+        Me.LabelMonitoring = New System.Windows.Forms.Label()
+        Me.LabelAccountManagement = New System.Windows.Forms.Label()
+        Me.BTNMonitoring = New System.Windows.Forms.PictureBox()
+        Me.BTNViewLogReport = New System.Windows.Forms.PictureBox()
+        Me.BTNAccountManagement = New System.Windows.Forms.PictureBox()
         Me.InstructorControlPanel = New System.Windows.Forms.Panel()
         Me.LabelActionTestManagement = New System.Windows.Forms.Label()
         Me.LabelActionApprovalManagement = New System.Windows.Forms.Label()
@@ -45,24 +59,18 @@ Partial Class AdminMainScreen
         Me.ActionStudentManagement = New CAI.ImageShower()
         Me.ActionTestManagement = New CAI.ImageShower()
         Me.ActionApprovalManagement = New CAI.ImageShower()
-        Me.AdministratorControlPanel = New System.Windows.Forms.Panel()
-        Me.LabelViewLogReport = New System.Windows.Forms.Label()
-        Me.LabelMonitoring = New System.Windows.Forms.Label()
-        Me.LabelAccountManagement = New System.Windows.Forms.Label()
-        Me.BTNMonitoring = New System.Windows.Forms.PictureBox()
-        Me.BTNViewLogReport = New System.Windows.Forms.PictureBox()
-        Me.BTNAccountManagement = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.Avatar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AdminPanel.SuspendLayout()
-        Me.InstructorControlPanel.SuspendLayout()
+        Me.StudentControlPanel.SuspendLayout()
         Me.AdministratorControlPanel.SuspendLayout()
         CType(Me.BTNMonitoring, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BTNViewLogReport, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BTNAccountManagement, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.InstructorControlPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -212,6 +220,7 @@ Partial Class AdminMainScreen
         Me.AdminPanel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.AdminPanel.BackgroundImage = Global.CAI.My.Resources.Resources.homescreenbg
         Me.AdminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
         Me.AdminPanel.Controls.Add(Me.LabelDate)
         Me.AdminPanel.Controls.Add(Me.LabelTime)
         Me.AdminPanel.Controls.Add(Me.AdministratorControlPanel)
@@ -220,6 +229,99 @@ Partial Class AdminMainScreen
         Me.AdminPanel.Name = "AdminPanel"
         Me.AdminPanel.Size = New System.Drawing.Size(586, 596)
         Me.AdminPanel.TabIndex = 1
+        '
+        'StudentControlPanel
+        '
+        Me.StudentControlPanel.BackColor = System.Drawing.Color.Transparent
+        Me.StudentControlPanel.Controls.Add(Me.Label3)
+        Me.StudentControlPanel.Controls.Add(Me.Label5)
+        Me.StudentControlPanel.Controls.Add(Me.Label7)
+        Me.StudentControlPanel.Controls.Add(Me.ImageShower1)
+        Me.StudentControlPanel.Controls.Add(Me.ImageShower2)
+        Me.StudentControlPanel.Controls.Add(Me.ImageShower3)
+        Me.StudentControlPanel.Location = New System.Drawing.Point(3, 308)
+        Me.StudentControlPanel.Name = "StudentControlPanel"
+        Me.StudentControlPanel.Size = New System.Drawing.Size(583, 285)
+        Me.StudentControlPanel.TabIndex = 18
+        Me.StudentControlPanel.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label3.AutoSize = True
+        Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label3.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(413, 130)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 14)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "TEST"
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label5.AutoSize = True
+        Me.Label5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label5.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(244, 130)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(96, 14)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "TEST RESULTS"
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Label7.AutoSize = True
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label7.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(118, 130)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(65, 14)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "LESSONS"
+        '
+        'ImageShower1
+        '
+        Me.ImageShower1.BackColor = System.Drawing.Color.Transparent
+        Me.ImageShower1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageShower1.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
+        Me.ImageShower1.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
+        Me.ImageShower1.Location = New System.Drawing.Point(238, 31)
+        Me.ImageShower1.Name = "ImageShower1"
+        Me.ImageShower1.Size = New System.Drawing.Size(108, 86)
+        Me.ImageShower1.State = False
+        Me.ImageShower1.TabIndex = 20
+        '
+        'ImageShower2
+        '
+        Me.ImageShower2.BackColor = System.Drawing.Color.Transparent
+        Me.ImageShower2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageShower2.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
+        Me.ImageShower2.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
+        Me.ImageShower2.Location = New System.Drawing.Point(96, 27)
+        Me.ImageShower2.Name = "ImageShower2"
+        Me.ImageShower2.Size = New System.Drawing.Size(108, 90)
+        Me.ImageShower2.State = False
+        Me.ImageShower2.TabIndex = 20
+        '
+        'ImageShower3
+        '
+        Me.ImageShower3.BackColor = System.Drawing.Color.Transparent
+        Me.ImageShower3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageShower3.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
+        Me.ImageShower3.EnabledImage = Global.CAI.My.Resources.Resources.test_management
+        Me.ImageShower3.Location = New System.Drawing.Point(377, 30)
+        Me.ImageShower3.Name = "ImageShower3"
+        Me.ImageShower3.Size = New System.Drawing.Size(108, 86)
+        Me.ImageShower3.State = False
+        Me.ImageShower3.TabIndex = 21
         '
         'LabelDate
         '
@@ -246,6 +348,101 @@ Partial Class AdminMainScreen
         Me.LabelTime.TabIndex = 6
         Me.LabelTime.Text = "00:00:00 AM"
         Me.LabelTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AdministratorControlPanel
+        '
+        Me.AdministratorControlPanel.BackColor = System.Drawing.Color.Transparent
+        Me.AdministratorControlPanel.Controls.Add(Me.LabelViewLogReport)
+        Me.AdministratorControlPanel.Controls.Add(Me.LabelMonitoring)
+        Me.AdministratorControlPanel.Controls.Add(Me.LabelAccountManagement)
+        Me.AdministratorControlPanel.Controls.Add(Me.BTNMonitoring)
+        Me.AdministratorControlPanel.Controls.Add(Me.BTNViewLogReport)
+        Me.AdministratorControlPanel.Controls.Add(Me.BTNAccountManagement)
+        Me.AdministratorControlPanel.Location = New System.Drawing.Point(3, 343)
+        Me.AdministratorControlPanel.Name = "AdministratorControlPanel"
+        Me.AdministratorControlPanel.Size = New System.Drawing.Size(565, 169)
+        Me.AdministratorControlPanel.TabIndex = 16
+        '
+        'LabelViewLogReport
+        '
+        Me.LabelViewLogReport.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelViewLogReport.AutoSize = True
+        Me.LabelViewLogReport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LabelViewLogReport.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelViewLogReport.ForeColor = System.Drawing.Color.Black
+        Me.LabelViewLogReport.Location = New System.Drawing.Point(369, 130)
+        Me.LabelViewLogReport.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelViewLogReport.Name = "LabelViewLogReport"
+        Me.LabelViewLogReport.Size = New System.Drawing.Size(124, 14)
+        Me.LabelViewLogReport.TabIndex = 15
+        Me.LabelViewLogReport.Text = "VIEW LOG REPORT"
+        '
+        'LabelMonitoring
+        '
+        Me.LabelMonitoring.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelMonitoring.AutoSize = True
+        Me.LabelMonitoring.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LabelMonitoring.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelMonitoring.ForeColor = System.Drawing.Color.Black
+        Me.LabelMonitoring.Location = New System.Drawing.Point(248, 130)
+        Me.LabelMonitoring.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelMonitoring.Name = "LabelMonitoring"
+        Me.LabelMonitoring.Size = New System.Drawing.Size(89, 14)
+        Me.LabelMonitoring.TabIndex = 14
+        Me.LabelMonitoring.Text = "MONITORING"
+        '
+        'LabelAccountManagement
+        '
+        Me.LabelAccountManagement.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelAccountManagement.AutoSize = True
+        Me.LabelAccountManagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LabelAccountManagement.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAccountManagement.ForeColor = System.Drawing.Color.Black
+        Me.LabelAccountManagement.Location = New System.Drawing.Point(71, 130)
+        Me.LabelAccountManagement.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelAccountManagement.Name = "LabelAccountManagement"
+        Me.LabelAccountManagement.Size = New System.Drawing.Size(158, 14)
+        Me.LabelAccountManagement.TabIndex = 13
+        Me.LabelAccountManagement.Text = "ACCOUNT MANAGEMENT"
+        '
+        'BTNMonitoring
+        '
+        Me.BTNMonitoring.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BTNMonitoring.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNMonitoring.Image = CType(resources.GetObject("BTNMonitoring.Image"), System.Drawing.Image)
+        Me.BTNMonitoring.Location = New System.Drawing.Point(238, 31)
+        Me.BTNMonitoring.Margin = New System.Windows.Forms.Padding(2)
+        Me.BTNMonitoring.Name = "BTNMonitoring"
+        Me.BTNMonitoring.Size = New System.Drawing.Size(108, 86)
+        Me.BTNMonitoring.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BTNMonitoring.TabIndex = 10
+        Me.BTNMonitoring.TabStop = False
+        '
+        'BTNViewLogReport
+        '
+        Me.BTNViewLogReport.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BTNViewLogReport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNViewLogReport.Image = CType(resources.GetObject("BTNViewLogReport.Image"), System.Drawing.Image)
+        Me.BTNViewLogReport.Location = New System.Drawing.Point(377, 30)
+        Me.BTNViewLogReport.Margin = New System.Windows.Forms.Padding(2)
+        Me.BTNViewLogReport.Name = "BTNViewLogReport"
+        Me.BTNViewLogReport.Size = New System.Drawing.Size(108, 86)
+        Me.BTNViewLogReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BTNViewLogReport.TabIndex = 9
+        Me.BTNViewLogReport.TabStop = False
+        '
+        'BTNAccountManagement
+        '
+        Me.BTNAccountManagement.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.BTNAccountManagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNAccountManagement.Image = CType(resources.GetObject("BTNAccountManagement.Image"), System.Drawing.Image)
+        Me.BTNAccountManagement.Location = New System.Drawing.Point(96, 27)
+        Me.BTNAccountManagement.Margin = New System.Windows.Forms.Padding(2)
+        Me.BTNAccountManagement.Name = "BTNAccountManagement"
+        Me.BTNAccountManagement.Size = New System.Drawing.Size(108, 90)
+        Me.BTNAccountManagement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BTNAccountManagement.TabIndex = 8
+        Me.BTNAccountManagement.TabStop = False
         '
         'InstructorControlPanel
         '
@@ -369,101 +566,6 @@ Partial Class AdminMainScreen
         Me.ActionApprovalManagement.State = False
         Me.ActionApprovalManagement.TabIndex = 22
         '
-        'AdministratorControlPanel
-        '
-        Me.AdministratorControlPanel.BackColor = System.Drawing.Color.Transparent
-        Me.AdministratorControlPanel.Controls.Add(Me.LabelViewLogReport)
-        Me.AdministratorControlPanel.Controls.Add(Me.LabelMonitoring)
-        Me.AdministratorControlPanel.Controls.Add(Me.LabelAccountManagement)
-        Me.AdministratorControlPanel.Controls.Add(Me.BTNMonitoring)
-        Me.AdministratorControlPanel.Controls.Add(Me.BTNViewLogReport)
-        Me.AdministratorControlPanel.Controls.Add(Me.BTNAccountManagement)
-        Me.AdministratorControlPanel.Location = New System.Drawing.Point(3, 343)
-        Me.AdministratorControlPanel.Name = "AdministratorControlPanel"
-        Me.AdministratorControlPanel.Size = New System.Drawing.Size(565, 169)
-        Me.AdministratorControlPanel.TabIndex = 16
-        '
-        'LabelViewLogReport
-        '
-        Me.LabelViewLogReport.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelViewLogReport.AutoSize = True
-        Me.LabelViewLogReport.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LabelViewLogReport.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelViewLogReport.ForeColor = System.Drawing.Color.Black
-        Me.LabelViewLogReport.Location = New System.Drawing.Point(369, 130)
-        Me.LabelViewLogReport.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LabelViewLogReport.Name = "LabelViewLogReport"
-        Me.LabelViewLogReport.Size = New System.Drawing.Size(124, 14)
-        Me.LabelViewLogReport.TabIndex = 15
-        Me.LabelViewLogReport.Text = "VIEW LOG REPORT"
-        '
-        'LabelMonitoring
-        '
-        Me.LabelMonitoring.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelMonitoring.AutoSize = True
-        Me.LabelMonitoring.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LabelMonitoring.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelMonitoring.ForeColor = System.Drawing.Color.Black
-        Me.LabelMonitoring.Location = New System.Drawing.Point(248, 130)
-        Me.LabelMonitoring.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LabelMonitoring.Name = "LabelMonitoring"
-        Me.LabelMonitoring.Size = New System.Drawing.Size(89, 14)
-        Me.LabelMonitoring.TabIndex = 14
-        Me.LabelMonitoring.Text = "MONITORING"
-        '
-        'LabelAccountManagement
-        '
-        Me.LabelAccountManagement.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelAccountManagement.AutoSize = True
-        Me.LabelAccountManagement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LabelAccountManagement.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAccountManagement.ForeColor = System.Drawing.Color.Black
-        Me.LabelAccountManagement.Location = New System.Drawing.Point(71, 130)
-        Me.LabelAccountManagement.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LabelAccountManagement.Name = "LabelAccountManagement"
-        Me.LabelAccountManagement.Size = New System.Drawing.Size(158, 14)
-        Me.LabelAccountManagement.TabIndex = 13
-        Me.LabelAccountManagement.Text = "ACCOUNT MANAGEMENT"
-        '
-        'BTNMonitoring
-        '
-        Me.BTNMonitoring.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BTNMonitoring.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNMonitoring.Image = CType(resources.GetObject("BTNMonitoring.Image"), System.Drawing.Image)
-        Me.BTNMonitoring.Location = New System.Drawing.Point(238, 31)
-        Me.BTNMonitoring.Margin = New System.Windows.Forms.Padding(2)
-        Me.BTNMonitoring.Name = "BTNMonitoring"
-        Me.BTNMonitoring.Size = New System.Drawing.Size(108, 86)
-        Me.BTNMonitoring.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BTNMonitoring.TabIndex = 10
-        Me.BTNMonitoring.TabStop = False
-        '
-        'BTNViewLogReport
-        '
-        Me.BTNViewLogReport.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BTNViewLogReport.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNViewLogReport.Image = CType(resources.GetObject("BTNViewLogReport.Image"), System.Drawing.Image)
-        Me.BTNViewLogReport.Location = New System.Drawing.Point(377, 30)
-        Me.BTNViewLogReport.Margin = New System.Windows.Forms.Padding(2)
-        Me.BTNViewLogReport.Name = "BTNViewLogReport"
-        Me.BTNViewLogReport.Size = New System.Drawing.Size(108, 86)
-        Me.BTNViewLogReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BTNViewLogReport.TabIndex = 9
-        Me.BTNViewLogReport.TabStop = False
-        '
-        'BTNAccountManagement
-        '
-        Me.BTNAccountManagement.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BTNAccountManagement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNAccountManagement.Image = CType(resources.GetObject("BTNAccountManagement.Image"), System.Drawing.Image)
-        Me.BTNAccountManagement.Location = New System.Drawing.Point(96, 27)
-        Me.BTNAccountManagement.Margin = New System.Windows.Forms.Padding(2)
-        Me.BTNAccountManagement.Name = "BTNAccountManagement"
-        Me.BTNAccountManagement.Size = New System.Drawing.Size(108, 90)
-        Me.BTNAccountManagement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.BTNAccountManagement.TabIndex = 8
-        Me.BTNAccountManagement.TabStop = False
-        '
         'Label2
         '
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -516,13 +618,15 @@ Partial Class AdminMainScreen
         CType(Me.Avatar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AdminPanel.ResumeLayout(False)
-        Me.InstructorControlPanel.ResumeLayout(False)
-        Me.InstructorControlPanel.PerformLayout()
+        Me.StudentControlPanel.ResumeLayout(False)
+        Me.StudentControlPanel.PerformLayout()
         Me.AdministratorControlPanel.ResumeLayout(False)
         Me.AdministratorControlPanel.PerformLayout()
         CType(Me.BTNMonitoring, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BTNViewLogReport, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BTNAccountManagement, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.InstructorControlPanel.ResumeLayout(False)
+        Me.InstructorControlPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -560,4 +664,11 @@ Partial Class AdminMainScreen
     Friend WithEvents ActionLessonManagement As ImageShower
     Friend WithEvents ActionTestManagement As ImageShower
     Friend WithEvents ActionApprovalManagement As ImageShower
+    Friend WithEvents StudentControlPanel As Panel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents ImageShower1 As ImageShower
+    Friend WithEvents ImageShower2 As ImageShower
+    Friend WithEvents ImageShower3 As ImageShower
 End Class

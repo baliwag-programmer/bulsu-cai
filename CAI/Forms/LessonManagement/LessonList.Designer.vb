@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class LessonList
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,10 @@ Partial Class LessonList
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_filter = New System.Windows.Forms.TextBox()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.BTNEdit = New System.Windows.Forms.Button()
         Me.BTNTrash = New System.Windows.Forms.Button()
         Me.BTNCreate = New System.Windows.Forms.Button()
@@ -60,21 +57,16 @@ Partial Class LessonList
         Me.Label3 = New System.Windows.Forms.Label()
         Me.BTNLocker = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Heading1 = New CAI.Heading()
         Me.ListContainer.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 162)
+        Me.Label1.Location = New System.Drawing.Point(4, 184)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 16)
         Me.Label1.TabIndex = 2
@@ -82,41 +74,11 @@ Partial Class LessonList
         '
         'txt_filter
         '
-        Me.txt_filter.Location = New System.Drawing.Point(66, 159)
+        Me.txt_filter.Location = New System.Drawing.Point(66, 181)
         Me.txt_filter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_filter.Name = "txt_filter"
         Me.txt_filter.Size = New System.Drawing.Size(193, 23)
         Me.txt_filter.TabIndex = 3
-        '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(994, 572)
-        Me.ShapeContainer1.TabIndex = 5
-        Me.ShapeContainer1.TabStop = False
-        '
-        'LineShape2
-        '
-        Me.LineShape2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LineShape2.BorderColor = System.Drawing.Color.White
-        Me.LineShape2.Name = "LineShape2"
-        Me.LineShape2.X1 = 624
-        Me.LineShape2.X2 = 998
-        Me.LineShape2.Y1 = 59
-        Me.LineShape2.Y2 = 59
-        '
-        'LineShape1
-        '
-        Me.LineShape1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LineShape1.BorderColor = System.Drawing.Color.White
-        Me.LineShape1.Name = "LineShape1"
-        Me.LineShape1.X1 = 685
-        Me.LineShape1.X2 = 1043
-        Me.LineShape1.Y1 = 71
-        Me.LineShape1.Y2 = 71
         '
         'BTNEdit
         '
@@ -129,7 +91,7 @@ Partial Class LessonList
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(445, 131)
+        Me.BTNEdit.Location = New System.Drawing.Point(443, 153)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(73, 71)
         Me.BTNEdit.TabIndex = 8
@@ -149,7 +111,7 @@ Partial Class LessonList
         Me.BTNTrash.ForeColor = System.Drawing.Color.White
         Me.BTNTrash.Image = Global.CAI.My.Resources.Resources.trash
         Me.BTNTrash.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNTrash.Location = New System.Drawing.Point(532, 131)
+        Me.BTNTrash.Location = New System.Drawing.Point(523, 153)
         Me.BTNTrash.Name = "BTNTrash"
         Me.BTNTrash.Size = New System.Drawing.Size(73, 71)
         Me.BTNTrash.TabIndex = 7
@@ -168,7 +130,7 @@ Partial Class LessonList
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(358, 131)
+        Me.BTNCreate.Location = New System.Drawing.Point(363, 153)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(73, 71)
         Me.BTNCreate.TabIndex = 6
@@ -199,9 +161,9 @@ Partial Class LessonList
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListContainer.Controls.Add(Me.Panel2)
         Me.ListContainer.Controls.Add(Me.lesson_list)
-        Me.ListContainer.Location = New System.Drawing.Point(0, 208)
+        Me.ListContainer.Location = New System.Drawing.Point(0, 231)
         Me.ListContainer.Name = "ListContainer"
-        Me.ListContainer.Size = New System.Drawing.Size(605, 364)
+        Me.ListContainer.Size = New System.Drawing.Size(680, 341)
         Me.ListContainer.TabIndex = 17
         '
         'Panel2
@@ -212,9 +174,9 @@ Partial Class LessonList
         Me.Panel2.Controls.Add(Me.lesson_prev)
         Me.Panel2.Controls.Add(Me.lesson_next)
         Me.Panel2.Controls.Add(Me.lesson_page)
-        Me.Panel2.Location = New System.Drawing.Point(0, 332)
+        Me.Panel2.Location = New System.Drawing.Point(0, 309)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(605, 32)
+        Me.Panel2.Size = New System.Drawing.Size(680, 32)
         Me.Panel2.TabIndex = 3
         '
         'lesson_prev
@@ -223,7 +185,7 @@ Partial Class LessonList
         Me.lesson_prev.FlatAppearance.BorderSize = 0
         Me.lesson_prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lesson_prev.Image = Global.CAI.My.Resources.Resources.icons8_prev_48
-        Me.lesson_prev.Location = New System.Drawing.Point(530, 0)
+        Me.lesson_prev.Location = New System.Drawing.Point(605, 0)
         Me.lesson_prev.Name = "lesson_prev"
         Me.lesson_prev.Size = New System.Drawing.Size(38, 31)
         Me.lesson_prev.TabIndex = 2
@@ -235,7 +197,7 @@ Partial Class LessonList
         Me.lesson_next.FlatAppearance.BorderSize = 0
         Me.lesson_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.lesson_next.Image = Global.CAI.My.Resources.Resources.icons8_right_button_48
-        Me.lesson_next.Location = New System.Drawing.Point(567, 0)
+        Me.lesson_next.Location = New System.Drawing.Point(642, 0)
         Me.lesson_next.Name = "lesson_next"
         Me.lesson_next.Size = New System.Drawing.Size(38, 31)
         Me.lesson_next.TabIndex = 1
@@ -260,7 +222,7 @@ Partial Class LessonList
         Me.lesson_list.GridLines = True
         Me.lesson_list.Location = New System.Drawing.Point(0, 0)
         Me.lesson_list.Name = "lesson_list"
-        Me.lesson_list.Size = New System.Drawing.Size(605, 334)
+        Me.lesson_list.Size = New System.Drawing.Size(680, 311)
         Me.lesson_list.TabIndex = 2
         Me.lesson_list.UseCompatibleStateImageBehavior = False
         Me.lesson_list.View = System.Windows.Forms.View.Details
@@ -295,9 +257,9 @@ Partial Class LessonList
         Me.GroupBox1.Controls.Add(Me.lbl_lesson_title)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(611, 131)
+        Me.GroupBox1.Location = New System.Drawing.Point(686, 151)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(371, 435)
+        Me.GroupBox1.Size = New System.Drawing.Size(371, 415)
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "LESSON VIEWER"
@@ -320,7 +282,7 @@ Partial Class LessonList
         Me.txt_lesson_description.Location = New System.Drawing.Point(6, 312)
         Me.txt_lesson_description.Name = "txt_lesson_description"
         Me.txt_lesson_description.ReadOnly = True
-        Me.txt_lesson_description.Size = New System.Drawing.Size(359, 117)
+        Me.txt_lesson_description.Size = New System.Drawing.Size(359, 97)
         Me.txt_lesson_description.TabIndex = 16
         Me.txt_lesson_description.Text = ""
         '
@@ -365,7 +327,7 @@ Partial Class LessonList
         Me.BTNLocker.ForeColor = System.Drawing.Color.White
         Me.BTNLocker.Image = Global.CAI.My.Resources.Resources.icons8_lock_48
         Me.BTNLocker.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNLocker.Location = New System.Drawing.Point(279, 131)
+        Me.BTNLocker.Location = New System.Drawing.Point(283, 153)
         Me.BTNLocker.Name = "BTNLocker"
         Me.BTNLocker.Size = New System.Drawing.Size(73, 71)
         Me.BTNLocker.TabIndex = 19
@@ -384,7 +346,7 @@ Partial Class LessonList
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(532, 51)
+        Me.Button1.Location = New System.Drawing.Point(603, 151)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 20
@@ -393,79 +355,33 @@ Partial Class LessonList
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Label2
+        'Heading1
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(654, 16)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(328, 33)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "LESSON MANAGEMENT"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(178, 73)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(115, 16)
-        Me.Label9.TabIndex = 12
-        Me.Label9.Text = "Baliuag, Bulacan"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(143, 57)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(132, 16)
-        Me.Label8.TabIndex = 11
-        Me.Label8.Text = "Baptiste, Academy"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(109, 25)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(171, 32)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Saint Jean"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.logo
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
+        Me.Heading1.BackColor = System.Drawing.Color.White
+        Me.Heading1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Heading1.Font = New System.Drawing.Font("Verdana", 8.25!)
+        Me.Heading1.Location = New System.Drawing.Point(0, 0)
+        Me.Heading1.Name = "Heading1"
+        Me.Heading1.Size = New System.Drawing.Size(1069, 127)
+        Me.Heading1.TabIndex = 21
+        Me.Heading1.Title = "LESSONS"
         '
         'LessonList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
-        Me.ClientSize = New System.Drawing.Size(994, 572)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1069, 572)
+        Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.BTNLocker)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ListContainer)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.BTNEdit)
-        Me.Controls.Add(Me.BTNTrash)
         Me.Controls.Add(Me.BTNCreate)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_filter)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ShapeContainer1)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BTNTrash)
         Me.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.White
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -480,7 +396,6 @@ Partial Class LessonList
         Me.Panel2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -520,12 +435,5 @@ Partial Class LessonList
     Friend WithEvents BTNLocker As System.Windows.Forms.Button
     Friend WithEvents AttachmentViewer1 As CAI.AttachmentViewer
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
-    Private WithEvents LineShape2 As PowerPacks.LineShape
-    Private WithEvents LineShape1 As PowerPacks.LineShape
+    Friend WithEvents Heading1 As Heading
 End Class

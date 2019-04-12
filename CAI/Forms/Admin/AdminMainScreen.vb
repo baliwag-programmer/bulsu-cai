@@ -42,6 +42,7 @@ Public Class AdminMainScreen
     End Sub
 
     Private Sub IntializeRoleBasedControl(auth As Auth)
+        StudentControlPanel.Visible = auth.role.name = "student"
         InstructorControlPanel.Visible = auth.role.name = "instructor"
         AdministratorControlPanel.Visible = auth.role.name = "administrator"
 
@@ -156,7 +157,24 @@ Public Class AdminMainScreen
             LoggerModule.createLog(ex.ToString(), LogType.Err)
         End Try
 
-        Return HasForApproval()
+        Return HasStudents
+    End Function
+
+    Private Function HasLessons() As Boolean
+        HasLessons = False
+
+        Try
+            Dim query_rule = String.Format("SELECT COUNT(*) FROM users WHERE approved = 1 AND EXISTS (SELECT * FROM role_user WHERE EXISTS (SELECT * FROM roles WHERE name = '{0}' AND role_user.role_id = roles.id) AND users.id = role_user.user_id AND users.instructor_id = {1})", "student", Auth.GetInstance.id)
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(query_rule, Database.GetInstance.GetConnection)
+            Dim total = command.ExecuteScalar()
+
+            HasLessons = total > 0
+        Catch ex As Exception
+            LoggerModule.createLog(Me.ToString(), LogType.Err)
+            LoggerModule.createLog(ex.ToString(), LogType.Err)
+        End Try
+
+        Return HasLessons
     End Function
 
     Private Sub OnInstructorButtonChangedState(sender As Object, state As Boolean) Handles ActionTestManagement.OnStateChanged, ActionStudentManagement.OnStateChanged, ActionLessonManagement.OnStateChanged, ActionApprovalManagement.OnStateChanged
