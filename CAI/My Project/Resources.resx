@@ -142,11 +142,17 @@
   <data name="create_instructor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\create instructor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lessonviewer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lessonviewer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="student-management-ico-disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\student-management-ico-disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_password_filled_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-password-filled-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_eye_96__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-96 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_cancel_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-cancel-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search_filelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_filelogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,23 +160,20 @@
   <data name="icons8_eye_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-eye-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="test-management-disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test-management-disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_right_button_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-right-button-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lessonviewer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lessonviewer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_key_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_key_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_search_property_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-search-property-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_lock_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-lock-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lesson-management-disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lesson-management-disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_search_property_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-search-property-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_key_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-key-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -189,6 +192,9 @@
   </data>
   <data name="icons8_prev_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-prev-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lesson-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lesson-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lecturelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lecturelogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -210,6 +216,9 @@
   </data>
   <data name="icons8_bulleted_list_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-bulleted-list-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_eye_96__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye-96 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_conference_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-conference-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -237,9 +246,6 @@
   </data>
   <data name="icons8_exit_filled_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-exit-filled-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_cancel_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-cancel-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_padlock_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-padlock-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,14 +295,11 @@
   <data name="flaticon_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flaticon_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lesson-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lesson-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-ok-480" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-ok-480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-ok-480" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-ok-480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_back_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-back-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,10 +328,10 @@
   <data name="trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-trash-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="student-management-ico-disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\student-management-ico-disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_key_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_key_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="test-management-disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\test-management-disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lessonviewer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lessonviewer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

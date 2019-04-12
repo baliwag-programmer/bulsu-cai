@@ -112,6 +112,9 @@ Namespace My.Resources
         
         '''<summary>
         '''  Looks up a localized string similar to network_path=Z
+        '''network_address=\\PC-Name\SharedCAIPath
+        '''network_user=\\PC-Name\AMD
+        '''network_password=
         '''server=localhost
         '''port=3306
         '''database=db_cai
@@ -127,7 +130,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized string similar to -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
         '''--
-        '''-- Host: 127.0.0.1    Database: db_cai
+        '''-- Host: 127.0.0.1    Database: db_cai_auto
         '''-- ------------------------------------------------------
         '''-- Server version	5.7.19
         '''
@@ -137,7 +140,7 @@ Namespace My.Resources
         '''/*!40101 SET NAMES utf8 */;
         '''/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
         '''/*!40103 SET TIME_ZONE=&apos;+00:00&apos; */;
-        '''/*!40014 S [rest of string was truncated]&quot;;.
+        '''/*!40 [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property cai_setup() As String
             Get
@@ -671,6 +674,16 @@ Namespace My.Resources
         Friend ReadOnly Property lessonviewer() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lessonviewer", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property lessonviewer1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lessonviewer1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

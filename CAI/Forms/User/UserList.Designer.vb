@@ -434,11 +434,11 @@ Partial Class UserList
         Me.Controls.Add(Me.txt_filter)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BTNEdit)
-        Me.Controls.Add(Me.BTNTrash)
         Me.Controls.Add(Me.BTNCreate)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Controls.Add(Me.BTNApprovedBlocked)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BTNTrash)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog

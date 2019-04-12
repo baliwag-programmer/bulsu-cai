@@ -38,9 +38,6 @@ Partial Class AdminMainScreen
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ImageShower1 = New CAI.ImageShower()
-        Me.ImageShower2 = New CAI.ImageShower()
-        Me.ImageShower3 = New CAI.ImageShower()
         Me.LabelDate = New System.Windows.Forms.Label()
         Me.LabelTime = New System.Windows.Forms.Label()
         Me.AdministratorControlPanel = New System.Windows.Forms.Panel()
@@ -55,12 +52,15 @@ Partial Class AdminMainScreen
         Me.LabelActionApprovalManagement = New System.Windows.Forms.Label()
         Me.LabelActionLessonManagement = New System.Windows.Forms.Label()
         Me.LabelActionStudentManagement = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ActionLessonManagement = New CAI.ImageShower()
         Me.ActionStudentManagement = New CAI.ImageShower()
         Me.ActionTestManagement = New CAI.ImageShower()
         Me.ActionApprovalManagement = New CAI.ImageShower()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ImageShower1 = New CAI.ImageShower()
+        Me.ImageShower2 = New CAI.ImageShower()
+        Me.ImageShower3 = New CAI.ImageShower()
         Me.Panel1.SuspendLayout()
         CType(Me.Avatar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -220,11 +220,11 @@ Partial Class AdminMainScreen
         Me.AdminPanel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.AdminPanel.BackgroundImage = Global.CAI.My.Resources.Resources.homescreenbg
         Me.AdminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
+        Me.AdminPanel.Controls.Add(Me.InstructorControlPanel)
         Me.AdminPanel.Controls.Add(Me.LabelDate)
         Me.AdminPanel.Controls.Add(Me.LabelTime)
         Me.AdminPanel.Controls.Add(Me.AdministratorControlPanel)
-        Me.AdminPanel.Controls.Add(Me.InstructorControlPanel)
+        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
         Me.AdminPanel.Location = New System.Drawing.Point(347, -8)
         Me.AdminPanel.Name = "AdminPanel"
         Me.AdminPanel.Size = New System.Drawing.Size(586, 596)
@@ -286,42 +286,6 @@ Partial Class AdminMainScreen
         Me.Label7.Size = New System.Drawing.Size(65, 14)
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "LESSONS"
-        '
-        'ImageShower1
-        '
-        Me.ImageShower1.BackColor = System.Drawing.Color.Transparent
-        Me.ImageShower1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ImageShower1.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
-        Me.ImageShower1.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
-        Me.ImageShower1.Location = New System.Drawing.Point(238, 31)
-        Me.ImageShower1.Name = "ImageShower1"
-        Me.ImageShower1.Size = New System.Drawing.Size(108, 86)
-        Me.ImageShower1.State = False
-        Me.ImageShower1.TabIndex = 20
-        '
-        'ImageShower2
-        '
-        Me.ImageShower2.BackColor = System.Drawing.Color.Transparent
-        Me.ImageShower2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ImageShower2.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
-        Me.ImageShower2.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
-        Me.ImageShower2.Location = New System.Drawing.Point(96, 27)
-        Me.ImageShower2.Name = "ImageShower2"
-        Me.ImageShower2.Size = New System.Drawing.Size(108, 90)
-        Me.ImageShower2.State = False
-        Me.ImageShower2.TabIndex = 20
-        '
-        'ImageShower3
-        '
-        Me.ImageShower3.BackColor = System.Drawing.Color.Transparent
-        Me.ImageShower3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ImageShower3.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
-        Me.ImageShower3.EnabledImage = Global.CAI.My.Resources.Resources.test_management
-        Me.ImageShower3.Location = New System.Drawing.Point(377, 30)
-        Me.ImageShower3.Name = "ImageShower3"
-        Me.ImageShower3.Size = New System.Drawing.Size(108, 86)
-        Me.ImageShower3.State = False
-        Me.ImageShower3.TabIndex = 21
         '
         'LabelDate
         '
@@ -518,6 +482,33 @@ Partial Class AdminMainScreen
         Me.LabelActionStudentManagement.TabIndex = 15
         Me.LabelActionStudentManagement.Text = "STUDENT MANAGEMENT"
         '
+        'Label2
+        '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.Location = New System.Drawing.Point(938, 100)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 14)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "LOG OUT"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.flaticon_logout
+        Me.PictureBox1.Location = New System.Drawing.Point(938, 17)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 75)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'ActionLessonManagement
         '
         Me.ActionLessonManagement.BackColor = System.Drawing.Color.Transparent
@@ -566,32 +557,41 @@ Partial Class AdminMainScreen
         Me.ActionApprovalManagement.State = False
         Me.ActionApprovalManagement.TabIndex = 22
         '
-        'Label2
+        'ImageShower1
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(938, 100)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 14)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "LOG OUT"
+        Me.ImageShower1.BackColor = System.Drawing.Color.Transparent
+        Me.ImageShower1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageShower1.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
+        Me.ImageShower1.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
+        Me.ImageShower1.Location = New System.Drawing.Point(238, 31)
+        Me.ImageShower1.Name = "ImageShower1"
+        Me.ImageShower1.Size = New System.Drawing.Size(108, 86)
+        Me.ImageShower1.State = False
+        Me.ImageShower1.TabIndex = 20
         '
-        'PictureBox1
+        'ImageShower2
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.flaticon_logout
-        Me.PictureBox1.Location = New System.Drawing.Point(938, 17)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(82, 75)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
+        Me.ImageShower2.BackColor = System.Drawing.Color.Transparent
+        Me.ImageShower2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageShower2.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
+        Me.ImageShower2.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
+        Me.ImageShower2.Location = New System.Drawing.Point(96, 27)
+        Me.ImageShower2.Name = "ImageShower2"
+        Me.ImageShower2.Size = New System.Drawing.Size(108, 90)
+        Me.ImageShower2.State = False
+        Me.ImageShower2.TabIndex = 20
+        '
+        'ImageShower3
+        '
+        Me.ImageShower3.BackColor = System.Drawing.Color.Transparent
+        Me.ImageShower3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ImageShower3.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
+        Me.ImageShower3.EnabledImage = Global.CAI.My.Resources.Resources.test_management
+        Me.ImageShower3.Location = New System.Drawing.Point(377, 30)
+        Me.ImageShower3.Name = "ImageShower3"
+        Me.ImageShower3.Size = New System.Drawing.Size(108, 86)
+        Me.ImageShower3.State = False
+        Me.ImageShower3.TabIndex = 21
         '
         'AdminMainScreen
         '

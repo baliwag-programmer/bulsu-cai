@@ -29,7 +29,6 @@
                 title = "MONITORING"
                 BTNCreate.Visible = False
                 BTNEdit.Visible = False
-                Button1.SetBounds(BTNApprovedBlocked.Location.X, BTNApprovedBlocked.Location.Y, BTNApprovedBlocked.Width, BTNApprovedBlocked.Height)
                 for_approval = False
             Case UserList.Role.Student
                 title = "STUDENT MANAGEMENT"
