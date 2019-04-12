@@ -29,7 +29,8 @@ Public Class UserEdit
 
     Sub fetchDetails()
         Try
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("SELECT id, username, lastname, firstname, middlename, dp FROM users WHERE id = @id", Database.GetInstance.GetConnection)
+            Dim UpdatedBySQL = "SELECT concat(lastname,', ',firstname,', ',middlename) FROM users as updated_by_details WHERE updated_by_details.id = IF(ISNULL(users.updated_by), users.id, users.updated_by)"
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(String.Format("SELECT id, username, lastname, firstname, middlename, dp, DATE_FORMAT(updated_at, '%a %b %d, %Y @ %h:%m') as updated_at, ({0}) as last_updated_by FROM users WHERE id = @id", UpdatedBySQL), Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@id", Me.user_id)
             Dim reader = command.ExecuteReader
             If Not reader.Read Then
@@ -44,6 +45,9 @@ Public Class UserEdit
             Dim middle_name = IIf(IsDBNull(reader.GetValue(4)), "", reader.GetValue(4))
             Dim dp = Database.GetInstance.readerValue(reader, "dp")
             Dim avatar = ImageModule.Base64ToImage(dp)
+            Dim last_updated_date = Database.GetInstance.readerValue(reader, "updated_at")
+            Dim last_updated_by = Database.GetInstance.readerValue(reader, "last_updated_by")
+
             pict_user_pict.Image = My.Resources.icons8_user_96
             reader.Close()
 
@@ -51,12 +55,17 @@ Public Class UserEdit
             txt_last_name.Text = last_name
             txt_first_name.Text = first_name
             txt_middle.Text = middle_name
+
+            DisplayLastUpdatedBy.Text = last_updated_by
+            DisplayLastUpdatedDate.Text = last_updated_date
+            dp_profile = dp
+
             If Not avatar Is Nothing Then _
                 pict_user_pict.Image = avatar
 
         Catch ex As Exception
-            Console.WriteLine("Unable to fetch user details")
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
     End Sub
 
@@ -83,13 +92,14 @@ Public Class UserEdit
         Try
             If Not validation() Then _
                 Exit Sub
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("UPDATE users SET username = @username, lastname = @lastname, firstname = @firstname, middlename = @middlename, dp = @dp WHERE id = @id", Database.GetInstance.GetConnection)
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand("UPDATE users SET username = @username, lastname = @lastname, firstname = @firstname, middlename = @middlename, dp = @dp, updated_by = @updatedBy WHERE id = @id", Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@id", user_id)
             command.Parameters.AddWithValue("@dp", dp_profile)
             command.Parameters.AddWithValue("@username", txt_username.Text)
             command.Parameters.AddWithValue("@lastname", txt_last_name.Text)
             command.Parameters.AddWithValue("@firstname", txt_first_name.Text)
             command.Parameters.AddWithValue("@middlename", txt_middle.Text)
+            command.Parameters.AddWithValue("@updatedBy", Auth.GetInstance.id)
             command.ExecuteNonQuery()
             Dim logs = New LogsModel
             If Not user_id = Auth.GetInstance.id Then

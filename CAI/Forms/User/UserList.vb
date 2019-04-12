@@ -151,7 +151,7 @@
             auto_list.parameters = New List(Of CommandParameter)
 
             If Not filter = "" Then
-                query_rule = " AND EXISTS (SELECT * FROM users as filter_user WHERE filter_user.username LIKE @keyword OR filter_user.lastname LIKE @keyword OR filter_user.firstname LIKE @keyword OR filter_user.middlename LIKE @keyword AND users.id = filter_user.id)"
+                query_rule = " AND id IN (SELECT id FROM users as filter_user WHERE filter_user.username LIKE @keyword OR filter_user.lastname LIKE @keyword OR filter_user.firstname LIKE @keyword OR filter_user.middlename LIKE @keyword)"
                 auto_list.custom_Sql &= query_rule
                 auto_list.pagination_custom_Sql &= query_rule
             End If
@@ -349,4 +349,5 @@
         user_list.SelectedItems.Clear()
         fetchUsers()
     End Sub
+
 End Class

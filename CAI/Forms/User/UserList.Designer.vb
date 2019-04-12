@@ -422,7 +422,6 @@ Partial Class UserList
         Me.ClientSize = New System.Drawing.Size(1020, 562)
         Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.BTNPreview)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_user_name)
         Me.Controls.Add(Me.lbl_reigestered_since)
         Me.Controls.Add(Me.Label3)
@@ -439,6 +438,7 @@ Partial Class UserList
         Me.Controls.Add(Me.BTNCreate)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Controls.Add(Me.BTNApprovedBlocked)
+        Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
