@@ -25,6 +25,7 @@ Partial Class UserListRev2
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserListRev2))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.UserDetailWrapper = New System.Windows.Forms.Panel()
+        Me.pict_user_pict = New System.Windows.Forms.PictureBox()
         Me.ActionHideUserDetailWrapper = New System.Windows.Forms.Button()
         Me.BTNApprovedBlocked = New System.Windows.Forms.Button()
         Me.BTNPreview = New System.Windows.Forms.Button()
@@ -36,7 +37,6 @@ Partial Class UserListRev2
         Me.LabelDisplayUsername = New System.Windows.Forms.Label()
         Me.DisplayRegisteredSince = New System.Windows.Forms.Label()
         Me.LabelDisplayRegisteredSince = New System.Windows.Forms.Label()
-        Me.pict_user_pict = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btn_prev = New System.Windows.Forms.Button()
@@ -112,6 +112,19 @@ Partial Class UserListRev2
         Me.UserDetailWrapper.Name = "UserDetailWrapper"
         Me.UserDetailWrapper.Size = New System.Drawing.Size(262, 363)
         Me.UserDetailWrapper.TabIndex = 0
+        '
+        'pict_user_pict
+        '
+        Me.pict_user_pict.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pict_user_pict.BackColor = System.Drawing.Color.White
+        Me.pict_user_pict.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pict_user_pict.Image = Global.CAI.My.Resources.Resources.icons8_user_96
+        Me.pict_user_pict.Location = New System.Drawing.Point(70, 25)
+        Me.pict_user_pict.Name = "pict_user_pict"
+        Me.pict_user_pict.Size = New System.Drawing.Size(120, 112)
+        Me.pict_user_pict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pict_user_pict.TabIndex = 55
+        Me.pict_user_pict.TabStop = False
         '
         'ActionHideUserDetailWrapper
         '
@@ -267,19 +280,6 @@ Partial Class UserListRev2
         Me.LabelDisplayRegisteredSince.TabIndex = 56
         Me.LabelDisplayRegisteredSince.Text = "REGISTERED SINCE :"
         Me.LabelDisplayRegisteredSince.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pict_user_pict
-        '
-        Me.pict_user_pict.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pict_user_pict.BackColor = System.Drawing.Color.White
-        Me.pict_user_pict.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pict_user_pict.Image = Global.CAI.My.Resources.Resources.icons8_user_96
-        Me.pict_user_pict.Location = New System.Drawing.Point(70, 25)
-        Me.pict_user_pict.Name = "pict_user_pict"
-        Me.pict_user_pict.Size = New System.Drawing.Size(120, 112)
-        Me.pict_user_pict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pict_user_pict.TabIndex = 55
-        Me.pict_user_pict.TabStop = False
         '
         'Panel1
         '

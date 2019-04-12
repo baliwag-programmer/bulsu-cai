@@ -22,12 +22,13 @@ Public Class UserListRev2
         End With
     End Sub
 
-    Private Sub OnActionClick(sender As Object, e As EventArgs) Handles ActionClose.Click, BTNEdit.Click, BTNCreate.Click
+    Private Sub OnActionClick(sender As Object, e As EventArgs) Handles ActionClose.Click, BTNEdit.Click, BTNCreate.Click, BTNTrash.Click
         If sender Is BTNCreate Then
             Dim AccountForm As New UserForm(UserForm.Mode.Create)
             Me.Hide()
             AccountForm.ShowDialog()
             Me.Show()
+            FetchUsers(KeywordFilter.Text)
         End If
 
         If sender Is ActionClose Then
@@ -47,8 +48,28 @@ Public Class UserListRev2
         End If
 
         If sender Is BTNTrash Then
-
+            DestroyData()
         End If
+    End Sub
+
+    Private Sub DestroyData()
+        Dim confirm = MsgBox("Are you sure to delete selected account?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Are you sure?")
+        If confirm = MsgBoxResult.No Then _
+            Exit Sub
+
+        Dim selected = user_list.SelectedItems(0).Text
+        Try
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand("DELETE FROM users WHERE id = @id", Database.GetInstance().GetConnection())
+            command.Parameters.AddWithValue("@id", selected)
+            command.ExecuteNonQuery()
+
+            MsgBox("Successfully deleted user account.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success")
+            user_list.SelectedItems.Clear()
+        Catch ex As MySql.Data.MySqlClient.MySqlException
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
+        End Try
+        FetchUsers(KeywordFilter.Text)
     End Sub
 
     Private Sub ShowUserDetails(show As Boolean)
@@ -245,4 +266,5 @@ Public Class UserListRev2
             End If
         End If
     End Sub
+
 End Class
