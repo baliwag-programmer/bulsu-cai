@@ -37,8 +37,10 @@ Partial Class MultipleChoice
         '
         'lbl_question
         '
+        Me.lbl_question.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_question.Dock = System.Windows.Forms.DockStyle.Top
         Me.lbl_question.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_question.ForeColor = System.Drawing.Color.Black
         Me.lbl_question.Location = New System.Drawing.Point(0, 0)
         Me.lbl_question.Name = "lbl_question"
         Me.lbl_question.Padding = New System.Windows.Forms.Padding(19, 0, 0, 0)
@@ -67,6 +69,7 @@ Partial Class MultipleChoice
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -89,13 +92,15 @@ Partial Class MultipleChoice
         '
         Me.rad_d.AutoSize = True
         Me.rad_d.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_d.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.rad_d.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rad_d.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_d.ForeColor = System.Drawing.Color.Black
         Me.rad_d.Location = New System.Drawing.Point(476, 76)
         Me.rad_d.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_d.Name = "rad_d"
         Me.rad_d.Padding = New System.Windows.Forms.Padding(19, 0, 0, 0)
-        Me.rad_d.Size = New System.Drawing.Size(467, 74)
+        Me.rad_d.Size = New System.Drawing.Size(466, 73)
         Me.rad_d.TabIndex = 3
         Me.rad_d.TabStop = True
         Me.rad_d.UseVisualStyleBackColor = True
@@ -104,13 +109,15 @@ Partial Class MultipleChoice
         '
         Me.rad_c.AutoSize = True
         Me.rad_c.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_c.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.rad_c.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.rad_c.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_c.ForeColor = System.Drawing.Color.Black
-        Me.rad_c.Location = New System.Drawing.Point(3, 76)
+        Me.rad_c.Location = New System.Drawing.Point(4, 76)
         Me.rad_c.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_c.Name = "rad_c"
         Me.rad_c.Padding = New System.Windows.Forms.Padding(19, 0, 0, 0)
-        Me.rad_c.Size = New System.Drawing.Size(467, 74)
+        Me.rad_c.Size = New System.Drawing.Size(465, 73)
         Me.rad_c.TabIndex = 2
         Me.rad_c.TabStop = True
         Me.rad_c.UseVisualStyleBackColor = True
@@ -119,13 +126,15 @@ Partial Class MultipleChoice
         '
         Me.rad_b.AutoSize = True
         Me.rad_b.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_b.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.rad_b.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.rad_b.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_b.ForeColor = System.Drawing.Color.Black
-        Me.rad_b.Location = New System.Drawing.Point(476, 4)
+        Me.rad_b.Location = New System.Drawing.Point(476, 5)
         Me.rad_b.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_b.Name = "rad_b"
         Me.rad_b.Padding = New System.Windows.Forms.Padding(19, 0, 0, 0)
-        Me.rad_b.Size = New System.Drawing.Size(467, 64)
+        Me.rad_b.Size = New System.Drawing.Size(466, 62)
         Me.rad_b.TabIndex = 1
         Me.rad_b.TabStop = True
         Me.rad_b.UseVisualStyleBackColor = True
@@ -134,13 +143,15 @@ Partial Class MultipleChoice
         '
         Me.rad_a.AutoSize = True
         Me.rad_a.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_a.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.rad_a.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.rad_a.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_a.ForeColor = System.Drawing.Color.Black
-        Me.rad_a.Location = New System.Drawing.Point(3, 4)
+        Me.rad_a.Location = New System.Drawing.Point(4, 5)
         Me.rad_a.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_a.Name = "rad_a"
         Me.rad_a.Padding = New System.Windows.Forms.Padding(19, 0, 0, 0)
-        Me.rad_a.Size = New System.Drawing.Size(467, 64)
+        Me.rad_a.Size = New System.Drawing.Size(465, 62)
         Me.rad_a.TabIndex = 0
         Me.rad_a.TabStop = True
         Me.rad_a.UseVisualStyleBackColor = True
