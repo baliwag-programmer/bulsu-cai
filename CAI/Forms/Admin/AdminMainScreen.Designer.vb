@@ -54,13 +54,13 @@ Partial Class AdminMainScreen
         Me.BTNAccountManagement = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ActionViewTestResults = New CAI.ImageShower()
+        Me.ActionViewLessons = New CAI.ImageShower()
+        Me.ActionViewTests = New CAI.ImageShower()
         Me.ActionLessonManagement = New CAI.ImageShower()
         Me.ActionStudentManagement = New CAI.ImageShower()
         Me.ActionTestManagement = New CAI.ImageShower()
         Me.ActionApprovalManagement = New CAI.ImageShower()
-        Me.ActionViewTestResults = New CAI.ImageShower()
-        Me.ActionViewLessons = New CAI.ImageShower()
-        Me.ActionViewTests = New CAI.ImageShower()
         Me.Panel1.SuspendLayout()
         CType(Me.Avatar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,9 +222,9 @@ Partial Class AdminMainScreen
         Me.AdminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.AdminPanel.Controls.Add(Me.LabelDate)
         Me.AdminPanel.Controls.Add(Me.LabelTime)
-        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
         Me.AdminPanel.Controls.Add(Me.InstructorControlPanel)
         Me.AdminPanel.Controls.Add(Me.AdministratorControlPanel)
+        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
         Me.AdminPanel.Location = New System.Drawing.Point(347, -8)
         Me.AdminPanel.Name = "AdminPanel"
         Me.AdminPanel.Size = New System.Drawing.Size(586, 596)
@@ -509,6 +509,42 @@ Partial Class AdminMainScreen
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'ActionViewTestResults
+        '
+        Me.ActionViewTestResults.BackColor = System.Drawing.Color.Transparent
+        Me.ActionViewTestResults.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionViewTestResults.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
+        Me.ActionViewTestResults.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
+        Me.ActionViewTestResults.Location = New System.Drawing.Point(238, 31)
+        Me.ActionViewTestResults.Name = "ActionViewTestResults"
+        Me.ActionViewTestResults.Size = New System.Drawing.Size(108, 86)
+        Me.ActionViewTestResults.State = True
+        Me.ActionViewTestResults.TabIndex = 20
+        '
+        'ActionViewLessons
+        '
+        Me.ActionViewLessons.BackColor = System.Drawing.Color.Transparent
+        Me.ActionViewLessons.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionViewLessons.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
+        Me.ActionViewLessons.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
+        Me.ActionViewLessons.Location = New System.Drawing.Point(96, 27)
+        Me.ActionViewLessons.Name = "ActionViewLessons"
+        Me.ActionViewLessons.Size = New System.Drawing.Size(108, 90)
+        Me.ActionViewLessons.State = True
+        Me.ActionViewLessons.TabIndex = 20
+        '
+        'ActionViewTests
+        '
+        Me.ActionViewTests.BackColor = System.Drawing.Color.Transparent
+        Me.ActionViewTests.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionViewTests.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
+        Me.ActionViewTests.EnabledImage = Global.CAI.My.Resources.Resources.test_management
+        Me.ActionViewTests.Location = New System.Drawing.Point(377, 30)
+        Me.ActionViewTests.Name = "ActionViewTests"
+        Me.ActionViewTests.Size = New System.Drawing.Size(108, 86)
+        Me.ActionViewTests.State = True
+        Me.ActionViewTests.TabIndex = 21
+        '
         'ActionLessonManagement
         '
         Me.ActionLessonManagement.BackColor = System.Drawing.Color.Transparent
@@ -556,42 +592,6 @@ Partial Class AdminMainScreen
         Me.ActionApprovalManagement.Size = New System.Drawing.Size(108, 86)
         Me.ActionApprovalManagement.State = False
         Me.ActionApprovalManagement.TabIndex = 22
-        '
-        'ActionViewTestResults
-        '
-        Me.ActionViewTestResults.BackColor = System.Drawing.Color.Transparent
-        Me.ActionViewTestResults.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionViewTestResults.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
-        Me.ActionViewTestResults.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
-        Me.ActionViewTestResults.Location = New System.Drawing.Point(238, 31)
-        Me.ActionViewTestResults.Name = "ActionViewTestResults"
-        Me.ActionViewTestResults.Size = New System.Drawing.Size(108, 86)
-        Me.ActionViewTestResults.State = True
-        Me.ActionViewTestResults.TabIndex = 20
-        '
-        'ActionViewLessons
-        '
-        Me.ActionViewLessons.BackColor = System.Drawing.Color.Transparent
-        Me.ActionViewLessons.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionViewLessons.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
-        Me.ActionViewLessons.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
-        Me.ActionViewLessons.Location = New System.Drawing.Point(96, 27)
-        Me.ActionViewLessons.Name = "ActionViewLessons"
-        Me.ActionViewLessons.Size = New System.Drawing.Size(108, 90)
-        Me.ActionViewLessons.State = True
-        Me.ActionViewLessons.TabIndex = 20
-        '
-        'ActionViewTests
-        '
-        Me.ActionViewTests.BackColor = System.Drawing.Color.Transparent
-        Me.ActionViewTests.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionViewTests.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
-        Me.ActionViewTests.EnabledImage = Global.CAI.My.Resources.Resources.test_management
-        Me.ActionViewTests.Location = New System.Drawing.Point(377, 30)
-        Me.ActionViewTests.Name = "ActionViewTests"
-        Me.ActionViewTests.Size = New System.Drawing.Size(108, 86)
-        Me.ActionViewTests.State = True
-        Me.ActionViewTests.TabIndex = 21
         '
         'AdminMainScreen
         '

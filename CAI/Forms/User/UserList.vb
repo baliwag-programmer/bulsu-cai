@@ -42,6 +42,7 @@
 
         If for_approval Then
             BTNApprovedBlocked.Location = BTNEdit.Location
+            BTNDeclineAction.SetBounds(BTNCreate.Location.X, BTNDeclineAction.Location.Y, BTNDeclineAction.Width, BTNDeclineAction.Height)
         Else
             BTNTrash.Location = BTNEdit.Location
             BTNEdit.Location = BTNCreate.Location
@@ -50,6 +51,7 @@
 
         If Auth.GetInstance().role.name = "instructor" Then
             BTNApprovedBlocked.Visible = for_approval
+            BTNDeclineAction.Visible = for_approval
             BTNCreate.Visible = Not for_approval
             BTNEdit.Visible = Not for_approval
             BTNTrash.Visible = Not for_approval
@@ -235,6 +237,7 @@
         BTNTrash.Enabled = items.Count > 0 And Not Auth.GetInstance.isPreview
         BTNPreview.Enabled = items.Count > 0 And Not Auth.GetInstance.isPreview
         BTNApprovedBlocked.Enabled = items.Count > 0 And Not Auth.GetInstance.isPreview
+        BTNDeclineAction.Enabled = BTNApprovedBlocked.Enabled
 
         pict_user_pict.Image = My.Resources.icons8_user_96
 
@@ -342,8 +345,28 @@
             command.ExecuteScalar()
             MsgBox("Successfully approved student.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success.")
         Catch ex As Exception
-            Console.WriteLine("Unable to approved student data.")
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
+        End Try
+        user_list.SelectedItems.Clear()
+        fetchUsers()
+    End Sub
+
+    Private Sub BTNDecline(sender As System.Object, e As System.EventArgs) Handles BTNDeclineAction.Click
+        Dim confirm = MsgBox("Are you sure to decline this student?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Are you sure?")
+        If Not confirm = MsgBoxResult.Yes Then _
+            Exit Sub
+
+        Try
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand("DELETE FROM users WHERE id = @id", Database.GetInstance.GetConnection)
+            With command.Parameters
+                .AddWithValue("@id", user_list.SelectedItems(0).Text)
+            End With
+            command.ExecuteScalar()
+            MsgBox("Successfully decline student.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success.")
+        Catch ex As Exception
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
         user_list.SelectedItems.Clear()
         fetchUsers()

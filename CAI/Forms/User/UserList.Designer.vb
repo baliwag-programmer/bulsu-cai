@@ -27,7 +27,6 @@ Partial Class UserList
         Me.form_title = New System.Windows.Forms.Label()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.BTNEdit = New System.Windows.Forms.Button()
         Me.BTNTrash = New System.Windows.Forms.Button()
         Me.BTNCreate = New System.Windows.Forms.Button()
@@ -52,6 +51,7 @@ Partial Class UserList
         Me.BTNPreview = New System.Windows.Forms.Button()
         Me.BTNApprovedBlocked = New System.Windows.Forms.Button()
         Me.Heading1 = New CAI.Heading()
+        Me.BTNDeclineAction = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,16 +101,6 @@ Partial Class UserList
         Me.LineShape2.X2 = 408
         Me.LineShape2.Y1 = 55
         Me.LineShape2.Y2 = 55
-        '
-        'ShapeContainer1
-        '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
-        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
-        Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1020, 562)
-        Me.ShapeContainer1.TabIndex = 15
-        Me.ShapeContainer1.TabStop = False
         '
         'BTNEdit
         '
@@ -393,7 +383,7 @@ Partial Class UserList
         Me.BTNApprovedBlocked.ForeColor = System.Drawing.Color.White
         Me.BTNApprovedBlocked.Image = Global.CAI.My.Resources.Resources.icons8_ok_48
         Me.BTNApprovedBlocked.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNApprovedBlocked.Location = New System.Drawing.Point(470, 133)
+        Me.BTNApprovedBlocked.Location = New System.Drawing.Point(467, 133)
         Me.BTNApprovedBlocked.Name = "BTNApprovedBlocked"
         Me.BTNApprovedBlocked.Size = New System.Drawing.Size(85, 71)
         Me.BTNApprovedBlocked.TabIndex = 62
@@ -413,6 +403,27 @@ Partial Class UserList
         Me.Heading1.Size = New System.Drawing.Size(1020, 127)
         Me.Heading1.TabIndex = 63
         Me.Heading1.Title = "ACCOUNT MANAGEMENT"
+        '
+        'BTNDeclineAction
+        '
+        Me.BTNDeclineAction.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTNDeclineAction.BackColor = System.Drawing.Color.Transparent
+        Me.BTNDeclineAction.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNDeclineAction.Enabled = False
+        Me.BTNDeclineAction.FlatAppearance.BorderSize = 0
+        Me.BTNDeclineAction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNDeclineAction.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNDeclineAction.ForeColor = System.Drawing.Color.White
+        Me.BTNDeclineAction.Image = Global.CAI.My.Resources.Resources.icons8_decline
+        Me.BTNDeclineAction.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNDeclineAction.Location = New System.Drawing.Point(376, 140)
+        Me.BTNDeclineAction.Name = "BTNDeclineAction"
+        Me.BTNDeclineAction.Size = New System.Drawing.Size(85, 71)
+        Me.BTNDeclineAction.TabIndex = 64
+        Me.BTNDeclineAction.Text = "DECLINE"
+        Me.BTNDeclineAction.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNDeclineAction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.BTNDeclineAction.UseVisualStyleBackColor = False
         '
         'UserList
         '
@@ -435,10 +446,10 @@ Partial Class UserList
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BTNEdit)
         Me.Controls.Add(Me.BTNCreate)
-        Me.Controls.Add(Me.ShapeContainer1)
         Me.Controls.Add(Me.BTNApprovedBlocked)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BTNTrash)
+        Me.Controls.Add(Me.BTNDeclineAction)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -482,6 +493,6 @@ Partial Class UserList
     Friend WithEvents BTNApprovedBlocked As System.Windows.Forms.Button
     Private WithEvents LineShape1 As PowerPacks.LineShape
     Private WithEvents LineShape2 As PowerPacks.LineShape
-    Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents Heading1 As Heading
+    Friend WithEvents BTNDeclineAction As Button
 End Class
