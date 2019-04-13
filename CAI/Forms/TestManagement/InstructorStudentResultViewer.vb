@@ -2,11 +2,7 @@
 
     Private current_test = 0
     Sub New(Optional ByRef id As Integer = 0)
-
-        ' This call is required by the designer.
         InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
         current_test = id
     End Sub
 
@@ -15,13 +11,12 @@
     End Sub
 
     Sub loadUserDetails()
+        dp_user_profile.Image = My.Resources.icons8_user_96
         lbl_username.Text = Auth.GetInstance.username
         lbl_name.Text = String.Format("{0}, {1}, {2}", Auth.GetInstance.last_name, Auth.GetInstance.first_name, Auth.GetInstance.middle_name)
 
         If Not Auth.GetInstance.dp = "" Then _
-            dp_user_profile.Image = Image.FromFile(Auth.GetInstance.dp)
-        If Auth.GetInstance.dp = "" Then _
-            dp_user_profile.Image = My.Resources.icons8_user_96
+            dp_user_profile.Image = ImageModule.Base64ToImage(Auth.GetInstance.dp)
     End Sub
 
     Sub fetchTestDetails()
@@ -34,13 +29,13 @@
             If reader.Read Then
                 LBLTitlte.Text = Database.GetInstance.readerValue(reader, "title")
                 LBLDescription.Text = Database.GetInstance.readerValue(reader, "description")
-                LBLDuration.Text = String.Format("{0:00}:{1:00}", Database.GetInstance.readerValue(reader, "duration_hour"), _
+                LBLDuration.Text = String.Format("{0:00}:{1:00}", Database.GetInstance.readerValue(reader, "duration_hour"),
                                                  Database.GetInstance.readerValue(reader, "duration_minute"))
             End If
             reader.Close()
         Catch ex As Exception
-            Console.WriteLine("Sorry unable to fetch details")
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
     End Sub
 
@@ -68,7 +63,7 @@
                 li.SubItems.Add(String.Format("{0:00}", items - score))
                 li.SubItems.Add(String.Format("{0:00}", avg))
                 list_results.Items.Add(li)
-                
+
                 If avg < 50 Then _
                     total_failed += 1
                 If avg >= 50 Then _
@@ -78,8 +73,8 @@
             reader.Close()
             LBLIndication.Text = String.Format("Total Student : {0:00} | Total Student Passed : {1:00} | Total Student Failed : {2:00}", total_student, total_passed, total_failed)
         Catch ex As Exception
-            Console.WriteLine("Sorry unable to fetch students")
-            Console.WriteLine(ex)
+            LoggerModule.createLog(Me.ToString, LogType.Err)
+            LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
     End Sub
 

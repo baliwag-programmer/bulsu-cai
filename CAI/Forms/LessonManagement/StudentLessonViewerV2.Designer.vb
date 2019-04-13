@@ -34,9 +34,9 @@ Partial Class StudentLessonViewerV2
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackColor = System.Drawing.Color.Green
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 151)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1114, 581)
+        Me.Panel1.Size = New System.Drawing.Size(1114, 732)
         Me.Panel1.TabIndex = 0
         '
         'Button1
@@ -60,7 +60,6 @@ Partial Class StudentLessonViewerV2
         '
         'lbl_date
         '
-        Me.lbl_date.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_date.AutoSize = True
         Me.lbl_date.BackColor = System.Drawing.Color.Transparent
         Me.lbl_date.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -73,7 +72,6 @@ Partial Class StudentLessonViewerV2
         '
         'lbl_time
         '
-        Me.lbl_time.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_time.AutoSize = True
         Me.lbl_time.BackColor = System.Drawing.Color.Transparent
         Me.lbl_time.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -103,9 +101,9 @@ Partial Class StudentLessonViewerV2
         Me.ClientSize = New System.Drawing.Size(1114, 732)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_date)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lbl_time)
         Me.Controls.Add(Me.Heading1)
+        Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Verdana", 8.25!)
         Me.Name = "StudentLessonViewerV2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -184,6 +184,9 @@ Public Class AdminMainScreen
         Else
             control.Cursor = Cursors.No
         End If
+
+        LabelActionApprovalManagement.Cursor = ActionApprovalManagement.Cursor
+        LabelActionApprovalManagement.Enabled = ActionApprovalManagement.State
     End Sub
 
     Private Sub OnStudentAction(sender As Object, e As EventArgs) Handles ActionViewTests.OnClicked, ActionViewLessons.OnClicked, ActionViewTestResults.OnClicked, LabelActionViewLessons.Click, LabelActionViewTestResults.Click, LabelActionViewTests.Click
@@ -206,4 +209,5 @@ Public Class AdminMainScreen
             Me.Show()
         End If
     End Sub
+
 End Class

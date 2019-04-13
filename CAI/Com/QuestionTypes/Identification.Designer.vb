@@ -44,7 +44,7 @@ Partial Class Identification
         'txt_answer
         '
         Me.txt_answer.Location = New System.Drawing.Point(70, 17)
-        Me.txt_answer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txt_answer.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_answer.Name = "txt_answer"
         Me.txt_answer.Size = New System.Drawing.Size(395, 27)
         Me.txt_answer.TabIndex = 2
@@ -98,13 +98,14 @@ Partial Class Identification
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.White
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.lbl_main_question)
         Me.Controls.Add(Me.txt_answer)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Controls.Add(Me.lbl_number)
         Me.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Identification"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 14)
         Me.Size = New System.Drawing.Size(1151, 75)

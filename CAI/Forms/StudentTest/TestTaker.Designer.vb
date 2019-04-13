@@ -150,8 +150,8 @@ Partial Class TestTaker
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lock_container.BackColor = System.Drawing.Color.Transparent
-        Me.lock_container.Controls.Add(Me.lbl_indicator)
         Me.lock_container.Controls.Add(Me.img_lock_indication)
+        Me.lock_container.Controls.Add(Me.lbl_indicator)
         Me.lock_container.Location = New System.Drawing.Point(1, 0)
         Me.lock_container.Margin = New System.Windows.Forms.Padding(4)
         Me.lock_container.Name = "lock_container"
