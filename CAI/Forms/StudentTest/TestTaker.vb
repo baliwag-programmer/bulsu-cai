@@ -19,6 +19,14 @@
         current_test = id
     End Sub
 
+    Private Sub OnDateTimeChanged(ByRef CurrentDateTime As Date)
+        Try
+            Me.lbl_date.Text = Format(CurrentDateTime, "Long Date")
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
     Sub fetchQuestions()
         Try
             Dim command = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM questions WHERE test_id = @test", Database.GetInstance.GetConnection)
@@ -42,7 +50,7 @@
             Dim item_number As Integer = 1
             Dim next_y As Integer = 0
             next_y = TXTInstruction.Location.Y + TXTInstruction.Height + 5
-            While questions.Count - 6 > 0
+            While questions.Count - 5 > 0
                 Dim index As Integer = random.Next(0, questions.Count)
                 Dim question = questions(index)
 
@@ -168,6 +176,7 @@
     End Sub
 
     Private Sub TestTaker_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        AddHandler My.Application.OnDateTimeChanged, AddressOf OnDateTimeChanged
         fetchDetails()
     End Sub
 

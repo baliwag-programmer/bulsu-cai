@@ -63,9 +63,9 @@ Public Class TestForm
             current_test = command.ExecuteScalar()
 
             ' Create 10 question items
-            For x As Integer = 0 To TXTTotal.Text + 5
+            For x As Integer = 1 To TXTTotal.Text + 5
                 Dim question = New QuestionModel
-                question.attributes.question = String.Format("Question {0}", x + 1)
+                question.attributes.question = String.Format("Question {0}", x)
                 question.attributes.test_id = current_test
                 question.attributes.type = CMBQuestionType.Text
                 question = question.create()

@@ -34,18 +34,19 @@ Partial Class Identification
         '
         Me.lbl_number.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_number.Location = New System.Drawing.Point(0, 0)
+        Me.lbl_number.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_number.Name = "lbl_number"
-        Me.lbl_number.Padding = New System.Windows.Forms.Padding(19, 18, 0, 0)
-        Me.lbl_number.Size = New System.Drawing.Size(378, 54)
+        Me.lbl_number.Padding = New System.Windows.Forms.Padding(24, 20, 0, 0)
+        Me.lbl_number.Size = New System.Drawing.Size(472, 61)
         Me.lbl_number.TabIndex = 1
         Me.lbl_number.Text = "1. )"
         '
         'txt_answer
         '
-        Me.txt_answer.Location = New System.Drawing.Point(56, 15)
-        Me.txt_answer.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txt_answer.Location = New System.Drawing.Point(70, 17)
+        Me.txt_answer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_answer.Name = "txt_answer"
-        Me.txt_answer.Size = New System.Drawing.Size(317, 23)
+        Me.txt_answer.Size = New System.Drawing.Size(395, 27)
         Me.txt_answer.TabIndex = 2
         '
         'lbl_main_question
@@ -53,9 +54,10 @@ Partial Class Identification
         Me.lbl_main_question.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_main_question.BackColor = System.Drawing.Color.Transparent
-        Me.lbl_main_question.Location = New System.Drawing.Point(383, 18)
+        Me.lbl_main_question.Location = New System.Drawing.Point(479, 20)
+        Me.lbl_main_question.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_main_question.Name = "lbl_main_question"
-        Me.lbl_main_question.Size = New System.Drawing.Size(535, 16)
+        Me.lbl_main_question.Size = New System.Drawing.Size(669, 18)
         Me.lbl_main_question.TabIndex = 3
         '
         'ShapeContainer1
@@ -64,7 +66,7 @@ Partial Class Identification
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(691, 44)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1151, 61)
         Me.ShapeContainer1.TabIndex = 4
         Me.ShapeContainer1.TabStop = False
         '
@@ -75,9 +77,9 @@ Partial Class Identification
         Me.LineShape2.BorderColor = System.Drawing.Color.White
         Me.LineShape2.Name = "LineShape2"
         Me.LineShape2.X1 = -4
-        Me.LineShape2.X2 = 694
-        Me.LineShape2.Y1 = 1
-        Me.LineShape2.Y2 = 1
+        Me.LineShape2.X2 = 1154
+        Me.LineShape2.Y1 = 18
+        Me.LineShape2.Y2 = 18
         '
         'LineShape1
         '
@@ -86,13 +88,13 @@ Partial Class Identification
         Me.LineShape1.BorderColor = System.Drawing.Color.White
         Me.LineShape1.Name = "LineShape1"
         Me.LineShape1.X1 = -2
-        Me.LineShape1.X2 = 696
-        Me.LineShape1.Y1 = 43
-        Me.LineShape1.Y2 = 43
+        Me.LineShape1.X2 = 1156
+        Me.LineShape1.Y1 = 60
+        Me.LineShape1.Y2 = 60
         '
         'Identification
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
@@ -101,11 +103,11 @@ Partial Class Identification
         Me.Controls.Add(Me.txt_answer)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Controls.Add(Me.lbl_number)
-        Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Identification"
-        Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 12)
-        Me.Size = New System.Drawing.Size(921, 66)
+        Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 14)
+        Me.Size = New System.Drawing.Size(1151, 75)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

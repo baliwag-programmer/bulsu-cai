@@ -38,7 +38,7 @@ Partial Class MultipleChoice
         'lbl_question
         '
         Me.lbl_question.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lbl_question.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_question.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_question.Location = New System.Drawing.Point(0, 0)
         Me.lbl_question.Name = "lbl_question"
         Me.lbl_question.Padding = New System.Windows.Forms.Padding(19, 0, 0, 0)
@@ -89,6 +89,7 @@ Partial Class MultipleChoice
         '
         Me.rad_d.AutoSize = True
         Me.rad_d.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_d.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_d.ForeColor = System.Drawing.Color.White
         Me.rad_d.Location = New System.Drawing.Point(476, 76)
         Me.rad_d.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -103,6 +104,7 @@ Partial Class MultipleChoice
         '
         Me.rad_c.AutoSize = True
         Me.rad_c.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_c.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_c.ForeColor = System.Drawing.Color.White
         Me.rad_c.Location = New System.Drawing.Point(3, 76)
         Me.rad_c.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -117,6 +119,7 @@ Partial Class MultipleChoice
         '
         Me.rad_b.AutoSize = True
         Me.rad_b.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_b.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_b.ForeColor = System.Drawing.Color.White
         Me.rad_b.Location = New System.Drawing.Point(476, 4)
         Me.rad_b.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -131,6 +134,7 @@ Partial Class MultipleChoice
         '
         Me.rad_a.AutoSize = True
         Me.rad_a.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rad_a.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rad_a.ForeColor = System.Drawing.Color.White
         Me.rad_a.Location = New System.Drawing.Point(3, 4)
         Me.rad_a.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)

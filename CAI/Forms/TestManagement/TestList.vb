@@ -7,14 +7,13 @@
     Private Sub TestList_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         ComboType.SelectedItem = ComboType.Items(0)
 
+
         If Auth.GetInstance.role.name = "student" Or Auth.GetInstance.isPreview Then
             BTNCreate.Visible = False
             BTNEdit.Visible = False
             BTNTrash.Visible = False
             BTNLocker.Visible = False
             BTNStudentResults.Visible = False
-
-            Button1.Location = BTNTrash.Location
         End If
     End Sub
 
@@ -42,7 +41,7 @@
         auto_list.btn_next = lesson_next
         auto_list.btn_prev = lesson_prev
         auto_list.pagination = lesson_page
-        auto_list.custom_Sql = String.Format("SELECT tests.id, tests.title, tests.description, DATE_FORMAT(tests.created_at, '%a %b %d, %Y') as created_at, tests.type, IF(is_locked = 1, 'LOCKED', 'UNLOCKED') as locked_display, CONCAT(LPAD(duration_hour, 2, '0'), ':', LPAD(duration_minute, 2, '0')) as duration, COUNT(questions.id) as total_items, tests.is_locked FROM tests", Auth.GetInstance.id)
+        auto_list.custom_Sql = String.Format("SELECT tests.id, tests.title, tests.description, DATE_FORMAT(tests.created_at, '%a %b %d, %Y') as created_at, tests.type, IF(is_locked = 1, 'LOCKED', 'UNLOCKED') as locked_display, CONCAT(LPAD(duration_hour, 2, '0'), ':', LPAD(duration_minute, 2, '0')) as duration, COUNT(questions.id) - 5 as total_items, tests.is_locked FROM tests", Auth.GetInstance.id)
         auto_list.where = New List(Of Criteria)
         auto_list.orWhere = New List(Of OrCriteria)
         auto_list.parameters = New List(Of CommandParameter)
@@ -50,6 +49,7 @@
         auto_list.LeftOuterJoiner = New List(Of LeftOuterJoin)
         auto_list.GroupBy = New GroupBy
         auto_list.GroupBy.columns.Add("questions.test_id")
+        auto_list.GroupBy.columns.Add("tests.id")
 
         Dim join_question = New LeftOuterJoin
         join_question.table = "questions"

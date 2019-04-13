@@ -48,7 +48,7 @@ Partial Class TestTaker
         Me.Panel1.Controls.Add(Me.BTNSave)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 598)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1094, 84)
         Me.Panel1.TabIndex = 0
@@ -70,7 +70,7 @@ Partial Class TestTaker
         Me.lbl_time.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lbl_time.AutoSize = True
         Me.lbl_time.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_time.Location = New System.Drawing.Point(18, 2)
+        Me.lbl_time.Location = New System.Drawing.Point(18, 12)
         Me.lbl_time.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_time.Name = "lbl_time"
         Me.lbl_time.Size = New System.Drawing.Size(151, 32)
@@ -85,7 +85,7 @@ Partial Class TestTaker
         Me.BTNSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.BTNSave.Location = New System.Drawing.Point(916, 0)
-        Me.BTNSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BTNSave.Margin = New System.Windows.Forms.Padding(4)
         Me.BTNSave.Name = "BTNSave"
         Me.BTNSave.Size = New System.Drawing.Size(179, 84)
         Me.BTNSave.TabIndex = 11
@@ -98,7 +98,7 @@ Partial Class TestTaker
         Me.Panel3.Controls.Add(Me.lbl_title)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1094, 84)
         Me.Panel3.TabIndex = 2
@@ -126,7 +126,7 @@ Partial Class TestTaker
         Me.question_container.BackColor = System.Drawing.Color.Transparent
         Me.question_container.Controls.Add(Me.TXTInstruction)
         Me.question_container.Location = New System.Drawing.Point(-2, 83)
-        Me.question_container.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.question_container.Margin = New System.Windows.Forms.Padding(4)
         Me.question_container.Name = "question_container"
         Me.question_container.Size = New System.Drawing.Size(1098, 515)
         Me.question_container.TabIndex = 3
@@ -135,12 +135,12 @@ Partial Class TestTaker
         '
         Me.TXTInstruction.AutoSize = True
         Me.TXTInstruction.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TXTInstruction.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTInstruction.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TXTInstruction.Location = New System.Drawing.Point(0, 0)
         Me.TXTInstruction.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TXTInstruction.Name = "TXTInstruction"
         Me.TXTInstruction.Padding = New System.Windows.Forms.Padding(21, 20, 21, 0)
-        Me.TXTInstruction.Size = New System.Drawing.Size(139, 36)
+        Me.TXTInstruction.Size = New System.Drawing.Size(157, 38)
         Me.TXTInstruction.TabIndex = 0
         Me.TXTInstruction.Text = "Instruction :"
         '
@@ -153,7 +153,7 @@ Partial Class TestTaker
         Me.lock_container.Controls.Add(Me.lbl_indicator)
         Me.lock_container.Controls.Add(Me.img_lock_indication)
         Me.lock_container.Location = New System.Drawing.Point(1, 0)
-        Me.lock_container.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.lock_container.Margin = New System.Windows.Forms.Padding(4)
         Me.lock_container.Name = "lock_container"
         Me.lock_container.Size = New System.Drawing.Size(1092, 682)
         Me.lock_container.TabIndex = 4
@@ -175,7 +175,7 @@ Partial Class TestTaker
         Me.img_lock_indication.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.img_lock_indication.Image = Global.CAI.My.Resources.Resources.icons8_lock_96
         Me.img_lock_indication.Location = New System.Drawing.Point(459, 258)
-        Me.img_lock_indication.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.img_lock_indication.Margin = New System.Windows.Forms.Padding(4)
         Me.img_lock_indication.Name = "img_lock_indication"
         Me.img_lock_indication.Size = New System.Drawing.Size(176, 168)
         Me.img_lock_indication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -189,12 +189,12 @@ Partial Class TestTaker
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(1094, 682)
         Me.Controls.Add(Me.lock_container)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.question_container)
         Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.White
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "TestTaker"
         Me.RightToLeftLayout = True
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

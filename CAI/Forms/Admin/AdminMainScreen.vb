@@ -186,4 +186,24 @@ Public Class AdminMainScreen
         End If
     End Sub
 
+    Private Sub OnStudentAction(sender As Object, e As EventArgs) Handles ActionViewTests.OnClicked, ActionViewLessons.OnClicked, ActionViewTestResults.OnClicked, LabelActionViewLessons.Click, LabelActionViewTestResults.Click, LabelActionViewTests.Click
+        If sender Is ActionViewLessons Or sender Is LabelActionViewLessons Then
+            Dim form = New StudentLessonViewerV2
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+        If sender Is ActionViewTestResults Or sender Is LabelActionViewTestResults Then
+            Dim form = New StudentTestResult
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+        If sender Is ActionViewTests Or sender Is LabelActionViewTests Then
+            Dim form As New TestList
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+    End Sub
 End Class

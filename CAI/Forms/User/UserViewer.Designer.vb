@@ -225,7 +225,7 @@ Partial Class UserViewer
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(441, 264)
+        Me.BTNEdit.Location = New System.Drawing.Point(350, 264)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(85, 71)
         Me.BTNEdit.TabIndex = 62
@@ -245,7 +245,7 @@ Partial Class UserViewer
         Me.BTNPassword.ForeColor = System.Drawing.Color.White
         Me.BTNPassword.Image = Global.CAI.My.Resources.Resources.icons8_key_2_48
         Me.BTNPassword.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNPassword.Location = New System.Drawing.Point(350, 264)
+        Me.BTNPassword.Location = New System.Drawing.Point(259, 264)
         Me.BTNPassword.Name = "BTNPassword"
         Me.BTNPassword.Size = New System.Drawing.Size(85, 71)
         Me.BTNPassword.TabIndex = 61
@@ -264,7 +264,7 @@ Partial Class UserViewer
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(259, 264)
+        Me.Button1.Location = New System.Drawing.Point(441, 264)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 71)
         Me.Button1.TabIndex = 63

@@ -122,7 +122,7 @@ Partial Class TestList
         Me.txt_filter.Location = New System.Drawing.Point(69, 161)
         Me.txt_filter.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_filter.Name = "txt_filter"
-        Me.txt_filter.Size = New System.Drawing.Size(153, 30)
+        Me.txt_filter.Size = New System.Drawing.Size(172, 30)
         Me.txt_filter.TabIndex = 15
         '
         'Label1
@@ -265,7 +265,7 @@ Partial Class TestList
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(236, 170)
+        Me.Label3.Location = New System.Drawing.Point(259, 170)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 28
@@ -277,9 +277,9 @@ Partial Class TestList
         Me.ComboType.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.ComboType.FormattingEnabled = True
         Me.ComboType.Items.AddRange(New Object() {"PRE-TEST", "POST-TEST", "QUIZ", "ACTIVITY"})
-        Me.ComboType.Location = New System.Drawing.Point(286, 161)
+        Me.ComboType.Location = New System.Drawing.Point(309, 161)
         Me.ComboType.Name = "ComboType"
-        Me.ComboType.Size = New System.Drawing.Size(153, 31)
+        Me.ComboType.Size = New System.Drawing.Size(172, 31)
         Me.ComboType.TabIndex = 29
         '
         'Button1

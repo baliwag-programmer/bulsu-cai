@@ -41,6 +41,7 @@ Partial Class QuestionManagement
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Heading1 = New CAI.Heading()
+        Me.lbl_note = New System.Windows.Forms.Label()
         Me.ListContainer.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -162,7 +163,7 @@ Partial Class QuestionManagement
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1, Me.LineShape2})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(546, 570)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(757, 570)
         Me.ShapeContainer1.TabIndex = 29
         Me.ShapeContainer1.TabStop = False
         '
@@ -177,7 +178,7 @@ Partial Class QuestionManagement
         Me.BTNEdit.ForeColor = System.Drawing.Color.White
         Me.BTNEdit.Image = Global.CAI.My.Resources.Resources.edit
         Me.BTNEdit.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNEdit.Location = New System.Drawing.Point(672, 154)
+        Me.BTNEdit.Location = New System.Drawing.Point(587, 154)
         Me.BTNEdit.Name = "BTNEdit"
         Me.BTNEdit.Size = New System.Drawing.Size(73, 71)
         Me.BTNEdit.TabIndex = 31
@@ -196,7 +197,7 @@ Partial Class QuestionManagement
         Me.BTNCreate.ForeColor = System.Drawing.Color.White
         Me.BTNCreate.Image = Global.CAI.My.Resources.Resources.add
         Me.BTNCreate.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCreate.Location = New System.Drawing.Point(589, 154)
+        Me.BTNCreate.Location = New System.Drawing.Point(506, 154)
         Me.BTNCreate.Name = "BTNCreate"
         Me.BTNCreate.Size = New System.Drawing.Size(73, 71)
         Me.BTNCreate.TabIndex = 30
@@ -232,7 +233,7 @@ Partial Class QuestionManagement
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(506, 152)
+        Me.Button1.Location = New System.Drawing.Point(668, 152)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 34
@@ -252,12 +253,23 @@ Partial Class QuestionManagement
         Me.Heading1.TabIndex = 49
         Me.Heading1.Title = "QUESTIONS"
         '
+        'lbl_note
+        '
+        Me.lbl_note.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_note.Location = New System.Drawing.Point(9, 136)
+        Me.lbl_note.Name = "lbl_note"
+        Me.lbl_note.Size = New System.Drawing.Size(503, 39)
+        Me.lbl_note.TabIndex = 50
+        Me.lbl_note.Text = "Note: The total items has an extra items of 5 which means e.g. 10 items will have" &
+    " 15 total items the extra 5 items will be used for randomization of questions."
+        '
         'QuestionManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(757, 570)
+        Me.Controls.Add(Me.lbl_note)
         Me.Controls.Add(Me.Heading1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txt_filter)
@@ -301,4 +313,5 @@ Partial Class QuestionManagement
     Private WithEvents LineShape2 As PowerPacks.LineShape
     Private WithEvents LineShape1 As PowerPacks.LineShape
     Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents lbl_note As Label
 End Class

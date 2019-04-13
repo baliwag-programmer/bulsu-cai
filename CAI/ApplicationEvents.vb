@@ -42,11 +42,16 @@ Namespace My
                 OnDateTimeChangedHandlers.Remove(value)
             End RemoveHandler
             RaiseEvent(ByRef CurrentDateTime As Date)
-                For Each handler As DateTimeEventHandler In OnDateTimeChangedHandlers
-                    If handler IsNot Nothing Then
-                        handler.BeginInvoke(Me.CurrentDateTime, Nothing, Nothing)
-                    End If
-                Next
+                Try
+                    For Each handler As DateTimeEventHandler In OnDateTimeChangedHandlers
+                        If handler IsNot Nothing Then
+                            handler.BeginInvoke(Me.CurrentDateTime, Nothing, Nothing)
+                        End If
+                    Next
+                Catch ex As Exception
+                    LoggerModule.createLog(Me.ToString, LogType.Err)
+                    LoggerModule.createLog(ex.ToString, LogType.Err)
+                End Try
             End RaiseEvent
         End Event
 
@@ -58,11 +63,16 @@ Namespace My
                 OnAuthenticationHandlers.Remove(value)
             End RemoveHandler
             RaiseEvent(ByRef Auth As Auth)
-                For Each handler As AuthenticationHandler In OnAuthenticationHandlers
-                    If handler IsNot Nothing Then
-                        handler.BeginInvoke(Auth, Nothing, Nothing)
-                    End If
-                Next
+                Try
+                    For Each handler As AuthenticationHandler In OnAuthenticationHandlers
+                        If handler IsNot Nothing Then
+                            handler.BeginInvoke(Auth, Nothing, Nothing)
+                        End If
+                    Next
+                Catch ex As Exception
+                    LoggerModule.createLog(Me.ToString, LogType.Err)
+                    LoggerModule.createLog(ex.ToString, LogType.Err)
+                End Try
             End RaiseEvent
         End Event
 
@@ -74,11 +84,16 @@ Namespace My
                 OnDatabaseConnectivityErrorHandlers.Remove(value)
             End RemoveHandler
             RaiseEvent()
-                For Each handler As DatabaseConnectivityErrorHandler In OnDatabaseConnectivityErrorHandlers
-                    If handler IsNot Nothing Then
-                        handler.BeginInvoke(Nothing, Nothing)
-                    End If
-                Next
+                Try
+                    For Each handler As DatabaseConnectivityErrorHandler In OnDatabaseConnectivityErrorHandlers
+                        If handler IsNot Nothing Then
+                            handler.BeginInvoke(Nothing, Nothing)
+                        End If
+                    Next
+                Catch ex As Exception
+                    LoggerModule.createLog(Me.ToString, LogType.Err)
+                    LoggerModule.createLog(ex.ToString, LogType.Err)
+                End Try
             End RaiseEvent
         End Event
 
@@ -90,12 +105,17 @@ Namespace My
                 OnApplicationEventHandlers.Remove(value)
             End RemoveHandler
             RaiseEvent(ByRef message As String)
-                CurrentStatus = message
-                For Each handler As ApplicationEventHandler In OnApplicationEventHandlers
-                    If handler IsNot Nothing Then
-                        handler.BeginInvoke(message, Nothing, Nothing)
-                    End If
-                Next
+                Try
+                    CurrentStatus = message
+                    For Each handler As ApplicationEventHandler In OnApplicationEventHandlers
+                        If handler IsNot Nothing Then
+                            handler.BeginInvoke(message, Nothing, Nothing)
+                        End If
+                    Next
+                Catch ex As Exception
+                    LoggerModule.createLog(Me.ToString, LogType.Err)
+                    LoggerModule.createLog(ex.ToString, LogType.Err)
+                End Try
             End RaiseEvent
         End Event
 #End Region

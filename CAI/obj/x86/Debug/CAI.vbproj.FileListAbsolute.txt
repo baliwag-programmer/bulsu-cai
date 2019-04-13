@@ -300,3 +300,77 @@ C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Comp
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbprojAssemblyReference.cache
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserForm.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ImageShower.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe.config
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\System.Data.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\System.Design.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\System.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\System.Drawing.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\System.Windows.Forms.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\System.Xml.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\stdole.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Interop.AcroPDFLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Interop.PowerPointViewer.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Interop.SHDocVw.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Interop.WMPLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\AxInterop.SHDocVw.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\AxInterop.WMPLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.vbproj.ResolveComReference.cache
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.AttachmentViewer.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.Heading.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.ImageShower.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.LessonButton.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.DataList.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.DBList.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.Enumeration.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.Identification.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.MultipleChoice.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.AdminMain.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.AdminMainScreen.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.ChatTest.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.InstructorMain.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.StudentLessonAttachmentViewer.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.StudentLessonViewer.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.StudentLessonViewerV2.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.StudentMain.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.TestTaker.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.AnswerForm.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.InstructorStudentResultViewer.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.QuestionForm.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.QuestionManagement.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.StudentTestResult.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.TestForm.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.TestList.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UpdatePassword.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UserCreate.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UserForm.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UserEdit.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UserList.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.Authentication.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.LessonCreate.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.LessonEdit.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.LessonList.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.MainMDI.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.CAISplash.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UserListRev2.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.UserViewer.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.Resources.resources
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.cache
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.vbproj.CoreCompileInputs.cache
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.vbproj.CopyComplete
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Interop.AcroPDFLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Interop.PowerPointViewer.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Interop.SHDocVw.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\Interop.WMPLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\AxInterop.AcroPDFLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\AxInterop.SHDocVw.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\AxInterop.WMPLib.dll
+E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.vbprojAssemblyReference.cache
