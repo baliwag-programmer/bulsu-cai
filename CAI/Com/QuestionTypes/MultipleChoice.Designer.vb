@@ -90,7 +90,7 @@ Partial Class MultipleChoice
         Me.rad_d.AutoSize = True
         Me.rad_d.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rad_d.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rad_d.ForeColor = System.Drawing.Color.White
+        Me.rad_d.ForeColor = System.Drawing.Color.Black
         Me.rad_d.Location = New System.Drawing.Point(476, 76)
         Me.rad_d.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_d.Name = "rad_d"
@@ -105,7 +105,7 @@ Partial Class MultipleChoice
         Me.rad_c.AutoSize = True
         Me.rad_c.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rad_c.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rad_c.ForeColor = System.Drawing.Color.White
+        Me.rad_c.ForeColor = System.Drawing.Color.Black
         Me.rad_c.Location = New System.Drawing.Point(3, 76)
         Me.rad_c.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_c.Name = "rad_c"
@@ -120,7 +120,7 @@ Partial Class MultipleChoice
         Me.rad_b.AutoSize = True
         Me.rad_b.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rad_b.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rad_b.ForeColor = System.Drawing.Color.White
+        Me.rad_b.ForeColor = System.Drawing.Color.Black
         Me.rad_b.Location = New System.Drawing.Point(476, 4)
         Me.rad_b.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_b.Name = "rad_b"
@@ -135,7 +135,7 @@ Partial Class MultipleChoice
         Me.rad_a.AutoSize = True
         Me.rad_a.Dock = System.Windows.Forms.DockStyle.Fill
         Me.rad_a.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rad_a.ForeColor = System.Drawing.Color.White
+        Me.rad_a.ForeColor = System.Drawing.Color.Black
         Me.rad_a.Location = New System.Drawing.Point(3, 4)
         Me.rad_a.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rad_a.Name = "rad_a"

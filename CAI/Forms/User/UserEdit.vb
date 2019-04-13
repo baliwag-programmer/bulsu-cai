@@ -121,6 +121,14 @@ Public Class UserEdit
                 Auth.updatedDetails()
             End If
             MsgBox("Successfully updated user details.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Success")
+
+            If Auth.GetInstance.id = Me.user_id Then
+                Auth.GetInstance.dp = dp_profile
+                Auth.GetInstance.middle_name = txt_middle.Text
+                Auth.GetInstance.first_name = txt_username.Text
+                Auth.GetInstance.last_name = txt_last_name.Text
+                Auth.GetInstance.first_name = txt_first_name.Text
+            End If
         Catch ex As Exception
         End Try
         Me.DialogResult = System.Windows.Forms.DialogResult.OK

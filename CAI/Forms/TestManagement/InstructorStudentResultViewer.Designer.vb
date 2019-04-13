@@ -47,6 +47,7 @@ Partial Class InstructorStudentResultViewer
         Me.LBLDuration = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Heading1 = New CAI.Heading()
+        Me.ActionPrint = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dp_user_profile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -294,12 +295,32 @@ Partial Class InstructorStudentResultViewer
         Me.Heading1.TabIndex = 62
         Me.Heading1.Title = ""
         '
+        'ActionPrint
+        '
+        Me.ActionPrint.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ActionPrint.BackColor = System.Drawing.Color.Transparent
+        Me.ActionPrint.FlatAppearance.BorderSize = 0
+        Me.ActionPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ActionPrint.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ActionPrint.ForeColor = System.Drawing.Color.White
+        Me.ActionPrint.Image = Global.CAI.My.Resources.Resources.icons8_back_48
+        Me.ActionPrint.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ActionPrint.Location = New System.Drawing.Point(875, 139)
+        Me.ActionPrint.Name = "ActionPrint"
+        Me.ActionPrint.Size = New System.Drawing.Size(73, 74)
+        Me.ActionPrint.TabIndex = 63
+        Me.ActionPrint.Text = "PRINT"
+        Me.ActionPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ActionPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ActionPrint.UseVisualStyleBackColor = False
+        '
         'InstructorStudentResultViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(1028, 562)
+        Me.Controls.Add(Me.ActionPrint)
         Me.Controls.Add(Me.LBLDuration)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Panel2)
@@ -353,4 +374,5 @@ Partial Class InstructorStudentResultViewer
     Friend WithEvents LBLDuration As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Heading1 As Heading
+    Friend WithEvents ActionPrint As Button
 End Class

@@ -76,6 +76,7 @@ Public Class AdminMainScreen
             Me.Hide()
             form.ShowDialog()
             Me.Show()
+            FillAuthDetails()
         End If
     End Sub
 
