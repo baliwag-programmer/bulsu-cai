@@ -1,0 +1,7 @@
+
+4/14/2019 12:00:00 AM::CAI.My.MyApplication
+4/14/2019 12:00:00 AM::System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+   at CAI.My.MyApplication.raise_OnDateTimeChanged(DateTime& CurrentDateTime) in E:\Workspace\CAI\BulSu.CAI\CAI\ApplicationEvents.vb:line 50

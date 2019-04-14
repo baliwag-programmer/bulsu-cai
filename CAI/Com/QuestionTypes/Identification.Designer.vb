@@ -43,6 +43,7 @@ Partial Class Identification
         '
         'txt_answer
         '
+        Me.txt_answer.ForeColor = System.Drawing.Color.Black
         Me.txt_answer.Location = New System.Drawing.Point(70, 17)
         Me.txt_answer.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_answer.Name = "txt_answer"
@@ -54,6 +55,7 @@ Partial Class Identification
         Me.lbl_main_question.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_main_question.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_main_question.ForeColor = System.Drawing.Color.Black
         Me.lbl_main_question.Location = New System.Drawing.Point(479, 20)
         Me.lbl_main_question.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_main_question.Name = "lbl_main_question"
@@ -105,6 +107,7 @@ Partial Class Identification
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Controls.Add(Me.lbl_number)
         Me.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Identification"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 14)

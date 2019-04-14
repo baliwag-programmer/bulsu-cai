@@ -39,6 +39,7 @@
         End Select
         Me.Heading1.Title = title
         Me.Text = title
+        BTNDeclineAction.Visible = False
 
         If for_approval Then
             BTNApprovedBlocked.Location = BTNEdit.Location
