@@ -22,6 +22,7 @@ Public Class UserForm
     Private PreferredRole As Role
     Private HasPreferredRole As Boolean = False
     Private StudentAccountRequest As Boolean = False
+    Private instructor_dictionary As New List(Of String)
 #End Region
 
     Sub New()
@@ -148,11 +149,12 @@ Public Class UserForm
             Dim command = New MySql.Data.MySqlClient.MySqlCommand(query_rule, Database.GetInstance.GetConnection)
             Dim reader = command.ExecuteReader
             While reader.Read
-                Dim display = String.Format("{0}-{1}, {2}, {3}", Database.GetInstance.readerValue(reader, "username"),
+                Dim display = String.Format("{1}, {2}, {3}", Database.GetInstance.readerValue(reader, "username"),
                                              Database.GetInstance.readerValue(reader, "lastname"),
                                               Database.GetInstance.readerValue(reader, "firstname"),
                                                Database.GetInstance.readerValue(reader, "middlename"))
                 ComboAccountType.Items.Add(display)
+                instructor_dictionary.Add(Database.GetInstance.readerValue(reader, "id"))
             End While
             reader.Close()
 
@@ -193,7 +195,7 @@ Public Class UserForm
                 role = Role.Student
                 ' identify who is the prof
                 Dim selected = ComboAccountType.Text.Split("-")(0)
-                instructor_id = FetchInstructorID(selected)
+                instructor_id = instructor_dictionary.ToArray()(ComboAccountType.SelectedIndex)
             End If
 
             Dim command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users ( username, lastname, firstname, middlename, password, dp ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp ); SELECT LAST_INSERT_ID();", Database.GetInstance.GetConnection)

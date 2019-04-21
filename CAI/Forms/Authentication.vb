@@ -1,5 +1,21 @@
 ﻿Public Class Authentication
 
+    Public Enum AuthMode
+        Any
+        Student
+    End Enum
+
+    Private CurrentAuthMode As AuthMode = AuthMode.Any
+
+    Sub New()
+        InitializeComponent()
+    End Sub
+
+    Sub New(ByRef AuthMode As AuthMode)
+        InitializeComponent()
+        CurrentAuthMode = AuthMode
+    End Sub
+
     Sub createRole(ByRef role As RoleModel)
         Try
             Dim command = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM roles WHERE name = @role", Database.GetInstance.GetConnection)
@@ -197,6 +213,11 @@ invalid:
                 End If
             End If
 
+            If CurrentAuthMode = AuthMode.Student Then
+                UsernameLabel.Text = "STUDENT ID:"
+                LinkLoginAsStudent.Text = "Login  As Admin/Instructor"
+            End If
+
         Catch ex As Exception
 
         End Try
@@ -208,4 +229,14 @@ invalid:
         form.ShowDialog()
         Me.Show()
     End Sub
+
+    Private Sub LoginAsType(sender As Object, e As EventArgs) Handles LinkLoginAsStudent.Click
+        Dim auth As New Authentication
+        If CurrentAuthMode = AuthMode.Any Then _
+            auth = New Authentication(AuthMode.Student)
+        Me.Hide()
+        auth.ShowDialog()
+        Me.Close()
+    End Sub
+
 End Class

@@ -4,6 +4,7 @@ Public Class UserCreate
 
     Private for_register As Boolean
     Private profile_path As String
+    Private instructor_dictionary As New List(Of String)
     Private global_role As UserList.Role
 
     Sub New(Optional ByRef role As UserList.Role = UserList.Role.Administrator, Optional ByRef is_registration As Boolean = False)
@@ -37,10 +38,11 @@ Public Class UserCreate
             Dim command = New MySql.Data.MySqlClient.MySqlCommand(query_rule, Database.GetInstance.GetConnection)
             Dim reader = command.ExecuteReader
             While reader.Read
-                Dim display = String.Format("{0}-{1}, {2}, {3}", Database.GetInstance.readerValue(reader, "username"), _
-                                             Database.GetInstance.readerValue(reader, "lastname"), _
-                                              Database.GetInstance.readerValue(reader, "firstname"), _
+                Dim display = String.Format("{1}, {2}, {3}", Database.GetInstance.readerValue(reader, "username"),
+                                             Database.GetInstance.readerValue(reader, "lastname"),
+                                              Database.GetInstance.readerValue(reader, "firstname"),
                                                Database.GetInstance.readerValue(reader, "middlename"))
+                instructor_dictionary.Add(Database.GetInstance.readerValue(reader, "id"))
                 CMBInstructor.Items.Add(display)
             End While
             reader.Close()
@@ -111,8 +113,8 @@ Public Class UserCreate
             Dim instructor_id = 0
             If for_register Then
                 ' identify who is the prof
-                Dim selected = CMBInstructor.Text.Split("-")(0)
-                instructor_id = fetchInstructorId(selected)
+                'Dim selected = CMBInstructor.Text.Split("-")(0)
+                instructor_id = instructor_dictionary.ToArray()(CMBInstructor.SelectedIndex)
             End If
 
             Dim command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users ( username, lastname, firstname, middlename, password, dp ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp ); SELECT LAST_INSERT_ID();", Database.GetInstance.GetConnection)

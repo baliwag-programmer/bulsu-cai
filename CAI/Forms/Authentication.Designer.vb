@@ -39,8 +39,10 @@ Partial Class Authentication
         Me.lbl_display_ip = New System.Windows.Forms.Label()
         Me.link_register_student = New System.Windows.Forms.LinkLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.LinkLoginAsStudent = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -186,18 +188,6 @@ Partial Class Authentication
         Me.Panel1.Size = New System.Drawing.Size(547, 158)
         Me.Panel1.TabIndex = 21
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Verdana", 13.0!, System.Drawing.FontStyle.Bold)
-        Me.Label7.ForeColor = System.Drawing.Color.Green
-        Me.Label7.Location = New System.Drawing.Point(143, 31)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(341, 44)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "SAINT JEAN BAPTISTE ACADEMY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "BALIUAG, BULACAN"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -210,6 +200,41 @@ Partial Class Authentication
         Me.Label1.Text = "LOG-IN"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Verdana", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.Label7.ForeColor = System.Drawing.Color.Green
+        Me.Label7.Location = New System.Drawing.Point(143, 31)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(341, 44)
+        Me.Label7.TabIndex = 15
+        Me.Label7.Text = "SAINT JEAN BAPTISTE ACADEMY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "BALIUAG, BULACAN"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLoginAsStudent
+        '
+        Me.LinkLoginAsStudent.LinkColor = System.Drawing.Color.White
+        Me.LinkLoginAsStudent.Location = New System.Drawing.Point(116, 474)
+        Me.LinkLoginAsStudent.Name = "LinkLoginAsStudent"
+        Me.LinkLoginAsStudent.Size = New System.Drawing.Size(190, 13)
+        Me.LinkLoginAsStudent.TabIndex = 22
+        Me.LinkLoginAsStudent.TabStop = True
+        Me.LinkLoginAsStudent.Text = "Login As Student"
+        Me.LinkLoginAsStudent.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel2.Location = New System.Drawing.Point(305, 474)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(12, 13)
+        Me.LinkLabel2.TabIndex = 23
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "|"
+        '
         'Authentication
         '
         Me.AcceptButton = Me.BTNLogin
@@ -218,6 +243,8 @@ Partial Class Authentication
         Me.BackColor = System.Drawing.Color.Green
         Me.CancelButton = Me.BTNCancel
         Me.ClientSize = New System.Drawing.Size(547, 511)
+        Me.Controls.Add(Me.LinkLabel2)
+        Me.Controls.Add(Me.LinkLoginAsStudent)
         Me.Controls.Add(Me.link_register_student)
         Me.Controls.Add(Me.lbl_display_ip)
         Me.Controls.Add(Me.ip_address)
@@ -253,4 +280,6 @@ Partial Class Authentication
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents LinkLoginAsStudent As LinkLabel
+    Friend WithEvents LinkLabel2 As LinkLabel
 End Class
