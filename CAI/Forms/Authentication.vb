@@ -110,8 +110,19 @@
                     GoTo invalid
                 End If
 
+                ' Check role
                 reader.Close()
-                Dim logs = New LogsModel
+                Dim tmpAuth = New Auth()
+                tmpAuth.id = id
+                If CurrentAuthMode = AuthMode.Student Then
+                    If Not tmpAuth.role.name = "student" Then _
+                        GoTo invalid
+                Else
+                    If tmpAuth.role.name = "student" Then _
+                        GoTo invalid
+                End If
+
+                    Dim logs = New LogsModel
                 logs.attributes.activity = "Logged in"
                 logs.attributes.user_id = id
                 logs.attributes.type = "logon"
@@ -148,7 +159,6 @@
 
                 Dim form = New AdminMainScreen
                 form.ShowDialog()
-
 
                 Me.Show()
                 Exit Sub
@@ -212,15 +222,22 @@ invalid:
                     form.ShowDialog()
                 End If
             End If
-
-            If CurrentAuthMode = AuthMode.Student Then
-                UsernameLabel.Text = "STUDENT ID:"
-                LinkLoginAsStudent.Text = "Login  As Admin/Instructor"
-            End If
-
+            SetupLoginMode()
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub SetupLoginMode()
+
+        If CurrentAuthMode = AuthMode.Student Then
+            UsernameLabel.Text = "STUDENT ID:"
+            LinkLoginAsStudent.Text = "Login As Admin/Instructor"
+        Else
+            UsernameLabel.Text = "USERNAME:"
+            LinkLoginAsStudent.Text = "Login As Student"
+        End If
+
     End Sub
 
     Private Sub link_register_student_LinkClicked(sender As System.Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles link_register_student.LinkClicked
@@ -231,12 +248,12 @@ invalid:
     End Sub
 
     Private Sub LoginAsType(sender As Object, e As EventArgs) Handles LinkLoginAsStudent.Click
-        Dim auth As New Authentication
-        If CurrentAuthMode = AuthMode.Any Then _
-            auth = New Authentication(AuthMode.Student)
-        Me.Hide()
-        auth.ShowDialog()
-        Me.Close()
+        If CurrentAuthMode = AuthMode.Any Then
+            CurrentAuthMode = AuthMode.Student
+        Else
+            CurrentAuthMode = AuthMode.Any
+        End If
+        SetupLoginMode()
     End Sub
 
 End Class

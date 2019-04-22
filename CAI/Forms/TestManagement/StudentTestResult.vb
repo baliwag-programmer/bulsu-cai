@@ -1,8 +1,7 @@
 ﻿Public Class StudentTestResult
     Dim auto_list As ListviewAutomation
     Private Sub StudentTestResult_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        fetchTest()
-
+        ComboType.SelectedIndex = 0
         Dim logs = New LogsModel
         logs.attributes.type = "TEST_VIEW_RESULTS"
         logs.attributes.user_id = Auth.GetInstance.id
@@ -10,7 +9,7 @@
         logs.create()
     End Sub
 
-    Sub fetchTest(Optional ByRef filter As String = "")
+    Sub fetchTest(Optional ByRef type As String = "ALL")
         auto_list = New ListviewAutomation
         auto_list.table = "users_tests"
         auto_list.list = test_list
@@ -33,6 +32,18 @@
         param.value = Auth.GetInstance.id
         auto_list.parameters.Add(param)
 
+        If type <> "" And type <> "ALL" Then
+            where_criteria = New Criteria
+            where_criteria.column = "tests.type"
+            where_criteria.key = "testType"
+            auto_list.where.Add(where_criteria)
+
+            param = New CommandParameter
+            param.param = "testType"
+            param.value = type
+            auto_list.parameters.Add(param)
+        End If
+
         Dim cols = New List(Of String)
         cols.Add("title")
         cols.Add("description")
@@ -45,5 +56,9 @@
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Me.Close()
+    End Sub
+
+    Private Sub FilterTestResults(sender As Object, e As EventArgs) Handles ComboType.SelectedIndexChanged
+        fetchTest(ComboType.text)
     End Sub
 End Class

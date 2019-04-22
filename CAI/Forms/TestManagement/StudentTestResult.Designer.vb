@@ -35,6 +35,8 @@ Partial Class StudentTestResult
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ComboType = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Heading1 = New CAI.Heading()
         Me.ListContainer.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -47,9 +49,9 @@ Partial Class StudentTestResult
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ListContainer.Controls.Add(Me.Panel2)
         Me.ListContainer.Controls.Add(Me.test_list)
-        Me.ListContainer.Location = New System.Drawing.Point(-1, 127)
+        Me.ListContainer.Location = New System.Drawing.Point(-1, 199)
         Me.ListContainer.Name = "ListContainer"
-        Me.ListContainer.Size = New System.Drawing.Size(990, 435)
+        Me.ListContainer.Size = New System.Drawing.Size(990, 363)
         Me.ListContainer.TabIndex = 27
         '
         'Panel2
@@ -60,7 +62,7 @@ Partial Class StudentTestResult
         Me.Panel2.Controls.Add(Me.lesson_prev)
         Me.Panel2.Controls.Add(Me.lesson_next)
         Me.Panel2.Controls.Add(Me.lesson_page)
-        Me.Panel2.Location = New System.Drawing.Point(0, 403)
+        Me.Panel2.Location = New System.Drawing.Point(0, 331)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(990, 32)
         Me.Panel2.TabIndex = 3
@@ -108,7 +110,7 @@ Partial Class StudentTestResult
         Me.test_list.GridLines = True
         Me.test_list.Location = New System.Drawing.Point(0, 0)
         Me.test_list.Name = "test_list"
-        Me.test_list.Size = New System.Drawing.Size(990, 405)
+        Me.test_list.Size = New System.Drawing.Size(990, 333)
         Me.test_list.TabIndex = 2
         Me.test_list.UseCompatibleStateImageBehavior = False
         Me.test_list.View = System.Windows.Forms.View.Details
@@ -161,6 +163,27 @@ Partial Class StudentTestResult
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'ComboType
+        '
+        Me.ComboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboType.Font = New System.Drawing.Font("Tahoma", 14.25!)
+        Me.ComboType.FormattingEnabled = True
+        Me.ComboType.Items.AddRange(New Object() {"ALL", "PRE-TEST", "POST-TEST", "QUIZ", "ACTIVITY"})
+        Me.ComboType.Location = New System.Drawing.Point(82, 149)
+        Me.ComboType.Name = "ComboType"
+        Me.ComboType.Size = New System.Drawing.Size(209, 31)
+        Me.ComboType.TabIndex = 35
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(23, 158)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 16)
+        Me.Label2.TabIndex = 36
+        Me.Label2.Text = "TYPE :"
+        '
         'Heading1
         '
         Me.Heading1.BackColor = System.Drawing.Color.White
@@ -178,6 +201,8 @@ Partial Class StudentTestResult
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(984, 562)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.ComboType)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListContainer)
         Me.Controls.Add(Me.Heading1)
@@ -191,6 +216,7 @@ Partial Class StudentTestResult
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ListContainer As System.Windows.Forms.Panel
@@ -207,4 +233,6 @@ Partial Class StudentTestResult
     Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Heading1 As Heading
+    Friend WithEvents ComboType As ComboBox
+    Friend WithEvents Label2 As Label
 End Class

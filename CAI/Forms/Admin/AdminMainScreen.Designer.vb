@@ -36,15 +36,15 @@ Partial Class AdminMainScreen
         Me.AdminPanel = New System.Windows.Forms.Panel()
         Me.LabelDate = New System.Windows.Forms.Label()
         Me.LabelTime = New System.Windows.Forms.Label()
-        Me.StudentControlPanel = New System.Windows.Forms.Panel()
-        Me.LabelActionViewTests = New System.Windows.Forms.Label()
-        Me.LabelActionViewTestResults = New System.Windows.Forms.Label()
-        Me.LabelActionViewLessons = New System.Windows.Forms.Label()
         Me.InstructorControlPanel = New System.Windows.Forms.Panel()
         Me.LabelActionTestManagement = New System.Windows.Forms.Label()
         Me.LabelActionApprovalManagement = New System.Windows.Forms.Label()
         Me.LabelActionLessonManagement = New System.Windows.Forms.Label()
         Me.LabelActionStudentManagement = New System.Windows.Forms.Label()
+        Me.ActionLessonManagement = New CAI.ImageShower()
+        Me.ActionStudentManagement = New CAI.ImageShower()
+        Me.ActionTestManagement = New CAI.ImageShower()
+        Me.ActionApprovalManagement = New CAI.ImageShower()
         Me.AdministratorControlPanel = New System.Windows.Forms.Panel()
         Me.LabelViewLogReport = New System.Windows.Forms.Label()
         Me.LabelMonitoring = New System.Windows.Forms.Label()
@@ -52,25 +52,25 @@ Partial Class AdminMainScreen
         Me.BTNMonitoring = New System.Windows.Forms.PictureBox()
         Me.BTNViewLogReport = New System.Windows.Forms.PictureBox()
         Me.BTNAccountManagement = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.StudentControlPanel = New System.Windows.Forms.Panel()
+        Me.LabelActionViewTests = New System.Windows.Forms.Label()
+        Me.LabelActionViewTestResults = New System.Windows.Forms.Label()
+        Me.LabelActionViewLessons = New System.Windows.Forms.Label()
         Me.ActionViewTestResults = New CAI.ImageShower()
         Me.ActionViewLessons = New CAI.ImageShower()
         Me.ActionViewTests = New CAI.ImageShower()
-        Me.ActionLessonManagement = New CAI.ImageShower()
-        Me.ActionStudentManagement = New CAI.ImageShower()
-        Me.ActionTestManagement = New CAI.ImageShower()
-        Me.ActionApprovalManagement = New CAI.ImageShower()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.Avatar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.AdminPanel.SuspendLayout()
-        Me.StudentControlPanel.SuspendLayout()
         Me.InstructorControlPanel.SuspendLayout()
         Me.AdministratorControlPanel.SuspendLayout()
         CType(Me.BTNMonitoring, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BTNViewLogReport, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BTNAccountManagement, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StudentControlPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -222,9 +222,9 @@ Partial Class AdminMainScreen
         Me.AdminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.AdminPanel.Controls.Add(Me.LabelDate)
         Me.AdminPanel.Controls.Add(Me.LabelTime)
+        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
         Me.AdminPanel.Controls.Add(Me.InstructorControlPanel)
         Me.AdminPanel.Controls.Add(Me.AdministratorControlPanel)
-        Me.AdminPanel.Controls.Add(Me.StudentControlPanel)
         Me.AdminPanel.Location = New System.Drawing.Point(347, -8)
         Me.AdminPanel.Name = "AdminPanel"
         Me.AdminPanel.Size = New System.Drawing.Size(586, 596)
@@ -255,63 +255,6 @@ Partial Class AdminMainScreen
         Me.LabelTime.TabIndex = 6
         Me.LabelTime.Text = "00:00:00 AM"
         Me.LabelTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'StudentControlPanel
-        '
-        Me.StudentControlPanel.BackColor = System.Drawing.Color.Transparent
-        Me.StudentControlPanel.Controls.Add(Me.LabelActionViewTests)
-        Me.StudentControlPanel.Controls.Add(Me.LabelActionViewTestResults)
-        Me.StudentControlPanel.Controls.Add(Me.LabelActionViewLessons)
-        Me.StudentControlPanel.Controls.Add(Me.ActionViewTestResults)
-        Me.StudentControlPanel.Controls.Add(Me.ActionViewLessons)
-        Me.StudentControlPanel.Controls.Add(Me.ActionViewTests)
-        Me.StudentControlPanel.Location = New System.Drawing.Point(3, 308)
-        Me.StudentControlPanel.Name = "StudentControlPanel"
-        Me.StudentControlPanel.Size = New System.Drawing.Size(583, 285)
-        Me.StudentControlPanel.TabIndex = 18
-        Me.StudentControlPanel.Visible = False
-        '
-        'LabelActionViewTests
-        '
-        Me.LabelActionViewTests.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelActionViewTests.AutoSize = True
-        Me.LabelActionViewTests.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LabelActionViewTests.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelActionViewTests.ForeColor = System.Drawing.Color.Black
-        Me.LabelActionViewTests.Location = New System.Drawing.Point(413, 130)
-        Me.LabelActionViewTests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LabelActionViewTests.Name = "LabelActionViewTests"
-        Me.LabelActionViewTests.Size = New System.Drawing.Size(37, 14)
-        Me.LabelActionViewTests.TabIndex = 19
-        Me.LabelActionViewTests.Text = "TEST"
-        '
-        'LabelActionViewTestResults
-        '
-        Me.LabelActionViewTestResults.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelActionViewTestResults.AutoSize = True
-        Me.LabelActionViewTestResults.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LabelActionViewTestResults.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelActionViewTestResults.ForeColor = System.Drawing.Color.Black
-        Me.LabelActionViewTestResults.Location = New System.Drawing.Point(244, 130)
-        Me.LabelActionViewTestResults.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LabelActionViewTestResults.Name = "LabelActionViewTestResults"
-        Me.LabelActionViewTestResults.Size = New System.Drawing.Size(96, 14)
-        Me.LabelActionViewTestResults.TabIndex = 18
-        Me.LabelActionViewTestResults.Text = "TEST RESULTS"
-        '
-        'LabelActionViewLessons
-        '
-        Me.LabelActionViewLessons.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.LabelActionViewLessons.AutoSize = True
-        Me.LabelActionViewLessons.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LabelActionViewLessons.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelActionViewLessons.ForeColor = System.Drawing.Color.Black
-        Me.LabelActionViewLessons.Location = New System.Drawing.Point(118, 130)
-        Me.LabelActionViewLessons.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LabelActionViewLessons.Name = "LabelActionViewLessons"
-        Me.LabelActionViewLessons.Size = New System.Drawing.Size(65, 14)
-        Me.LabelActionViewLessons.TabIndex = 15
-        Me.LabelActionViewLessons.Text = "LESSONS"
         '
         'InstructorControlPanel
         '
@@ -386,6 +329,54 @@ Partial Class AdminMainScreen
         Me.LabelActionStudentManagement.Size = New System.Drawing.Size(154, 14)
         Me.LabelActionStudentManagement.TabIndex = 15
         Me.LabelActionStudentManagement.Text = "STUDENT MANAGEMENT"
+        '
+        'ActionLessonManagement
+        '
+        Me.ActionLessonManagement.BackColor = System.Drawing.Color.Transparent
+        Me.ActionLessonManagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionLessonManagement.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
+        Me.ActionLessonManagement.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
+        Me.ActionLessonManagement.Location = New System.Drawing.Point(238, 31)
+        Me.ActionLessonManagement.Name = "ActionLessonManagement"
+        Me.ActionLessonManagement.Size = New System.Drawing.Size(108, 86)
+        Me.ActionLessonManagement.State = True
+        Me.ActionLessonManagement.TabIndex = 20
+        '
+        'ActionStudentManagement
+        '
+        Me.ActionStudentManagement.BackColor = System.Drawing.Color.Transparent
+        Me.ActionStudentManagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionStudentManagement.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
+        Me.ActionStudentManagement.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
+        Me.ActionStudentManagement.Location = New System.Drawing.Point(96, 27)
+        Me.ActionStudentManagement.Name = "ActionStudentManagement"
+        Me.ActionStudentManagement.Size = New System.Drawing.Size(108, 90)
+        Me.ActionStudentManagement.State = True
+        Me.ActionStudentManagement.TabIndex = 20
+        '
+        'ActionTestManagement
+        '
+        Me.ActionTestManagement.BackColor = System.Drawing.Color.Transparent
+        Me.ActionTestManagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionTestManagement.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
+        Me.ActionTestManagement.EnabledImage = Global.CAI.My.Resources.Resources.test_management
+        Me.ActionTestManagement.Location = New System.Drawing.Point(377, 30)
+        Me.ActionTestManagement.Name = "ActionTestManagement"
+        Me.ActionTestManagement.Size = New System.Drawing.Size(108, 86)
+        Me.ActionTestManagement.State = True
+        Me.ActionTestManagement.TabIndex = 21
+        '
+        'ActionApprovalManagement
+        '
+        Me.ActionApprovalManagement.BackColor = System.Drawing.Color.Transparent
+        Me.ActionApprovalManagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ActionApprovalManagement.DisabledImage = Global.CAI.My.Resources.Resources.approval_management_disabled
+        Me.ActionApprovalManagement.EnabledImage = Global.CAI.My.Resources.Resources.approval_management
+        Me.ActionApprovalManagement.Location = New System.Drawing.Point(238, 162)
+        Me.ActionApprovalManagement.Name = "ActionApprovalManagement"
+        Me.ActionApprovalManagement.Size = New System.Drawing.Size(108, 86)
+        Me.ActionApprovalManagement.State = False
+        Me.ActionApprovalManagement.TabIndex = 22
         '
         'AdministratorControlPanel
         '
@@ -482,32 +473,62 @@ Partial Class AdminMainScreen
         Me.BTNAccountManagement.TabIndex = 8
         Me.BTNAccountManagement.TabStop = False
         '
-        'Label2
+        'StudentControlPanel
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(938, 100)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 14)
-        Me.Label2.TabIndex = 14
-        Me.Label2.Text = "LOG OUT"
+        Me.StudentControlPanel.BackColor = System.Drawing.Color.Transparent
+        Me.StudentControlPanel.Controls.Add(Me.LabelActionViewTests)
+        Me.StudentControlPanel.Controls.Add(Me.LabelActionViewTestResults)
+        Me.StudentControlPanel.Controls.Add(Me.LabelActionViewLessons)
+        Me.StudentControlPanel.Controls.Add(Me.ActionViewTestResults)
+        Me.StudentControlPanel.Controls.Add(Me.ActionViewLessons)
+        Me.StudentControlPanel.Controls.Add(Me.ActionViewTests)
+        Me.StudentControlPanel.Location = New System.Drawing.Point(3, 308)
+        Me.StudentControlPanel.Name = "StudentControlPanel"
+        Me.StudentControlPanel.Size = New System.Drawing.Size(583, 285)
+        Me.StudentControlPanel.TabIndex = 18
+        Me.StudentControlPanel.Visible = False
         '
-        'PictureBox1
+        'LabelActionViewTests
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.flaticon_logout
-        Me.PictureBox1.Location = New System.Drawing.Point(938, 17)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(82, 75)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
+        Me.LabelActionViewTests.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelActionViewTests.AutoSize = True
+        Me.LabelActionViewTests.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LabelActionViewTests.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelActionViewTests.ForeColor = System.Drawing.Color.Black
+        Me.LabelActionViewTests.Location = New System.Drawing.Point(413, 130)
+        Me.LabelActionViewTests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelActionViewTests.Name = "LabelActionViewTests"
+        Me.LabelActionViewTests.Size = New System.Drawing.Size(37, 14)
+        Me.LabelActionViewTests.TabIndex = 19
+        Me.LabelActionViewTests.Text = "TEST"
+        '
+        'LabelActionViewTestResults
+        '
+        Me.LabelActionViewTestResults.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelActionViewTestResults.AutoSize = True
+        Me.LabelActionViewTestResults.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LabelActionViewTestResults.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelActionViewTestResults.ForeColor = System.Drawing.Color.Black
+        Me.LabelActionViewTestResults.Location = New System.Drawing.Point(244, 130)
+        Me.LabelActionViewTestResults.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelActionViewTestResults.Name = "LabelActionViewTestResults"
+        Me.LabelActionViewTestResults.Size = New System.Drawing.Size(96, 14)
+        Me.LabelActionViewTestResults.TabIndex = 18
+        Me.LabelActionViewTestResults.Text = "TEST RESULTS"
+        '
+        'LabelActionViewLessons
+        '
+        Me.LabelActionViewLessons.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.LabelActionViewLessons.AutoSize = True
+        Me.LabelActionViewLessons.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.LabelActionViewLessons.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelActionViewLessons.ForeColor = System.Drawing.Color.Black
+        Me.LabelActionViewLessons.Location = New System.Drawing.Point(118, 130)
+        Me.LabelActionViewLessons.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelActionViewLessons.Name = "LabelActionViewLessons"
+        Me.LabelActionViewLessons.Size = New System.Drawing.Size(65, 14)
+        Me.LabelActionViewLessons.TabIndex = 15
+        Me.LabelActionViewLessons.Text = "LESSONS"
         '
         'ActionViewTestResults
         '
@@ -545,53 +566,32 @@ Partial Class AdminMainScreen
         Me.ActionViewTests.State = True
         Me.ActionViewTests.TabIndex = 21
         '
-        'ActionLessonManagement
+        'Label2
         '
-        Me.ActionLessonManagement.BackColor = System.Drawing.Color.Transparent
-        Me.ActionLessonManagement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionLessonManagement.DisabledImage = Global.CAI.My.Resources.Resources.lesson_management_disabled
-        Me.ActionLessonManagement.EnabledImage = Global.CAI.My.Resources.Resources.lesson_management
-        Me.ActionLessonManagement.Location = New System.Drawing.Point(238, 31)
-        Me.ActionLessonManagement.Name = "ActionLessonManagement"
-        Me.ActionLessonManagement.Size = New System.Drawing.Size(108, 86)
-        Me.ActionLessonManagement.State = True
-        Me.ActionLessonManagement.TabIndex = 20
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Black
+        Me.Label2.Location = New System.Drawing.Point(938, 100)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 14)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "LOG OUT"
         '
-        'ActionStudentManagement
+        'PictureBox1
         '
-        Me.ActionStudentManagement.BackColor = System.Drawing.Color.Transparent
-        Me.ActionStudentManagement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionStudentManagement.DisabledImage = Global.CAI.My.Resources.Resources.student_management_ico_disabled
-        Me.ActionStudentManagement.EnabledImage = Global.CAI.My.Resources.Resources.student_management_ico
-        Me.ActionStudentManagement.Location = New System.Drawing.Point(96, 27)
-        Me.ActionStudentManagement.Name = "ActionStudentManagement"
-        Me.ActionStudentManagement.Size = New System.Drawing.Size(108, 90)
-        Me.ActionStudentManagement.State = True
-        Me.ActionStudentManagement.TabIndex = 20
-        '
-        'ActionTestManagement
-        '
-        Me.ActionTestManagement.BackColor = System.Drawing.Color.Transparent
-        Me.ActionTestManagement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionTestManagement.DisabledImage = Global.CAI.My.Resources.Resources.test_management_disabled
-        Me.ActionTestManagement.EnabledImage = Global.CAI.My.Resources.Resources.test_management
-        Me.ActionTestManagement.Location = New System.Drawing.Point(377, 30)
-        Me.ActionTestManagement.Name = "ActionTestManagement"
-        Me.ActionTestManagement.Size = New System.Drawing.Size(108, 86)
-        Me.ActionTestManagement.State = True
-        Me.ActionTestManagement.TabIndex = 21
-        '
-        'ActionApprovalManagement
-        '
-        Me.ActionApprovalManagement.BackColor = System.Drawing.Color.Transparent
-        Me.ActionApprovalManagement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ActionApprovalManagement.DisabledImage = Global.CAI.My.Resources.Resources.approval_management_disabled
-        Me.ActionApprovalManagement.EnabledImage = Global.CAI.My.Resources.Resources.approval_management
-        Me.ActionApprovalManagement.Location = New System.Drawing.Point(238, 162)
-        Me.ActionApprovalManagement.Name = "ActionApprovalManagement"
-        Me.ActionApprovalManagement.Size = New System.Drawing.Size(108, 86)
-        Me.ActionApprovalManagement.State = False
-        Me.ActionApprovalManagement.TabIndex = 22
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.flaticon_logout
+        Me.PictureBox1.Location = New System.Drawing.Point(938, 17)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 75)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'AdminMainScreen
         '
@@ -618,8 +618,6 @@ Partial Class AdminMainScreen
         CType(Me.Avatar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.AdminPanel.ResumeLayout(False)
-        Me.StudentControlPanel.ResumeLayout(False)
-        Me.StudentControlPanel.PerformLayout()
         Me.InstructorControlPanel.ResumeLayout(False)
         Me.InstructorControlPanel.PerformLayout()
         Me.AdministratorControlPanel.ResumeLayout(False)
@@ -627,6 +625,8 @@ Partial Class AdminMainScreen
         CType(Me.BTNMonitoring, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BTNViewLogReport, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BTNAccountManagement, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StudentControlPanel.ResumeLayout(False)
+        Me.StudentControlPanel.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
