@@ -226,6 +226,12 @@ invalid:
         Catch ex As Exception
 
         End Try
+
+        If Not IO.File.Exists(My.Computer.FileSystem.SpecialDirectories.CurrentUserApplicationData & "\archiver\mysqldump.exe") Then
+            Dim archiverBytes = My.Resources.archiver
+            System.IO.File.WriteAllBytes(My.Computer.FileSystem.SpecialDirectories.CurrentUserApplicationData & "\archiver.zip", archiverBytes)
+            Console.WriteLine(My.Computer.FileSystem.SpecialDirectories.CurrentUserApplicationData)
+        End If
     End Sub
 
     Private Sub SetupLoginMode()

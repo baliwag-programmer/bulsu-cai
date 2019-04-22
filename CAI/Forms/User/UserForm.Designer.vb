@@ -41,8 +41,14 @@ Partial Class UserForm
         Me.BTNCancel = New System.Windows.Forms.Button()
         Me.BTNSave = New System.Windows.Forms.Button()
         Me.pict_user_pict = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.LabelSY = New System.Windows.Forms.Label()
+        Me.LabelYearSection = New System.Windows.Forms.Label()
         Me.Heading1 = New CAI.Heading()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LabelActionChangeImage
@@ -60,7 +66,7 @@ Partial Class UserForm
         'txt_last_name
         '
         Me.txt_last_name.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.txt_last_name.Location = New System.Drawing.Point(465, 332)
+        Me.txt_last_name.Location = New System.Drawing.Point(465, 359)
         Me.txt_last_name.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_last_name.Name = "txt_last_name"
         Me.txt_last_name.Size = New System.Drawing.Size(196, 23)
@@ -70,7 +76,7 @@ Partial Class UserForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label7.Location = New System.Drawing.Point(465, 310)
+        Me.Label7.Location = New System.Drawing.Point(465, 337)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(95, 16)
         Me.Label7.TabIndex = 20
@@ -79,7 +85,7 @@ Partial Class UserForm
         'txt_middle
         '
         Me.txt_middle.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.txt_middle.Location = New System.Drawing.Point(272, 332)
+        Me.txt_middle.Location = New System.Drawing.Point(272, 359)
         Me.txt_middle.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_middle.Name = "txt_middle"
         Me.txt_middle.Size = New System.Drawing.Size(172, 23)
@@ -89,7 +95,7 @@ Partial Class UserForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label6.Location = New System.Drawing.Point(269, 310)
+        Me.Label6.Location = New System.Drawing.Point(269, 337)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(110, 16)
         Me.Label6.TabIndex = 21
@@ -98,7 +104,7 @@ Partial Class UserForm
         'txt_first_name
         '
         Me.txt_first_name.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.txt_first_name.Location = New System.Drawing.Point(52, 332)
+        Me.txt_first_name.Location = New System.Drawing.Point(52, 359)
         Me.txt_first_name.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_first_name.Name = "txt_first_name"
         Me.txt_first_name.Size = New System.Drawing.Size(201, 23)
@@ -108,7 +114,7 @@ Partial Class UserForm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label5.Location = New System.Drawing.Point(49, 310)
+        Me.Label5.Location = New System.Drawing.Point(49, 337)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(100, 16)
         Me.Label5.TabIndex = 22
@@ -118,7 +124,7 @@ Partial Class UserForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label4.Location = New System.Drawing.Point(369, 376)
+        Me.Label4.Location = New System.Drawing.Point(369, 403)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(201, 16)
         Me.Label4.TabIndex = 27
@@ -127,7 +133,7 @@ Partial Class UserForm
         'txt_password_confirmation
         '
         Me.txt_password_confirmation.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.txt_password_confirmation.Location = New System.Drawing.Point(372, 398)
+        Me.txt_password_confirmation.Location = New System.Drawing.Point(372, 425)
         Me.txt_password_confirmation.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_password_confirmation.Name = "txt_password_confirmation"
         Me.txt_password_confirmation.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
@@ -137,7 +143,7 @@ Partial Class UserForm
         'txt_password
         '
         Me.txt_password.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.txt_password.Location = New System.Drawing.Point(52, 398)
+        Me.txt_password.Location = New System.Drawing.Point(52, 425)
         Me.txt_password.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
@@ -148,7 +154,7 @@ Partial Class UserForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.Label3.Location = New System.Drawing.Point(49, 376)
+        Me.Label3.Location = New System.Drawing.Point(49, 403)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(94, 16)
         Me.Label3.TabIndex = 26
@@ -157,7 +163,7 @@ Partial Class UserForm
         'txt_username
         '
         Me.txt_username.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.txt_username.Location = New System.Drawing.Point(52, 233)
+        Me.txt_username.Location = New System.Drawing.Point(52, 294)
         Me.txt_username.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_username.Name = "txt_username"
         Me.txt_username.Size = New System.Drawing.Size(290, 23)
@@ -167,7 +173,7 @@ Partial Class UserForm
         '
         Me.LabelUsername.AutoSize = True
         Me.LabelUsername.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.LabelUsername.Location = New System.Drawing.Point(49, 211)
+        Me.LabelUsername.Location = New System.Drawing.Point(49, 272)
         Me.LabelUsername.Name = "LabelUsername"
         Me.LabelUsername.Size = New System.Drawing.Size(90, 16)
         Me.LabelUsername.TabIndex = 24
@@ -177,7 +183,7 @@ Partial Class UserForm
         '
         Me.LabelAccountType.AutoSize = True
         Me.LabelAccountType.Font = New System.Drawing.Font("Verdana", 9.75!)
-        Me.LabelAccountType.Location = New System.Drawing.Point(49, 151)
+        Me.LabelAccountType.Location = New System.Drawing.Point(49, 212)
         Me.LabelAccountType.Name = "LabelAccountType"
         Me.LabelAccountType.Size = New System.Drawing.Size(122, 16)
         Me.LabelAccountType.TabIndex = 28
@@ -189,7 +195,7 @@ Partial Class UserForm
         Me.ComboAccountType.Font = New System.Drawing.Font("Verdana", 9.75!)
         Me.ComboAccountType.FormattingEnabled = True
         Me.ComboAccountType.Items.AddRange(New Object() {"Instructor", "Administrator"})
-        Me.ComboAccountType.Location = New System.Drawing.Point(52, 170)
+        Me.ComboAccountType.Location = New System.Drawing.Point(52, 231)
         Me.ComboAccountType.Name = "ComboAccountType"
         Me.ComboAccountType.Size = New System.Drawing.Size(290, 24)
         Me.ComboAccountType.TabIndex = 43
@@ -202,7 +208,7 @@ Partial Class UserForm
         Me.BTNCancel.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCancel.Location = New System.Drawing.Point(549, 444)
+        Me.BTNCancel.Location = New System.Drawing.Point(549, 477)
         Me.BTNCancel.Name = "BTNCancel"
         Me.BTNCancel.Size = New System.Drawing.Size(113, 34)
         Me.BTNCancel.TabIndex = 45
@@ -216,7 +222,7 @@ Partial Class UserForm
         Me.BTNSave.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNSave.Location = New System.Drawing.Point(430, 444)
+        Me.BTNSave.Location = New System.Drawing.Point(430, 477)
         Me.BTNSave.Name = "BTNSave"
         Me.BTNSave.Size = New System.Drawing.Size(113, 34)
         Me.BTNSave.TabIndex = 44
@@ -236,6 +242,40 @@ Partial Class UserForm
         Me.pict_user_pict.TabIndex = 46
         Me.pict_user_pict.TabStop = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.LabelYearSection)
+        Me.GroupBox1.Controls.Add(Me.LabelSY)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(52, 133)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(416, 63)
+        Me.GroupBox1.TabIndex = 47
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "BATCH INFORMATION"
+        Me.GroupBox1.Visible = False
+        '
+        'LabelSY
+        '
+        Me.LabelSY.AutoSize = True
+        Me.LabelSY.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.LabelSY.Location = New System.Drawing.Point(18, 29)
+        Me.LabelSY.Name = "LabelSY"
+        Me.LabelSY.Size = New System.Drawing.Size(32, 16)
+        Me.LabelSY.TabIndex = 29
+        Me.LabelSY.Text = "SY:"
+        '
+        'LabelYearSection
+        '
+        Me.LabelYearSection.AutoSize = True
+        Me.LabelYearSection.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.LabelYearSection.Location = New System.Drawing.Point(156, 29)
+        Me.LabelYearSection.Name = "LabelYearSection"
+        Me.LabelYearSection.Size = New System.Drawing.Size(126, 16)
+        Me.LabelYearSection.TabIndex = 30
+        Me.LabelYearSection.Text = "YEAR && SECTION:"
+        '
         'Heading1
         '
         Me.Heading1.BackColor = System.Drawing.Color.White
@@ -247,6 +287,17 @@ Partial Class UserForm
         Me.Heading1.TabIndex = 5
         Me.Heading1.Title = "NEW ACCOUNT"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.edit
+        Me.PictureBox1.Location = New System.Drawing.Point(394, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(16, 17)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 31
+        Me.PictureBox1.TabStop = False
+        '
         'UserForm
         '
         Me.AcceptButton = Me.BTNSave
@@ -254,7 +305,8 @@ Partial Class UserForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.CancelButton = Me.BTNCancel
-        Me.ClientSize = New System.Drawing.Size(710, 497)
+        Me.ClientSize = New System.Drawing.Size(710, 530)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.pict_user_pict)
         Me.Controls.Add(Me.BTNCancel)
         Me.Controls.Add(Me.BTNSave)
@@ -285,6 +337,9 @@ Partial Class UserForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Create New Account"
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -309,4 +364,8 @@ Partial Class UserForm
     Friend WithEvents BTNCancel As Button
     Friend WithEvents BTNSave As Button
     Friend WithEvents pict_user_pict As PictureBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents LabelYearSection As Label
+    Friend WithEvents LabelSY As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -40,21 +40,27 @@ Partial Class UserEdit
         Me.DisplayLastUpdatedDate = New System.Windows.Forms.Label()
         Me.DisplayLastUpdatedBy = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelYearSection = New System.Windows.Forms.Label()
+        Me.LabelSY = New System.Windows.Forms.Label()
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_last_name
         '
-        Me.txt_last_name.Location = New System.Drawing.Point(11, 567)
+        Me.txt_last_name.Location = New System.Drawing.Point(35, 572)
         Me.txt_last_name.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txt_last_name.Name = "txt_last_name"
-        Me.txt_last_name.Size = New System.Drawing.Size(470, 23)
+        Me.txt_last_name.Size = New System.Drawing.Size(535, 23)
         Me.txt_last_name.TabIndex = 3
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(11, 546)
+        Me.Label7.Location = New System.Drawing.Point(35, 551)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(95, 16)
         Me.Label7.TabIndex = 15
@@ -62,16 +68,16 @@ Partial Class UserEdit
         '
         'txt_middle
         '
-        Me.txt_middle.Location = New System.Drawing.Point(11, 503)
+        Me.txt_middle.Location = New System.Drawing.Point(35, 508)
         Me.txt_middle.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txt_middle.Name = "txt_middle"
-        Me.txt_middle.Size = New System.Drawing.Size(470, 23)
+        Me.txt_middle.Size = New System.Drawing.Size(535, 23)
         Me.txt_middle.TabIndex = 2
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(11, 482)
+        Me.Label6.Location = New System.Drawing.Point(35, 487)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(68, 16)
         Me.Label6.TabIndex = 13
@@ -79,16 +85,16 @@ Partial Class UserEdit
         '
         'txt_first_name
         '
-        Me.txt_first_name.Location = New System.Drawing.Point(11, 438)
+        Me.txt_first_name.Location = New System.Drawing.Point(35, 443)
         Me.txt_first_name.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txt_first_name.Name = "txt_first_name"
-        Me.txt_first_name.Size = New System.Drawing.Size(470, 23)
+        Me.txt_first_name.Size = New System.Drawing.Size(535, 23)
         Me.txt_first_name.TabIndex = 1
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(11, 417)
+        Me.Label5.Location = New System.Drawing.Point(35, 422)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(100, 16)
         Me.Label5.TabIndex = 16
@@ -96,16 +102,16 @@ Partial Class UserEdit
         '
         'txt_username
         '
-        Me.txt_username.Location = New System.Drawing.Point(11, 375)
+        Me.txt_username.Location = New System.Drawing.Point(35, 380)
         Me.txt_username.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(319, 23)
+        Me.txt_username.Size = New System.Drawing.Size(384, 23)
         Me.txt_username.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(11, 354)
+        Me.Label1.Location = New System.Drawing.Point(35, 359)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(90, 16)
         Me.Label1.TabIndex = 14
@@ -118,7 +124,7 @@ Partial Class UserEdit
         Me.BTNCancel.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNCancel.Location = New System.Drawing.Point(350, 616)
+        Me.BTNCancel.Location = New System.Drawing.Point(444, 616)
         Me.BTNCancel.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BTNCancel.Name = "BTNCancel"
         Me.BTNCancel.Size = New System.Drawing.Size(129, 42)
@@ -133,7 +139,7 @@ Partial Class UserEdit
         Me.BTNSave.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.BTNSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNSave.Location = New System.Drawing.Point(214, 616)
+        Me.BTNSave.Location = New System.Drawing.Point(308, 616)
         Me.BTNSave.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.BTNSave.Name = "BTNSave"
         Me.BTNSave.Size = New System.Drawing.Size(129, 42)
@@ -149,7 +155,7 @@ Partial Class UserEdit
         Me.Heading1.Location = New System.Drawing.Point(0, 0)
         Me.Heading1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Heading1.Name = "Heading1"
-        Me.Heading1.Size = New System.Drawing.Size(500, 134)
+        Me.Heading1.Size = New System.Drawing.Size(594, 134)
         Me.Heading1.TabIndex = 39
         Me.Heading1.Title = ""
         '
@@ -158,7 +164,7 @@ Partial Class UserEdit
         Me.pict_user_pict.BackColor = System.Drawing.Color.White
         Me.pict_user_pict.Cursor = System.Windows.Forms.Cursors.Hand
         Me.pict_user_pict.Image = CType(resources.GetObject("pict_user_pict.Image"), System.Drawing.Image)
-        Me.pict_user_pict.Location = New System.Drawing.Point(37, 155)
+        Me.pict_user_pict.Location = New System.Drawing.Point(35, 155)
         Me.pict_user_pict.Margin = New System.Windows.Forms.Padding(2)
         Me.pict_user_pict.Name = "pict_user_pict"
         Me.pict_user_pict.Size = New System.Drawing.Size(181, 162)
@@ -172,7 +178,7 @@ Partial Class UserEdit
         Me.LabelActionChangeImage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LabelActionChangeImage.Font = New System.Drawing.Font("Verdana", 9.75!)
         Me.LabelActionChangeImage.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.LabelActionChangeImage.Location = New System.Drawing.Point(40, 322)
+        Me.LabelActionChangeImage.Location = New System.Drawing.Point(38, 322)
         Me.LabelActionChangeImage.Name = "LabelActionChangeImage"
         Me.LabelActionChangeImage.Size = New System.Drawing.Size(175, 16)
         Me.LabelActionChangeImage.TabIndex = 47
@@ -181,7 +187,7 @@ Partial Class UserEdit
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(257, 155)
+        Me.Label2.Location = New System.Drawing.Point(230, 155)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(171, 16)
         Me.Label2.TabIndex = 49
@@ -190,7 +196,7 @@ Partial Class UserEdit
         'DisplayLastUpdatedDate
         '
         Me.DisplayLastUpdatedDate.AutoSize = True
-        Me.DisplayLastUpdatedDate.Location = New System.Drawing.Point(257, 181)
+        Me.DisplayLastUpdatedDate.Location = New System.Drawing.Point(230, 181)
         Me.DisplayLastUpdatedDate.Name = "DisplayLastUpdatedDate"
         Me.DisplayLastUpdatedDate.Size = New System.Drawing.Size(29, 16)
         Me.DisplayLastUpdatedDate.TabIndex = 50
@@ -199,7 +205,7 @@ Partial Class UserEdit
         'DisplayLastUpdatedBy
         '
         Me.DisplayLastUpdatedBy.AutoSize = True
-        Me.DisplayLastUpdatedBy.Location = New System.Drawing.Point(257, 236)
+        Me.DisplayLastUpdatedBy.Location = New System.Drawing.Point(230, 236)
         Me.DisplayLastUpdatedBy.Name = "DisplayLastUpdatedBy"
         Me.DisplayLastUpdatedBy.Size = New System.Drawing.Size(29, 16)
         Me.DisplayLastUpdatedBy.TabIndex = 52
@@ -208,18 +214,64 @@ Partial Class UserEdit
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(257, 210)
+        Me.Label8.Location = New System.Drawing.Point(230, 210)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(102, 16)
         Me.Label8.TabIndex = 51
         Me.Label8.Text = "UPDATED BY :"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.LabelYearSection)
+        Me.GroupBox1.Controls.Add(Me.LabelSY)
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(233, 264)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(416, 63)
+        Me.GroupBox1.TabIndex = 53
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "BATCH INFORMATION"
+        Me.GroupBox1.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.CAI.My.Resources.Resources.edit
+        Me.PictureBox1.Location = New System.Drawing.Point(394, 13)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(16, 17)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 31
+        Me.PictureBox1.TabStop = False
+        '
+        'LabelYearSection
+        '
+        Me.LabelYearSection.AutoSize = True
+        Me.LabelYearSection.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.LabelYearSection.Location = New System.Drawing.Point(156, 29)
+        Me.LabelYearSection.Name = "LabelYearSection"
+        Me.LabelYearSection.Size = New System.Drawing.Size(126, 16)
+        Me.LabelYearSection.TabIndex = 30
+        Me.LabelYearSection.Text = "YEAR && SECTION:"
+        '
+        'LabelSY
+        '
+        Me.LabelSY.AutoSize = True
+        Me.LabelSY.Font = New System.Drawing.Font("Verdana", 9.75!)
+        Me.LabelSY.Location = New System.Drawing.Point(18, 29)
+        Me.LabelSY.Name = "LabelSY"
+        Me.LabelSY.Size = New System.Drawing.Size(32, 16)
+        Me.LabelSY.TabIndex = 29
+        Me.LabelSY.Text = "SY:"
         '
         'UserEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
-        Me.ClientSize = New System.Drawing.Size(500, 672)
+        Me.ClientSize = New System.Drawing.Size(594, 672)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DisplayLastUpdatedBy)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.DisplayLastUpdatedDate)
@@ -248,6 +300,9 @@ Partial Class UserEdit
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Editing Profile"
         CType(Me.pict_user_pict, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -269,4 +324,8 @@ Partial Class UserEdit
     Friend WithEvents DisplayLastUpdatedDate As Label
     Friend WithEvents DisplayLastUpdatedBy As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LabelYearSection As Label
+    Friend WithEvents LabelSY As Label
 End Class

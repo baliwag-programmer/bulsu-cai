@@ -48,6 +48,13 @@
     Public Property approved As Integer
     Public Property previewing_auth As Auth
 
+#Region "Batching Information"
+    Public Property sy_from As Integer
+    Public Property sy_to As Integer
+    Public Property year As Integer
+    Public Property section As String
+#End Region
+
     Shared instance As Auth = Nothing
 
     Sub New()

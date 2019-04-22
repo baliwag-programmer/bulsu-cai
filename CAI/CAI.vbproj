@@ -13,7 +13,7 @@
     <AssemblyName>Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -41,6 +41,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -51,6 +52,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -92,6 +94,7 @@
     <Reference Include="System.Drawing">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Windows.Forms">
       <Private>True</Private>
     </Reference>
@@ -200,6 +203,12 @@
     <Compile Include="Forms\Admin\AdminMainScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Admin\ArhivingSelection.Designer.vb">
+      <DependentUpon>ArhivingSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\ArhivingSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\ChatTest.Designer.vb">
       <DependentUpon>ChatTest.vb</DependentUpon>
     </Compile>
@@ -295,6 +304,12 @@
     <Compile Include="Forms\TestManagement\TestList.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\User\StudentBatchInformation.Designer.vb">
+      <DependentUpon>StudentBatchInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\StudentBatchInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\User\UpdatePassword.Designer.vb">
       <DependentUpon>UpdatePassword.vb</DependentUpon>
     </Compile>
@@ -376,6 +391,7 @@
     <Compile Include="Models\LessonModel.vb" />
     <Compile Include="Models\Model.vb" />
     <Compile Include="Models\RoleModel.vb" />
+    <Compile Include="Modules\DataArchiver.vb" />
     <Compile Include="Modules\ImageModule.vb" />
     <Compile Include="Modules\LoggerModule.vb" />
     <Compile Include="Modules\NetworkModule1.vb" />
@@ -438,6 +454,9 @@
     <EmbeddedResource Include="Forms\Admin\AdminMainScreen.resx">
       <DependentUpon>AdminMainScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\ArhivingSelection.resx">
+      <DependentUpon>ArhivingSelection.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChatTest.resx">
       <DependentUpon>ChatTest.vb</DependentUpon>
     </EmbeddedResource>
@@ -482,6 +501,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TestManagement\TestList.resx">
       <DependentUpon>TestList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\StudentBatchInformation.resx">
+      <DependentUpon>StudentBatchInformation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\User\UpdatePassword.resx">
       <DependentUpon>UpdatePassword.vb</DependentUpon>
@@ -535,6 +557,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Library\archiver\archiver.zip" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -545,6 +568,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Resources\archiver.zip" />
     <None Include="Resources\cai.ini" />
     <None Include="Settings\DatabaseConfig.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -643,23 +667,6 @@
     <None Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AcroPDFLib">
-      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="AxAcroPDFLib">
-      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
     <COMReference Include="AxSHDocVw">
       <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -706,7 +713,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Library\" />
+    <None Include="Resources\archive.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

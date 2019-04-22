@@ -2,7 +2,7 @@
 
 Public Class AdminMainScreen
 
-    Private Sub OnActionClick(sender As Object, e As MouseEventArgs) Handles LabelViewLogReport.MouseClick, LabelMonitoring.MouseClick, LabelAccountManagement.MouseClick, BTNViewLogReport.MouseClick, BTNMonitoring.MouseClick, BTNAccountManagement.MouseClick, PictureBox1.MouseClick, Label2.MouseClick
+    Private Sub OnActionClick(sender As Object, e As MouseEventArgs) Handles LabelViewLogReport.MouseClick, LabelMonitoring.MouseClick, LabelAccountManagement.MouseClick, BTNViewLogReport.MouseClick, BTNMonitoring.MouseClick, BTNAccountManagement.MouseClick, PictureBox1.MouseClick, Label2.MouseClick, BTNDataArchiving.MouseClick, LabelDataArhiving.MouseClick
 
         If sender Is BTNAccountManagement Or sender Is LabelAccountManagement Then
             Dim AMForm = New UserListRev2
@@ -20,6 +20,13 @@ Public Class AdminMainScreen
 
         If sender Is BTNViewLogReport Or sender Is LabelViewLogReport Then
             Dim form = New ActivityLogs
+            Me.Hide()
+            form.ShowDialog()
+            Me.Show()
+        End If
+
+        If sender Is BTNDataArchiving Or sender Is LabelDataArhiving Then
+            Dim form = New ArhivingSelection
             Me.Hide()
             form.ShowDialog()
             Me.Show()

@@ -78,6 +78,16 @@ Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of 
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:CAI.My.Resources.Resources.archive">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CAI.My.Resources.Resources.archiver">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
 <member name="P:CAI.My.Resources.Resources.banner">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

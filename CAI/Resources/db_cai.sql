@@ -240,8 +240,12 @@ CREATE TABLE `users` (
   `dp` longtext COLLATE utf8mb4_unicode_ci,
   `approved` int(1) DEFAULT '0',
   `updated_by` int(11) DEFAULT NULL,
+  `sy_from` int(4) DEFAULT NULL,
+  `sy_to` int(4) DEFAULT NULL,
+  `year` int(2) DEFAULT NULL,
+  `section` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

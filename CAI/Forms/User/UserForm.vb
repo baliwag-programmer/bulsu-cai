@@ -25,6 +25,51 @@ Public Class UserForm
     Private instructor_dictionary As New List(Of String)
 #End Region
 
+#Region "Batching Data"
+    Private _Year As Integer
+    Private _SY_To As Integer
+    Private _SY_From As Integer
+    Private _Section As String
+
+
+    Private Property Year As Integer
+        Set(value As Integer)
+            _Year = value
+            LabelYearSection.Text = String.Format("YEAR && SECTION: {0:00}-{1}", _Year, _Section)
+        End Set
+        Get
+            Return IIf(StudentAccountRequest, _Year, Nothing)
+        End Get
+    End Property
+    Private Property SY_To As Integer
+        Set(value As Integer)
+            _SY_To = value
+            LabelSY.Text = String.Format("SY: {0}-{1}", _SY_From, _SY_To)
+        End Set
+        Get
+            Return IIf(StudentAccountRequest, _SY_To, Nothing)
+        End Get
+    End Property
+    Private Property SY_From As Integer
+        Set(value As Integer)
+            _SY_From = value
+            LabelSY.Text = String.Format("SY: {0}-{1}", _SY_From, _SY_To)
+        End Set
+        Get
+            Return IIf(StudentAccountRequest, _SY_From, Nothing)
+        End Get
+    End Property
+    Private Property Section As String
+        Set(value As String)
+            _Section = value
+            LabelYearSection.Text = String.Format("YEAR && SECTION: {0:00}-{1}", _Year, _Section)
+        End Set
+        Get
+            Return IIf(StudentAccountRequest, _Section, Nothing)
+        End Get
+    End Property
+#End Region
+
     Sub New()
         InitializeComponent()
     End Sub
@@ -59,9 +104,26 @@ Public Class UserForm
 
         If HasPreferredRole Then
             If PreferredRole = Role.Student Then
+
+                ' Force to fill in the school year, year and section
+                Dim BatchInforGather = New StudentBatchInformation
+                Me.Visible = False
+                Dim result = BatchInforGather.ShowDialog()
+                If result <> DialogResult.OK Then
+                    Me.Close()
+                    Exit Sub
+                End If
+                Year = BatchInforGather.TXTYear.Text
+                SY_To = BatchInforGather.TXTYearTo.Text
+                Section = BatchInforGather.TXTSection.Text
+                SY_From = BatchInforGather.TXTYearFrom.Text
+                Me.Visible = True
+
                 LabelAccountType.Text = "INSTRUCTOR NAME :"
                 LabelUsername.Text = "STUDENT NUMBER :"
                 Me.Heading1.Title = "REGISTER AS STUDENT"
+
+                GroupBox1.Visible = True
 
                 fetchInstructors()
             Else
@@ -198,13 +260,21 @@ Public Class UserForm
                 instructor_id = instructor_dictionary.ToArray()(ComboAccountType.SelectedIndex)
             End If
 
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users ( username, lastname, firstname, middlename, password, dp ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp ); SELECT LAST_INSERT_ID();", Database.GetInstance.GetConnection)
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users ( username, lastname, firstname, middlename, password, dp, sy_from, sy_to, year, section ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp, @sy_from, @sy_to, @year, @section ); SELECT LAST_INSERT_ID();", Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@username", txt_username.Text)
             command.Parameters.AddWithValue("@lastname", txt_last_name.Text)
             command.Parameters.AddWithValue("@firstname", txt_first_name.Text)
             command.Parameters.AddWithValue("@middlename", txt_middle.Text)
             command.Parameters.AddWithValue("@password", txt_password.Text)
             command.Parameters.AddWithValue("@dp", ImageModule.ImageToBase64(pict_user_pict.Image))
+
+            With command.Parameters
+                .AddWithValue("@year", Year)
+                .AddWithValue("@sy_to", SY_To)
+                .AddWithValue("@sy_from", SY_From)
+                .AddWithValue("@section", Section)
+            End With
+
             Dim user_id = command.ExecuteScalar()
 
             ' Bind the role
@@ -256,6 +326,25 @@ Public Class UserForm
         End Try
         Me.DialogResult = DialogResult.OK
         Me.Close()
+    End Sub
+
+    Private Sub ChangeBatchInformation(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Dim BatchInforGather = New StudentBatchInformation(False)
+        With BatchInforGather
+            .TXTYear.Text = Year
+            .TXTYearTo.Text = SY_To
+            .TXTSection.Text = Section
+            .TXTYearFrom.Text = SY_From
+
+            Me.Visible = False
+            Dim result = BatchInforGather.ShowDialog()
+
+            Year = .TXTYear.Text
+            SY_To = .TXTYearTo.Text
+            Section = .TXTSection.Text
+            SY_From = .TXTYearFrom.Text
+            Me.Visible = True
+        End With
     End Sub
 
 End Class

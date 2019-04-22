@@ -1,0 +1,13 @@
+
+4/22/2019 12:00:00 AM::CAI.UserEdit, Text: Editing Profile
+4/22/2019 12:00:00 AM::System.InvalidCastException: Conversion from string "" to type 'Integer' is not valid. ---> System.FormatException: Input string was not in a correct format.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   --- End of inner exception stack trace ---
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(String Value)
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at CAI.UserEdit.fetchDetails() in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\User\UserEdit.vb:line 102
+4/22/2019 12:00:00 AM::CAI.UserEdit, Text: Editing Profile
+4/22/2019 12:00:00 AM::System.InvalidCastException: Conversion from type 'DBNull' to type 'Integer' is not valid.
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)
+   at CAI.UserEdit.fetchDetails() in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\User\UserEdit.vb:line 102
