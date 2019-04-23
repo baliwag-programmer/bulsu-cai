@@ -148,6 +148,49 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to SELECT
+        '''	sy_from, sy_to,
+        '''	CONCAT(sy_from, &quot;-&quot;, sy_to) as SY, year as student_year,
+        '''	(
+        '''		SELECT COUNT(*) FROM users as students
+        '''			WHERE (
+        '''				students.sy_from = BATCH.sy_from
+        '''                AND 
+        '''				students.sy_to = BATCH.sy_to
+        '''                AND 
+        '''				students.year = BATCH.year
+        '''			)
+        '''	) as total_students,
+        '''	(
+        '''		SELECT COUNT(distinct(section)) FROM users as students
+        '''			WHERE (
+        '''				students.sy_from = BATCH.sy_from
+        '''                AND 
+        '''				students.sy_to = BATCH.sy_to
+        '''                AND 
+        '''		 [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property cai_batch_query() As String
+            Get
+                Return ResourceManager.GetString("cai_batch_query", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to /* Delete Role */
+        '''DELETE FROM role_user WHERE user_id IN (SELECT id FROM users as students WHERE sy_from = @PLACE_SY_FROM AND sy_to = @PLACE_SY_TO AND year = @PLACE_YEAR);
+        '''/* Delete Logs */
+        '''DELETE FROM user_logs WHERE user_id IN (SELECT id FROM users as students WHERE sy_from = @PLACE_SY_FROM AND sy_to = @PLACE_SY_TO AND year = @PLACE_YEAR);
+        '''/* Delete Answers */
+        '''DELETE FROM users_answers WHERE user_id IN (SELECT id FROM users as students WHERE sy_from = @PLACE_SY_FROM AND sy_to = @PLACE_SY_TO AND year = @PL [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property cai_query_for_batch_dump_deletion() As String
+            Get
+                Return ResourceManager.GetString("cai_query_for_batch_dump_deletion", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
         '''--
         '''-- Host: 127.0.0.1    Database: db_cai_auto
@@ -511,6 +554,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property icons8_microsoft_excel_48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8_microsoft_excel_48", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icons8_microsoft_excel_96() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8_microsoft_excel_96", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property icons8_ok_48() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8-ok-48", resourceCulture)
@@ -634,6 +697,16 @@ Namespace My.Resources
         Friend ReadOnly Property icons8_search_property_16() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8_search_property_16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icons8_send_to_printer_48() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8-send-to-printer-48", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -845,6 +918,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("test-management-disabled", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property TestTemplate() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TestTemplate", resourceCulture)
+                Return CType(obj,Byte())
             End Get
         End Property
         

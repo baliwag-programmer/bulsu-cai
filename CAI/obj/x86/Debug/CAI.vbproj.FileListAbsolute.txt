@@ -305,22 +305,6 @@ E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\AxInterop.AcroPDFLib.dll
 E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\AxInterop.SHDocVw.dll
 E:\Workspace\CAI\BulSu.CAI\CAI\bin\Debug\AxInterop.WMPLib.dll
 E:\Workspace\CAI\BulSu.CAI\CAI\obj\x86\Debug\CAI.vbprojAssemblyReference.cache
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe.config
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Data.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Design.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Drawing.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Windows.Forms.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Xml.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.PowerPointViewer.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.SHDocVw.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.WMPLib.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.SHDocVw.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbprojAssemblyReference.cache
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.PowerPointViewer.dll
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.SHDocVw.dll
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Interop.WMPLib.dll
@@ -339,6 +323,7 @@ C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ActivityLogs.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AdminMain.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.AdminMainScreen.resources
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ArhivingSelection.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ChatTest.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ConfigurationManager.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.InstructorMain.resources
@@ -368,11 +353,27 @@ C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.CAISplash.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserListRev2.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.UserViewer.resources
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Resources.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.GenerateResource.cache
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe.config
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Data.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Design.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Drawing.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Windows.Forms.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\System.Xml.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\GemBox.Spreadsheet.xml
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.PowerPointViewer.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.SHDocVw.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\Interop.WMPLib.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.SHDocVw.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.Resources.resources
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CoreCompileInputs.cache
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.vbproj.CopyComplete
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.exe
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.xml
 C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\Computer Aided Instruction in Empowerment Technologies for Grade 12 Students of SJBA.pdb
-C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\obj\x86\Debug\CAI.ArhivingSelection.resources

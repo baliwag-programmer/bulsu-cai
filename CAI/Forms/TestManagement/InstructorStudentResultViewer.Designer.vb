@@ -46,8 +46,9 @@ Partial Class InstructorStudentResultViewer
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.LBLDuration = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Heading1 = New CAI.Heading()
         Me.ActionPrint = New System.Windows.Forms.Button()
+        Me.Heading1 = New CAI.Heading()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dp_user_profile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -64,7 +65,7 @@ Partial Class InstructorStudentResultViewer
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.CAI.My.Resources.Resources.icons8_back_48
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.Location = New System.Drawing.Point(943, 139)
+        Me.Button1.Location = New System.Drawing.Point(946, 133)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(73, 74)
         Me.Button1.TabIndex = 36
@@ -284,6 +285,25 @@ Partial Class InstructorStudentResultViewer
         Me.Label13.TabIndex = 60
         Me.Label13.Text = "Duration :"
         '
+        'ActionPrint
+        '
+        Me.ActionPrint.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ActionPrint.BackColor = System.Drawing.Color.Transparent
+        Me.ActionPrint.FlatAppearance.BorderSize = 0
+        Me.ActionPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ActionPrint.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ActionPrint.ForeColor = System.Drawing.Color.White
+        Me.ActionPrint.Image = Global.CAI.My.Resources.Resources.icons8_send_to_printer_48
+        Me.ActionPrint.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ActionPrint.Location = New System.Drawing.Point(873, 133)
+        Me.ActionPrint.Name = "ActionPrint"
+        Me.ActionPrint.Size = New System.Drawing.Size(73, 74)
+        Me.ActionPrint.TabIndex = 63
+        Me.ActionPrint.Text = "PRINT"
+        Me.ActionPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ActionPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ActionPrint.UseVisualStyleBackColor = False
+        '
         'Heading1
         '
         Me.Heading1.BackColor = System.Drawing.Color.White
@@ -295,24 +315,24 @@ Partial Class InstructorStudentResultViewer
         Me.Heading1.TabIndex = 62
         Me.Heading1.Title = ""
         '
-        'ActionPrint
+        'Button2
         '
-        Me.ActionPrint.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ActionPrint.BackColor = System.Drawing.Color.Transparent
-        Me.ActionPrint.FlatAppearance.BorderSize = 0
-        Me.ActionPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ActionPrint.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ActionPrint.ForeColor = System.Drawing.Color.White
-        Me.ActionPrint.Image = Global.CAI.My.Resources.Resources.icons8_back_48
-        Me.ActionPrint.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.ActionPrint.Location = New System.Drawing.Point(875, 139)
-        Me.ActionPrint.Name = "ActionPrint"
-        Me.ActionPrint.Size = New System.Drawing.Size(73, 74)
-        Me.ActionPrint.TabIndex = 63
-        Me.ActionPrint.Text = "PRINT"
-        Me.ActionPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.ActionPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.ActionPrint.UseVisualStyleBackColor = False
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Image = Global.CAI.My.Resources.Resources.icons8_microsoft_excel_48
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button2.Location = New System.Drawing.Point(800, 133)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(73, 74)
+        Me.Button2.TabIndex = 64
+        Me.Button2.Text = "EXPORT"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'InstructorStudentResultViewer
         '
@@ -320,6 +340,7 @@ Partial Class InstructorStudentResultViewer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(1028, 562)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ActionPrint)
         Me.Controls.Add(Me.LBLDuration)
         Me.Controls.Add(Me.Label13)
@@ -375,4 +396,5 @@ Partial Class InstructorStudentResultViewer
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Heading1 As Heading
     Friend WithEvents ActionPrint As Button
+    Friend WithEvents Button2 As Button
 End Class
