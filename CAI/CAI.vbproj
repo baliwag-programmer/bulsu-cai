@@ -577,6 +577,7 @@
     <None Include="packages.config" />
     <None Include="Resources\archiver.zip" />
     <None Include="Resources\cai.ini" />
+    <None Include="Resources\TestTemplate.xlsx" />
     <None Include="Settings\DatabaseConfig.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>DatabaseConfig.Designer.vb</LastGenOutput>
