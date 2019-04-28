@@ -46,6 +46,11 @@ Public Class AdminMainScreen
     Private Sub OnFormLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         AddHandler My.Application.OnDateTimeChanged, AddressOf OnDateTimeChanged
         FillAuthDetails()
+        If Auth.GetInstance.isPreview Then
+            '919, 100
+            Label2.Text = "EXIT PREVIEW"
+            Label2.SetBounds(Label2.Location.X - 19, 100, Label2.Width, Label2.Height)
+        End If
     End Sub
 
     Private Sub IntializeRoleBasedControl(auth As Auth)
@@ -92,7 +97,11 @@ Public Class AdminMainScreen
     End Sub
 
     Private Sub AdminMainScreen_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        e.Cancel = Not MsgBox("Are you sure to logout?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Are you sure?") = MsgBoxResult.Yes
+        If Auth.GetInstance.isPreview Then
+            e.Cancel = Not MsgBox("Are you sure to exit preview?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Are you sure?") = MsgBoxResult.Yes
+        Else
+            e.Cancel = Not MsgBox("Are you sure to logout?", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "Are you sure?") = MsgBoxResult.Yes
+        End If
     End Sub
 
     Private Sub OnEnable(sender As Object, e As EventArgs)
