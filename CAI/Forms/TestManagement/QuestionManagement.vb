@@ -17,7 +17,7 @@ Public Class QuestionManagement
 
     Private Sub QuestionManagement_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         fetchQuestion(txt_filter.Text)
-        BTNCreate.Visible = Not Auth.GetInstance.isPreview
+        'BTNCreate.Visible = Not Auth.GetInstance.isPreview
         BTNEdit.Visible = Not Auth.GetInstance.isPreview
     End Sub
 
