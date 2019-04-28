@@ -32,7 +32,7 @@ Public Class InstructorStudentResultViewer
     End Sub
     Sub FetchHandledSections()
         Try
-            Dim SQL = "SELECT distinct year, section FROM db_cai_auto.users WHERE instructor_id = @ID AND year > 0 AND section IS NOT NULL;"
+            Dim SQL = "SELECT distinct year, section FROM users WHERE instructor_id = @ID AND year > 0 AND section IS NOT NULL;"
             Dim command = New MySql.Data.MySqlClient.MySqlCommand(SQL, Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@ID", Auth.GetInstance.id)
             Dim reader = command.ExecuteReader
