@@ -108,7 +108,12 @@ Public Class InstructorStudentResultViewer
                 li.Text = reader.GetValue(0)
                 li.SubItems.Add(Database.GetInstance.readerValue(reader, "username"))
                 li.SubItems.Add(String.Format("{0}, {1}, {2}", Database.GetInstance.readerValue(reader, "lastname"), Database.GetInstance.readerValue(reader, "firstname"), Database.GetInstance.readerValue(reader, "middlename")))
-                li.SubItems.Add(Database.GetInstance.readerValue(reader, "created_at"))
+                Dim yearSection = New String() {
+                    String.Format("{0:00}", Database.GetInstance.readerValue(reader, "year")),
+                    Database.GetInstance.readerValue(reader, "section")
+                }
+                li.SubItems.Add(String.Join("-", yearSection.ToArray()))
+                li.SubItems.Add(String.Format("{0:MMMM dd, yyyy}", Date.Parse(Database.GetInstance.readerValue(reader, "created_at"))))
                 li.SubItems.Add(String.Format("{0:00}", score))
                 li.SubItems.Add(String.Format("{0:00}", items - score))
                 li.SubItems.Add(String.Format("{0:00}", avg))
@@ -174,9 +179,10 @@ Public Class InstructorStudentResultViewer
             sheet.Cells(String.Format("A{0}", cellIndex)).Value = li.SubItems(1).Text
             sheet.Cells(String.Format("B{0}", cellIndex)).Value = li.SubItems(2).Text
             sheet.Cells(String.Format("D{0}", cellIndex)).Value = li.SubItems(3).Text
-            sheet.Cells(String.Format("F{0}", cellIndex)).Value = li.SubItems(4).Text
-            sheet.Cells(String.Format("G{0}", cellIndex)).Value = li.SubItems(5).Text
-            sheet.Cells(String.Format("H{0}", cellIndex)).Value = li.SubItems(6).Text
+            sheet.Cells(String.Format("E{0}", cellIndex)).Value = li.SubItems(4).Text
+            sheet.Cells(String.Format("F{0}", cellIndex)).Value = li.SubItems(5).Text
+            sheet.Cells(String.Format("G{0}", cellIndex)).Value = li.SubItems(6).Text
+            sheet.Cells(String.Format("H{0}", cellIndex)).Value = li.SubItems(7).Text
         Next
 
         ' Save to XLSX file.

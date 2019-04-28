@@ -51,6 +51,7 @@ Partial Class InstructorStudentResultViewer
         Me.ActionPrint = New System.Windows.Forms.Button()
         Me.Heading1 = New CAI.Heading()
         Me.ButtonExport = New System.Windows.Forms.Button()
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GroupBox1.SuspendLayout()
         CType(Me.dp_user_profile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -245,7 +246,7 @@ Partial Class InstructorStudentResultViewer
         Me.list_results.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.list_results.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.head_id, Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
+        Me.list_results.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.head_id, Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
         Me.list_results.FullRowSelect = True
         Me.list_results.GridLines = True
         Me.list_results.Location = New System.Drawing.Point(0, 0)
@@ -360,6 +361,11 @@ Partial Class InstructorStudentResultViewer
         Me.ButtonExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.ButtonExport.UseVisualStyleBackColor = False
         '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "YEAR & SECTION"
+        Me.ColumnHeader3.Width = 117
+        '
         'InstructorStudentResultViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
@@ -425,4 +431,5 @@ Partial Class InstructorStudentResultViewer
     Friend WithEvents ButtonExport As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboShowStudents As ComboBox
+    Friend WithEvents ColumnHeader3 As ColumnHeader
 End Class
