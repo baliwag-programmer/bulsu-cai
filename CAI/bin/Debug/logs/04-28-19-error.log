@@ -1,0 +1,82 @@
+
+4/28/2019 12:00:00 AM::CAI.Authentication, Text: Authentication
+4/28/2019 12:00:00 AM::System.InvalidOperationException: Connection must be valid and open.
+   at MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at CAI.Authentication.BTNCreate_Click(Object sender, EventArgs e) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\Authentication.vb:line 96
+4/28/2019 12:00:00 AM::CAI.Authentication, Text: Authentication
+4/28/2019 12:00:00 AM::System.InvalidOperationException: Connection must be valid and open.
+   at MySql.Data.MySqlClient.MySqlCommand.CheckState()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at CAI.Authentication.BTNCreate_Click(Object sender, EventArgs e) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\Authentication.vb:line 96
+4/28/2019 12:00:00 AM::MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '@ID' must be defined.
+   at MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   at MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   at MySql.Data.MySqlClient.Statement.BindParameters()
+   at MySql.Data.MySqlClient.PreparableStatement.Execute()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at CAI.InstructorStudentResultViewer.FetchHandledSections() in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 37
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 88
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 88
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87
+4/28/2019 12:00:00 AM::CAI.InstructorStudentResultViewer, Text: InstructorStudentResultViewer
+4/28/2019 12:00:00 AM::System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CAI.InstructorStudentResultViewer.fetchStudents(String& filterYearSection) in C:\Users\Jorican\Documents\Freelance\BSU\CAI\CAI(SE)FINAL\CAI\Forms\TestManagement\InstructorStudentResultViewer.vb:line 87

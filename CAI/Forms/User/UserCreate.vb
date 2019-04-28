@@ -117,7 +117,11 @@ Public Class UserCreate
                 instructor_id = instructor_dictionary.ToArray()(CMBInstructor.SelectedIndex)
             End If
 
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users ( username, lastname, firstname, middlename, password, dp ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp ); SELECT LAST_INSERT_ID();", Database.GetInstance.GetConnection)
+            Dim SQL = "INSERT INTO users ( username, lastname, firstname, middlename, password, dp ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp ); SELECT LAST_INSERT_ID();"
+            If (Not for_register) Then _
+                SQL = "INSERT INTO users ( username, lastname, firstname, middlename, password, dp, approved ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp, 1 ); SELECT LAST_INSERT_ID();"
+
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(SQL, Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@username", txt_username.Text)
             command.Parameters.AddWithValue("@lastname", txt_last_name.Text)
             command.Parameters.AddWithValue("@firstname", txt_first_name.Text)
@@ -127,16 +131,18 @@ Public Class UserCreate
             Dim user_id = command.ExecuteScalar()
             ' Bind the role
             Dim role_id As Integer
+            Dim role_name = IIf(global_role = UserList.Role.Administrator, "administrator", IIf(global_role = UserList.Role.Instructor, "instructor", "student"))
             command = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM roles WHERE name = @role", Database.GetInstance.GetConnection)
-            command.Parameters.AddWithValue("@role", IIf(global_role = UserList.Role.Administrator, "administrator", IIf(global_role = UserList.Role.Instructor, "instructor", "student")))
+            command.Parameters.AddWithValue("@role", role_name)
             Dim reader = command.ExecuteReader
             If reader.Read Then _
                 role_id = reader.GetValue(0)
             reader.Close()
 
-            command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO role_user ( role_id, user_id ) VALUES ( @role, @user )", Database.GetInstance.GetConnection)
+            command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO role_user ( role_id, user_id, user_type ) VALUES ( @role, @user, @user_type )", Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@role", role_id)
             command.Parameters.AddWithValue("@user", user_id)
+            command.Parameters.AddWithValue("@user_type", role_name)
             command.ExecuteNonQuery()
 
             If global_role = UserList.Role.Student Then

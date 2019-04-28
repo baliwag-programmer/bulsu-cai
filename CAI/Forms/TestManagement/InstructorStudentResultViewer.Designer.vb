@@ -35,6 +35,8 @@ Partial Class InstructorStudentResultViewer
         Me.LBLIndication = New System.Windows.Forms.Label()
         Me.LBLDescription = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboShowStudents = New System.Windows.Forms.ComboBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.list_results = New System.Windows.Forms.ListView()
         Me.head_id = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -48,7 +50,7 @@ Partial Class InstructorStudentResultViewer
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ActionPrint = New System.Windows.Forms.Button()
         Me.Heading1 = New CAI.Heading()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonExport = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dp_user_profile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -197,11 +199,35 @@ Partial Class InstructorStudentResultViewer
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.ComboShowStudents)
         Me.Panel1.Controls.Add(Me.LBLIndication)
         Me.Panel1.Location = New System.Drawing.Point(0, 293)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1028, 45)
         Me.Panel1.TabIndex = 43
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(620, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(181, 16)
+        Me.Label4.TabIndex = 44
+        Me.Label4.Text = "FILTER YEAR && SECTION :"
+        '
+        'ComboShowStudents
+        '
+        Me.ComboShowStudents.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboShowStudents.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboShowStudents.Font = New System.Drawing.Font("Tahoma", 14.25!)
+        Me.ComboShowStudents.FormattingEnabled = True
+        Me.ComboShowStudents.Location = New System.Drawing.Point(807, 7)
+        Me.ComboShowStudents.Name = "ComboShowStudents"
+        Me.ComboShowStudents.Size = New System.Drawing.Size(209, 31)
+        Me.ComboShowStudents.TabIndex = 43
         '
         'Panel2
         '
@@ -315,24 +341,24 @@ Partial Class InstructorStudentResultViewer
         Me.Heading1.TabIndex = 62
         Me.Heading1.Title = ""
         '
-        'Button2
+        'ButtonExport
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Image = Global.CAI.My.Resources.Resources.icons8_microsoft_excel_48
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.Location = New System.Drawing.Point(800, 133)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(73, 74)
-        Me.Button2.TabIndex = 64
-        Me.Button2.Text = "EXPORT"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.ButtonExport.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ButtonExport.BackColor = System.Drawing.Color.Transparent
+        Me.ButtonExport.FlatAppearance.BorderSize = 0
+        Me.ButtonExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonExport.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonExport.ForeColor = System.Drawing.Color.White
+        Me.ButtonExport.Image = Global.CAI.My.Resources.Resources.icons8_microsoft_excel_48
+        Me.ButtonExport.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ButtonExport.Location = New System.Drawing.Point(800, 133)
+        Me.ButtonExport.Name = "ButtonExport"
+        Me.ButtonExport.Size = New System.Drawing.Size(73, 74)
+        Me.ButtonExport.TabIndex = 64
+        Me.ButtonExport.Text = "EXPORT"
+        Me.ButtonExport.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.ButtonExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.ButtonExport.UseVisualStyleBackColor = False
         '
         'InstructorStudentResultViewer
         '
@@ -340,7 +366,7 @@ Partial Class InstructorStudentResultViewer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Green
         Me.ClientSize = New System.Drawing.Size(1028, 562)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.ButtonExport)
         Me.Controls.Add(Me.ActionPrint)
         Me.Controls.Add(Me.LBLDuration)
         Me.Controls.Add(Me.Label13)
@@ -396,5 +422,7 @@ Partial Class InstructorStudentResultViewer
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Heading1 As Heading
     Friend WithEvents ActionPrint As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonExport As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents ComboShowStudents As ComboBox
 End Class

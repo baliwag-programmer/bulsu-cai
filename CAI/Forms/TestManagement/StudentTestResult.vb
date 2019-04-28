@@ -59,6 +59,6 @@
     End Sub
 
     Private Sub FilterTestResults(sender As Object, e As EventArgs) Handles ComboType.SelectedIndexChanged
-        fetchTest(ComboType.text)
+        fetchTest(ComboType.Text)
     End Sub
 End Class

@@ -156,9 +156,9 @@ Partial Class StudentBatchInformation
         Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!)
         Me.Label4.Location = New System.Drawing.Point(12, 141)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(154, 16)
+        Me.Label4.Size = New System.Drawing.Size(169, 16)
         Me.Label4.TabIndex = 54
-        Me.Label4.Text = "SCHOOL YEAR FROM :"
+        Me.Label4.Text = "ACADEMIC YEAR FROM :"
         '
         'Label5
         '
@@ -166,9 +166,9 @@ Partial Class StudentBatchInformation
         Me.Label5.Font = New System.Drawing.Font("Verdana", 9.75!)
         Me.Label5.Location = New System.Drawing.Point(229, 141)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(136, 16)
+        Me.Label5.Size = New System.Drawing.Size(151, 16)
         Me.Label5.TabIndex = 54
-        Me.Label5.Text = "SCHOOL YEAR TO :"
+        Me.Label5.Text = "ACADEMIC YEAR TO :"
         '
         'GroupBox1
         '

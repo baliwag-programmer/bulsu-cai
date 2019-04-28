@@ -112,7 +112,7 @@ Partial Class TestForm
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(513, 547)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(649, 618)
         Me.ShapeContainer1.TabIndex = 18
         Me.ShapeContainer1.TabStop = False
         '
@@ -189,7 +189,7 @@ Partial Class TestForm
         Me.combo_minutes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.combo_minutes.Font = New System.Drawing.Font("Tahoma", 14.25!)
         Me.combo_minutes.FormattingEnabled = True
-        Me.combo_minutes.Items.AddRange(New Object() {"00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
+        Me.combo_minutes.Items.AddRange(New Object() {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"})
         Me.combo_minutes.Location = New System.Drawing.Point(575, 162)
         Me.combo_minutes.Name = "combo_minutes"
         Me.combo_minutes.Size = New System.Drawing.Size(62, 31)

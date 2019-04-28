@@ -38,7 +38,7 @@ Public Class UserForm
             LabelYearSection.Text = String.Format("YEAR && SECTION: {0:00}-{1}", _Year, _Section)
         End Set
         Get
-            Return IIf(StudentAccountRequest, _Year, Nothing)
+            Return _Year
         End Get
     End Property
     Private Property SY_To As Integer
@@ -47,7 +47,7 @@ Public Class UserForm
             LabelSY.Text = String.Format("SY: {0}-{1}", _SY_From, _SY_To)
         End Set
         Get
-            Return IIf(StudentAccountRequest, _SY_To, Nothing)
+            Return _SY_To
         End Get
     End Property
     Private Property SY_From As Integer
@@ -56,7 +56,7 @@ Public Class UserForm
             LabelSY.Text = String.Format("SY: {0}-{1}", _SY_From, _SY_To)
         End Set
         Get
-            Return IIf(StudentAccountRequest, _SY_From, Nothing)
+            Return _SY_From
         End Get
     End Property
     Private Property Section As String
@@ -65,7 +65,7 @@ Public Class UserForm
             LabelYearSection.Text = String.Format("YEAR && SECTION: {0:00}-{1}", _Year, _Section)
         End Set
         Get
-            Return IIf(StudentAccountRequest, _Section, Nothing)
+            Return _Section
         End Get
     End Property
 #End Region
@@ -117,15 +117,23 @@ Public Class UserForm
                 SY_To = BatchInforGather.TXTYearTo.Text
                 Section = BatchInforGather.TXTSection.Text
                 SY_From = BatchInforGather.TXTYearFrom.Text
+
                 Me.Visible = True
 
                 LabelAccountType.Text = "INSTRUCTOR NAME :"
                 LabelUsername.Text = "STUDENT NUMBER :"
-                Me.Heading1.Title = "REGISTER AS STUDENT"
+                Me.Heading1.Title = "ADD STUDENT"
 
                 GroupBox1.Visible = True
+                LabelAccountType.Visible = False
+                ComboAccountType.Visible = False
+                If StudentAccountRequest Then
+                    LabelAccountType.Visible = True
+                    ComboAccountType.Visible = True
 
-                fetchInstructors()
+                    Heading1.Text = "REGISTER AS STUDENT"
+                    fetchInstructors()
+                End If
             Else
                 Me.ComboAccountType.Enabled = False
                 Me.ComboAccountType.SelectedIndex = PreferredRole
@@ -253,14 +261,25 @@ Public Class UserForm
 
             Dim instructor_id = 0
             Dim role As Role = ComboAccountType.SelectedIndex
+
+            If HasPreferredRole Then _
+                role = PreferredRole
+
             If StudentAccountRequest Then
                 role = Role.Student
                 ' identify who is the prof
                 Dim selected = ComboAccountType.Text.Split("-")(0)
                 instructor_id = instructor_dictionary.ToArray()(ComboAccountType.SelectedIndex)
+            Else
+                If role = Role.Student Then _
+                    instructor_id = Auth.GetInstance.id
             End If
 
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("INSERT INTO users ( username, lastname, firstname, middlename, password, dp, sy_from, sy_to, year, section ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp, @sy_from, @sy_to, @year, @section ); SELECT LAST_INSERT_ID();", Database.GetInstance.GetConnection)
+            Dim SQL = "INSERT INTO users ( username, lastname, firstname, middlename, password, dp, sy_from, sy_to, year, section ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp, @sy_from, @sy_to, @year, @section ); SELECT LAST_INSERT_ID();"
+            If Not StudentAccountRequest And role = Role.Student Then _
+                SQL = "INSERT INTO users ( username, lastname, firstname, middlename, password, dp, sy_from, sy_to, year, section, approved ) VALUES ( @username, @lastname, @firstname, @middlename, @password, @dp, @sy_from, @sy_to, @year, @section, 1 ); SELECT LAST_INSERT_ID();"
+
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(SQL, Database.GetInstance.GetConnection)
             command.Parameters.AddWithValue("@username", txt_username.Text)
             command.Parameters.AddWithValue("@lastname", txt_last_name.Text)
             command.Parameters.AddWithValue("@firstname", txt_first_name.Text)

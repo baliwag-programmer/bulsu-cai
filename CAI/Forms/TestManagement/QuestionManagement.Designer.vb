@@ -205,6 +205,7 @@ Partial Class QuestionManagement
         Me.BTNCreate.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTNCreate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.BTNCreate.UseVisualStyleBackColor = False
+        Me.BTNCreate.Visible = False
         '
         'txt_filter
         '

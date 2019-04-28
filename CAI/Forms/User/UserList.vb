@@ -87,7 +87,7 @@
 
     Sub create()
         Me.Hide()
-        Dim form = New UserCreate(current_role)
+        Dim form = New UserForm(UserForm.Mode.Create, current_role)
         Dim result = form.ShowDialog()
         If result = Windows.Forms.DialogResult.OK Then _
             fetchUsers(txt_filter.Text)
@@ -305,15 +305,18 @@
 
                 Me.Hide()
                 Auth.GetInstance.isPreview = True
-                If Auth.GetInstance.role.name = "instructor" Then
-                    Dim form = New AdminMainScreen
-                    form.ShowDialog()
-                End If
+                'If Auth.GetInstance.role.name = "instructor" Then
+                '    Dim form = New AdminMainScreen
+                '    form.ShowDialog()
+                'End If
 
-                If Auth.GetInstance.role.name = "student" Then
-                    Dim form = New StudentMain
-                    form.ShowDialog()
-                End If
+                'If Auth.GetInstance.role.name = "student" Then
+                '    Dim form = New StudentMain
+                '    form.ShowDialog()
+                'End If
+
+                Dim form = New AdminMainScreen
+                form.ShowDialog()
 
                 Auth.GetInstance.id = Auth.GetInstance.previewing_auth.id
                 Auth.GetInstance.username = Auth.GetInstance.previewing_auth.username

@@ -187,9 +187,9 @@ hasError:
         lbl_note.Visible = Not RADIdentification.Checked
 
         If RADIdentification.Checked Then _
-            Me.Size = New Point(537, 333)
+            Me.Size = New Point(727, 365)
         If Not RADIdentification.Checked Then _
-            Me.Size = New Point(537, 532)
+            Me.Size = New Point(727, 562)
     End Sub
 
     Private Sub QuestionForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load

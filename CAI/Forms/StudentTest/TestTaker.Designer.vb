@@ -31,8 +31,8 @@ Partial Class TestTaker
         Me.question_container = New System.Windows.Forms.Panel()
         Me.TXTInstruction = New System.Windows.Forms.Label()
         Me.lock_container = New System.Windows.Forms.Panel()
-        Me.lbl_indicator = New System.Windows.Forms.Label()
         Me.img_lock_indication = New System.Windows.Forms.PictureBox()
+        Me.lbl_indicator = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.question_container.SuspendLayout()
@@ -158,18 +158,6 @@ Partial Class TestTaker
         Me.lock_container.Size = New System.Drawing.Size(1092, 682)
         Me.lock_container.TabIndex = 4
         '
-        'lbl_indicator
-        '
-        Me.lbl_indicator.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_indicator.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_indicator.Location = New System.Drawing.Point(-1, 8)
-        Me.lbl_indicator.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_indicator.Name = "lbl_indicator"
-        Me.lbl_indicator.Size = New System.Drawing.Size(1094, 226)
-        Me.lbl_indicator.TabIndex = 1
-        Me.lbl_indicator.Text = "TEST CURRENTLY LOCKED"
-        Me.lbl_indicator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'img_lock_indication
         '
         Me.img_lock_indication.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -181,6 +169,18 @@ Partial Class TestTaker
         Me.img_lock_indication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.img_lock_indication.TabIndex = 0
         Me.img_lock_indication.TabStop = False
+        '
+        'lbl_indicator
+        '
+        Me.lbl_indicator.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_indicator.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_indicator.Location = New System.Drawing.Point(-1, 8)
+        Me.lbl_indicator.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_indicator.Name = "lbl_indicator"
+        Me.lbl_indicator.Size = New System.Drawing.Size(1094, 226)
+        Me.lbl_indicator.TabIndex = 1
+        Me.lbl_indicator.Text = "TEST CURRENTLY LOCKED"
+        Me.lbl_indicator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TestTaker
         '

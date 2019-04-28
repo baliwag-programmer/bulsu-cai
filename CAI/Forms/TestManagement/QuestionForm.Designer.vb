@@ -113,11 +113,11 @@ Partial Class QuestionForm
         '
         'ShapeContainer1
         '
-        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 127)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(531, 504)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(711, 397)
         Me.ShapeContainer1.TabIndex = 30
         Me.ShapeContainer1.TabStop = False
         '

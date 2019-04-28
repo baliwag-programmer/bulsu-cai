@@ -30,6 +30,30 @@ Public Class InstructorStudentResultViewer
         If Not Auth.GetInstance.dp = "" Then _
             dp_user_profile.Image = ImageModule.Base64ToImage(Auth.GetInstance.dp)
     End Sub
+    Sub FetchHandledSections()
+        Try
+            Dim SQL = "SELECT distinct year, section FROM db_cai_auto.users WHERE instructor_id = @ID AND year > 0 AND section IS NOT NULL;"
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(SQL, Database.GetInstance.GetConnection)
+            command.Parameters.AddWithValue("@ID", Auth.GetInstance.id)
+            Dim reader = command.ExecuteReader
+            With ComboShowStudents
+                With .Items
+                    .Clear()
+                    .Add("Show All")
+                    While reader.Read
+                        .Add(String.Format("{0:00}-{1}",
+                            reader("year"),
+                            reader("section")
+                        ))
+                    End While
+                    reader.Close()
+                End With
+                .SelectedIndex = 0
+            End With
+        Catch ex As Exception
+            LoggerModule.createLog(ex.ToString, LogType.Err)
+        End Try
+    End Sub
 
     Sub fetchTestDetails()
         Try
@@ -51,12 +75,29 @@ Public Class InstructorStudentResultViewer
         End Try
     End Sub
 
-    Sub fetchStudents()
+    Sub fetchStudents(Optional ByRef filterYearSection As String = "Show All")
         Try
-
-            Dim command = New MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM users_tests LEFT JOIN users ON users.id = users_tests.user_id WHERE test_id = @id", Database.GetInstance.GetConnection)
+            list_results.Items.Clear()
+            Dim yearFilter = 0
+            Dim sectionFilter = ""
+            Dim SQL = "SELECT * FROM users_tests LEFT JOIN users ON users.id = users_tests.user_id WHERE test_id = @id"
+            If Not String.IsNullOrEmpty(filterYearSection) Then
+                If Not filterYearSection = "Show All" Then
+                    Dim YearSection = filterYearSection.Split("-")
+                    yearFilter = Integer.Parse(YearSection(0))
+                    sectionFilter = YearSection(1)
+                    SQL = String.Format("{0} AND {1}", SQL, "user_id in (SELECT id FROM users WHERE year = @year AND section = @section)")
+                End If
+            End If
+            Dim command = New MySql.Data.MySqlClient.MySqlCommand(SQL, Database.GetInstance.GetConnection)
             With command.Parameters
                 .AddWithValue("@id", current_test)
+                If Not String.IsNullOrEmpty(filterYearSection) Then
+                    If Not filterYearSection = "Select All" Then
+                        .AddWithValue("@year", yearFilter)
+                        .AddWithValue("@section", sectionFilter)
+                    End If
+                End If
             End With
             Dim reader = command.ExecuteReader
             While reader.Read
@@ -85,9 +126,13 @@ Public Class InstructorStudentResultViewer
             LoggerModule.createLog(Me.ToString, LogType.Err)
             LoggerModule.createLog(ex.ToString, LogType.Err)
         End Try
+
+        ButtonExport.Enabled = list_results.Items.Count > 0
+        ActionPrint.Enabled = ButtonExport.Enabled
     End Sub
 
     Private Sub InstructorStudentResultViewer_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        FetchHandledSections()
         loadUserDetails()
         fetchTestDetails()
         fetchStudents()
@@ -156,7 +201,11 @@ Public Class InstructorStudentResultViewer
         'dialog.ShowDialog()
     End Sub
 
-    Private Sub OnExport(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub OnExport(sender As Object, e As EventArgs) Handles ButtonExport.Click
         SetupExcelFile(".xlsx")
+    End Sub
+
+    Private Sub OnFilterYearSection(sender As Object, e As EventArgs) Handles ComboShowStudents.SelectedIndexChanged
+        fetchStudents(ComboShowStudents.Text)
     End Sub
 End Class
