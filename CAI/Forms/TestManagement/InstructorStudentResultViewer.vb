@@ -77,6 +77,9 @@ Public Class InstructorStudentResultViewer
 
     Sub fetchStudents(Optional ByRef filterYearSection As String = "Show All")
         Try
+            total_passed = 0
+            total_failed = 0
+            total_student = 0
             list_results.Items.Clear()
             Dim yearFilter = 0
             Dim sectionFilter = ""
